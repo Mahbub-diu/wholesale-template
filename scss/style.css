@@ -777,6 +777,7 @@ a {
 }
 .popularproduct-main .popularproduct-tabs .popularproduct-wrapper .card .card-body .brand-image-box img {
   height: 100%;
+  min-height: 298px;
   max-height: 298px;
   margin: 0px auto;
 }
