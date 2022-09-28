@@ -459,6 +459,11 @@ a {
 }
 .layout-main .primary-slider-main .primary-slider-flex .double-slider .slick-slider {
   margin-bottom: 10px;
+  min-height: 256px;
+}
+.layout-main .primary-slider-main .primary-slider-flex .double-slider .slick-slider img {
+  height: 100%;
+  min-height: 256px;
 }
 .layout-main .primary-slider-main .primary-slider-flex .double-slider .slick-dots {
   bottom: 20px;
