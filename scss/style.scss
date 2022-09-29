@@ -807,7 +807,7 @@ a {
             }
           }
           .description-box {
-            min-height: 100px;
+            min-height: 130px;
             border-bottom: 1px solid $l-gray;
             margin-bottom: 7px;
             h4.product-title {
@@ -834,6 +834,93 @@ a {
                 font-weight: normal;
                 font-size: 14px;
                 text-transform: capitalize;
+              }
+            }
+            .moredetails-main {
+              border: 1px solid $l-gray;
+              padding-left: 5px;
+              border-bottom: none;
+              color: $tag-grey;
+              font-weight: normal;
+              font-size: 14px;
+              text-transform: capitalize;
+              .more-options {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                .all-more {
+                  display: inline-flex;
+                  flex-wrap: wrap;
+                  .dropdown-menu {
+                    @include no-radious;
+                    left: 50% !important;
+                    width: 90%;
+                    transform: unset;
+                    transform: translate(-50%, -105px) !important;
+                    -webkit-transform: translate(-50%, -105px) !important;
+                    -moz-transform: translate(-50%, -105px) !important;
+                    -ms-transform: translate(-50%, -105px) !important;
+                    -o-transform: translate(-50%, -105px) !important;
+                    padding: 15px;
+                    font-size: 14px;
+                    min-height: 150px;
+                    text-align: center;
+                    h4.product-name {
+                      font-size: 15px;
+                      margin-bottom: 10px;
+                    }
+                    .all-offer {
+                      p {
+                        margin-bottom: 5px;
+                        font-size: 14px;
+                        color: $tag-grey;
+                        span.disc-qty {
+                          color: $logo-red;
+                        }
+                      }
+                    }
+                    .form-select {
+                      @include no-radious;
+                      text-transform: capitalize;
+                      font-size: 14px;
+                      &:focus {
+                        box-shadow: none;
+                        outline: none;
+                      }
+                    }
+                  }
+                  .dropdown-toggle {
+                    padding: 0;
+                    @include no-radious;
+                    border: none;
+                    width: 50px;
+                    margin-left: 20px;
+                    background: transparent;
+                    &::after {
+                      border: none;
+                      content: '\f078';
+                      font-weight: 900;
+                      font-family: 'Font Awesome 6 Free';
+                      color: rgba(0, 0, 0, 0.87);
+                      font-size: 13px;
+                      flex-wrap: wrap;
+                      align-items: center;
+                      justify-content: center;
+                      vertical-align: middle;
+                    }
+                    &:focus {
+                      border: none;
+                    }
+                  }
+                  .dropdown-toggle-up {
+                    &::after {
+                      content: '\f077' !important;
+                    }
+                  }
+                }
               }
             }
           }
@@ -876,6 +963,15 @@ a {
                 background: #fff;
                 border-color: $light-blue;
                 color: $light-blue;
+              }
+            }
+            .add-req-flex {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-between;
+              .btn {
+                flex-basis: 49%;
               }
             }
             .quantity-box {

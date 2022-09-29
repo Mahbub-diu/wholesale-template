@@ -1,16 +1,30 @@
 $('.requestto-stock-btn').click(function () {
-  $(this).addClass('d-none');
-  $(this).next().toggleClass('d-none');
+  $(this).parent().toggleClass('d-none');
+
+  $(this).parent().next().toggleClass('d-none');
+  setTimeout(() => {
+    $(this).parent().toggleClass('d-none');
+    $(this).parent().next().toggleClass('d-none');
+  }, 5000);
 });
 
 $('.addtocart-btn').click(function () {
-  $(this).addClass('d-none');
-  $(this).next().toggleClass('d-none');
+  $(this).parent().toggleClass('d-none');
+
+  $(this).parent().next().toggleClass('d-none');
+  setTimeout(() => {
+    $(this).parent().toggleClass('d-none');
+    $(this).parent().next().toggleClass('d-none');
+  }, 5000);
 });
 
 $('.addto-quote-btn').click(function () {
-  $(this).addClass('d-none');
-  $(this).next().toggleClass('d-none');
+  $(this).parent().toggleClass('d-none');
+  $(this).parent().next().toggleClass('d-none');
+  setTimeout(() => {
+    $(this).parent().toggleClass('d-none');
+    $(this).parent().next().toggleClass('d-none');
+  }, 5000);
 });
 
 // brand shop slider start from here
@@ -317,7 +331,7 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
     element.addEventListener('click', function (e) {
-      let nextEl = element.nextElementSibling;
+      let nextEl = element.parentElementSibling;
       let parentEl = element.parentElement;
 
       if (nextEl) {
