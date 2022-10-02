@@ -315,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function () {
     .querySelectorAll('.sidebar .parent-link')
     .forEach(function (element) {
       element.addEventListener('click', function (e) {
-        console.log(this);
         $(this).toggleClass('icon-rotate');
       });
     });
