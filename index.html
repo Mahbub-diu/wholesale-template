@@ -12,9 +12,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i"
         rel="stylesheet" />
+
     <link rel="stylesheet" href="./fonts/icofont.min.css">
     <link rel="stylesheet" href="./fonts/arial-font.css" />
     <link rel="stylesheet" href="./scss/bootstrap.min.css" />
+    <!-- for select2  -->
+    <link rel="stylesheet" href="./scss/select2.min.css">
+
     <link rel="stylesheet" href="./scss/slick.css">
     <link rel="stylesheet" href="./scss/slick-theme.css">
     <link rel="stylesheet" href="./scss/style.css" />
@@ -25,95 +29,119 @@
     <!-- ========================================================== -->
     <!-- top header start from here  -->
     <!-- ========================================================== -->
+
     <section class="header-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" alt="" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top_nav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="row g-0 align-items-center">
+                    <div class="col-8 col-lg-2 ">
+                        <div class="d-flex">
 
-                <div class="collapse navbar-collapse" id="top_nav">
-                    <form class="d-flex" role="search">
-                        <div class="search-icon">
-                            <i class="icofont-search"></i>
+                            <a class="navbar-brand" href="#">
+
+                                <img src="./images/logo.png" alt="" class="img-fluid" />
+
+                            </a>
                         </div>
-                        <input class="form-control me-2" type="text" placeholder="Enter a keyword to search"
-                            aria-label="Search" />
-                    </form>
-                    <ul class="navbar-nav topsocial-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./images/icon/facebook.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> <img src="./images/icon/instagram.svg" alt=""> </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./images/icon/youtube.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav topcart-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                <img src="./images/icon/reorder.svg" alt="">
-                                reorder
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end fade-down">
-                                <li><a class="dropdown-item" href="#"> my items reorder</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#"> wishlists </a>
-                                </li>
-                                <li><a class="dropdown-item" href="#"> monthly list</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                <img src="./images/icon/cart.svg" alt="">
-                                cart
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end fade-down">
-                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#"> Submenu item 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                <img src="./images/icon/user.svg" alt="">
-                                Login
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end fade-down">
-                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#"> Submenu item 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./images/icon/compare.svg" alt="">
-                                compare
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img src="./images/icon/wishlist.svg" alt="">
-                                wish list
-                            </a>
-                        </li> -->
 
-                    </ul>
+                    </div>
+                    <div class="col-4 col-lg-10 position-static">
+                        <div class="d-flex w-100">
+                            <div class="search-box flex-grow-1 px-4 d-none d-lg-block">
+                                <form action="">
+                                    <div class="d-flex position-relative">
+                                        <div class="w-100">
+                                            <input class="form-control main-search w-100" type="search"
+                                                placeholder="I am searching for ..." aria-label="Search">
+                                        </div>
+                                        <div class="catagory-lists-select">
+                                            <select class="form-control select2">
+                                                <option>All catagories</option>
+                                                <option>Car</option>
+                                                <option>Bike</option>
+                                                <option>Scooter</option>
+                                                <option>Cycle</option>
+                                                <option>Horse</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn btn-success" type="submit"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="navbar-nav topsocial-nav inline-links">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="./images/icon/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <img src="./images/icon/instagram.svg" alt=""> </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="./images/icon/youtube.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav topcart-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                        <img src="./images/icon/reorder.svg" alt="">
+                                        reorder
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                        <li><a class="dropdown-item" href="#"> my items reorder</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"> wishlists </a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> monthly list</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                        <img src="./images/icon/cart.svg" alt="">
+                                        cart
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"> Submenu item 2 </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                        <img src="./images/icon/user.svg" alt="">
+                                        Login
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                        <li><a class="dropdown-item" href="#"> my account</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"> notification </a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> dashboard</a></li>
+                                        <li><a class="dropdown-item" href="#"> profile</a></li>
+                                        <li><a class="dropdown-item" href="#"> orders</a></li>
+                                        <li><a class="dropdown-item" href="#"> download</a></li>
+                                        <li><a class="dropdown-item" href="#"> broucher/coupon</a></li>
+                                        <li><a class="dropdown-item" href="#"> referral program</a></li>
+                                        <li><a class="dropdown-item" href="#"> payment history</a></li>
+                                        <li><a class="dropdown-item" href="#"> address</a></li>
+                                        <li><a class="dropdown-item" href="#"> wishlist</a></li>
+                                        <li><a class="dropdown-item" href="#"> compare</a></li>
+                                        <li><a class="dropdown-item" href="#"> membership</a></li>
+                                        <li><a class="dropdown-item" href="#"> password change</a></li>
+                                        <li><a class="dropdown-item" href="#"> logout</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!-- navbar-collapse.// -->
             </div>
-            <!-- container-fluid.// -->
         </nav>
     </section>
     <!-- ========================================================== -->
@@ -543,10 +571,24 @@
                                         <div class="slide">
                                             <img src="images/slider/2.png" alt="" class="img-fluid">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="secondary-slider">
-                                    <div class="secondary-second-wraper">
+                                        <div class="slide">
+                                            <img src="images/slider/1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="slide">
+                                            <img src="images/slider/2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="slide">
+                                            <img src="images/slider/1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="slide">
+                                            <img src="images/slider/2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="slide">
+                                            <img src="images/slider/1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="slide">
+                                            <img src="images/slider/2.png" alt="" class="img-fluid">
+                                        </div>
                                         <div class="slide">
                                             <img src="images/slider/1.png" alt="" class="img-fluid">
                                         </div>
@@ -555,16 +597,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="secondary-slider">
-                                    <div class="secondary-third-wraper">
-                                        <div class="slide">
-                                            <img src="images/slider/1.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="slide">
-                                            <img src="images/slider/2.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
+
                             </section>
                         </div>
                     </div>
@@ -575,6 +608,760 @@
             <!-- ========================================================== -->
         </section>
     </section>
+    <!-- ========================================================== -->
+    <!-- Hot Sale section start from here  -->
+    <!-- ========================================================== -->
+
+    <section class="popularproduct-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="common-title-flex">
+                        <div class="left-box">
+                            <h3 class="common-title hot-sale">hot sale</h3>
+                            <div id="countdown">
+
+                                <div id='tiles'></div>
+
+                            </div>
+                        </div>
+                        <div class="center-box"></div>
+                        <div class="right-box">
+                            <a href="#" class="see-all-products">see all <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="popularproduct-tabs">
+                        <div class="popularproduct-wrapper hotsale-slider">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+                                            <button class="btn addtocart-btn">
+
+                                                add to cart
+                                            </button>
+
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+                                        <div class="moredetails-main">
+
+                                            <div class="more-options">
+                                                More details
+                                                <div class="all-more">
+                                                    <div class="first-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+
+                                                            <h4 class="product-name">VVE Hilsha fish
+                                                                (1.6+kg)</h4>
+                                                            <div class="all-offer">
+
+                                                                <p>buy 1 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">8%</span>
+                                                                    discount</p>
+                                                                <p>buy 1 get<span class="disc-qty">10%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <select name="" id="" class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option value="">size 1</option>
+                                                                <option value="">size 2</option>
+                                                                <option value="">size 3</option>
+                                                                <option value="">size 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+
+
+                                            <button class="btn addto-quote-btn" tabindex="0">
+
+                                                add to quote
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+
+
+                                            <button class="btn requestto-stock-btn" tabindex="0">
+
+                                                request stock
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+                                        <div class="moredetails-main">
+
+                                            <div class="more-options">
+                                                More details
+                                                <div class="all-more">
+                                                    <div class="first-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+
+                                                            <h4 class="product-name">VVE Hilsha fish
+                                                                (1.6+kg)</h4>
+                                                            <div class="all-offer">
+
+                                                                <p>buy 1 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">8%</span>
+                                                                    discount</p>
+                                                                <p>buy 1 get<span class="disc-qty">10%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <select name="" id="" class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option value="">size 1</option>
+                                                                <option value="">size 2</option>
+                                                                <option value="">size 3</option>
+                                                                <option value="">size 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+                                            <button class="btn addtocart-btn">
+
+                                                add to cart
+                                            </button>
+
+                                            <button class="btn addto-quote-btn" tabindex="0">
+
+                                                add to quote
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+
+                                            <button class="btn requestto-stock-btn" tabindex="0">
+
+                                                request stock
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+                                        <div class="moredetails-main">
+
+                                            <div class="more-options">
+                                                More details
+                                                <div class="all-more">
+                                                    <div class="first-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+
+                                                            <h4 class="product-name">VVE Hilsha fish
+                                                                (1.6+kg)</h4>
+                                                            <div class="all-offer">
+
+                                                                <p>buy 1 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">8%</span>
+                                                                    discount</p>
+                                                                <p>buy 1 get<span class="disc-qty">10%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <select name="" id="" class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option value="">size 1</option>
+                                                                <option value="">size 2</option>
+                                                                <option value="">size 3</option>
+                                                                <option value="">size 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+                                            <button class="btn addtocart-btn">
+
+                                                add to cart
+                                            </button>
+
+                                            <button class="btn addto-quote-btn" tabindex="0">
+
+                                                add to quote
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+                                        <div class="moredetails-main">
+
+                                            <div class="more-options">
+                                                More details
+                                                <div class="all-more">
+                                                    <div class="first-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+
+                                                            <h4 class="product-name">VVE Hilsha fish
+                                                                (1.6+kg)</h4>
+                                                            <div class="all-offer">
+
+                                                                <p>buy 1 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">8%</span>
+                                                                    discount</p>
+                                                                <p>buy 1 get<span class="disc-qty">10%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <select name="" id="" class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option value="">size 1</option>
+                                                                <option value="">size 2</option>
+                                                                <option value="">size 3</option>
+                                                                <option value="">size 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+                                            <button class="btn addtocart-btn">
+
+                                                add to cart
+                                            </button>
+
+                                            <button class="btn addto-quote-btn" tabindex="0">
+
+                                                add to quote
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+
+                                            <button class="btn requestto-stock-btn" tabindex="0">
+
+                                                request stock
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-box">
+                                        <img src="images/products/1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="description-box">
+                                        <h4 class="product-title">
+                                            <a href="#" class="">kordite extra large white foam bowl 828
+                                                ml
+                                                10 pcs </a>
+                                        </h4>
+                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
+                                        </h3>
+                                        <div class="moredetails-main">
+
+                                            <div class="more-options">
+                                                More details
+                                                <div class="all-more">
+                                                    <div class="first-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+
+                                                            <h4 class="product-name">VVE Hilsha fish
+                                                                (1.6+kg)</h4>
+                                                            <div class="all-offer">
+
+                                                                <p>buy 1 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">8%</span>
+                                                                    discount</p>
+                                                                <p>buy 1 get<span class="disc-qty">10%</span>
+                                                                    discount</p>
+                                                                <p>buy 2 get <span class="disc-qty">5%</span>
+                                                                    discount</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-more">
+                                                        <button type="button"
+                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="visually-hidden">Toggle
+                                                                Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <select name="" id="" class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option value="">size 1</option>
+                                                                <option value="">size 2</option>
+                                                                <option value="">size 3</option>
+                                                                <option value="">size 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-section">
+
+                                        <div class="add-req-flex">
+                                            <button class="btn addtocart-btn">
+
+                                                add to cart
+                                            </button>
+
+                                            <button class="btn addto-quote-btn" tabindex="0">
+
+                                                add to quote
+                                            </button>
+                                        </div>
+                                        <div class="quantity-box d-none">
+                                            <button class="btn qty-minus-btn">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <input type="text" class="form-control" value="0">
+                                            <button class="btn qty-plus-btn">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================================================== -->
+    <!-- Hot Sale section end here  -->
+    <!-- ========================================================== -->
+
+    <!-- ========================================================== -->
+    <!-- Brand Shop section start from here  -->
+    <!-- ========================================================== -->
+    <section class="popularproduct-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="common-title-flex">
+                        <div class="left-box">
+                            <h3 class="common-title">Brand Shop</h3>
+                        </div>
+                        <div class="center-box">
+
+                        </div>
+                        <div class="right-box">
+                            <a href="#" class="see-all-products">see all <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="popularproduct-tabs">
+                        <div class="popularproduct-wrapper brand-shop">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="brand-image-box">
+                                        <a href="#" class="">
+                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- Brand Shop section end here  -->
+    <!-- ========================================================== -->
+
+
     <!-- ========================================================== -->
     <!-- Popular Product tab section start from here  -->
     <!-- ========================================================== -->
@@ -1242,892 +2029,9 @@
     <!-- Popular Product tab section end here  -->
     <!-- ========================================================== -->
 
-    <!-- ========================================================== -->
-    <!-- Hot Sale section start from here  -->
-    <!-- ========================================================== -->
 
-    <section class="popularproduct-main">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="common-title-flex">
-                        <div class="left-box">
-                            <h3 class="common-title hot-sale">hot sale</h3>
-                        </div>
-                        <div class="center-box">
-                            <span class="ends-in">Ends In </span>
-                            <div id="countdown">
-                                <div class="labels">
-                                    <li>Days</li>
-                                    <li>Hours</li>
-                                    <li>Mins</li>
-                                    <li>Secs</li>
-                                </div>
-                                <div id='tiles'></div>
 
-                            </div>
-                        </div>
-                        <div class="right-box">
-                            <a href="#" class="see-all-products">see all <i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="popularproduct-tabs">
-                        <div class="popularproduct-wrapper hotsale-slider">
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn requestto-stock-btn" tabindex="0">
-
-                                                request stock
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn addto-quote-btn" tabindex="0">
-
-                                                add to quote
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn requestto-stock-btn" tabindex="0">
-
-                                                request stock
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn addto-quote-btn" tabindex="0">
-
-                                                add to quote
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn requestto-stock-btn" tabindex="0">
-
-                                                request stock
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn addto-quote-btn" tabindex="0">
-
-                                                add to quote
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn requestto-stock-btn" tabindex="0">
-
-                                                request stock
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="image-box">
-                                        <img src="images/products/1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="description-box">
-                                        <h4 class="product-title">
-                                            <a href="#" class="">kordite extra large white foam bowl 828
-                                                ml
-                                                10 pcs </a>
-                                        </h4>
-                                        <h3 class="product-price">&#2547; 150 <span>/per PCs</span>
-                                        </h3>
-                                        <div class="moredetails-main">
-
-                                            <div class="more-options">
-                                                More details
-                                                <div class="all-more">
-                                                    <div class="first-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-
-                                                            <h4 class="product-name">VVE Hilsha fish
-                                                                (1.6+kg)</h4>
-                                                            <div class="all-offer">
-
-                                                                <p>buy 1 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">8%</span>
-                                                                    discount</p>
-                                                                <p>buy 1 get<span class="disc-qty">10%</span>
-                                                                    discount</p>
-                                                                <p>buy 2 get <span class="disc-qty">5%</span>
-                                                                    discount</p>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="second-more">
-                                                        <button type="button"
-                                                            class="btn dropdown-toggle dropdown-toggle-split dropdown-toggle-up"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="visually-hidden">Toggle
-                                                                Dropdown</span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <select name="" id="" class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option value="">size 1</option>
-                                                                <option value="">size 2</option>
-                                                                <option value="">size 3</option>
-                                                                <option value="">size 4</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addtocart-section">
-
-                                        <div class="add-req-flex">
-                                            <button class="btn addtocart-btn">
-
-                                                add to cart
-                                            </button>
-
-                                            <button class="btn addto-quote-btn" tabindex="0">
-
-                                                add to quote
-                                            </button>
-                                        </div>
-                                        <div class="quantity-box d-none">
-                                            <button class="btn qty-minus-btn">
-                                                <i class="icofont-minus"></i>
-                                            </button>
-                                            <input type="text" class="form-control" value="0">
-                                            <button class="btn qty-plus-btn">
-                                                <i class="icofont-plus"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========================================================== -->
-    <!-- Hot Sale section end here  -->
-    <!-- ========================================================== -->
-
-
-    <!-- ========================================================== -->
-    <!-- Brand Shop section start from here  -->
-    <!-- ========================================================== -->
-    <section class="popularproduct-main">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="common-title-flex">
-                        <div class="left-box">
-                            <h3 class="common-title">Brand Shop</h3>
-                        </div>
-                        <div class="center-box">
-
-                        </div>
-                        <div class="right-box">
-                            <a href="#" class="see-all-products">see all <i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="popularproduct-tabs">
-                        <div class="popularproduct-wrapper brand-shop">
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="brand-image-box">
-                                        <a href="#" class="">
-                                            <img src="images/brand/b1.jpg" alt="" class="img-fluid">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================================== -->
-    <!-- Brand Shop section end here  -->
-    <!-- ========================================================== -->
 
     <!-- ========================================================== -->
     <!-- Fruits section start from here  -->
@@ -3667,6 +3571,7 @@
     <!-- second footer end here  -->
     <!-- ========================================================== -->
     <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/select2.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/custom.js"></script>
@@ -3675,6 +3580,9 @@
 
     <!-- script for main home page  -->
     <!-- this script wiil run only in home page  -->
+    <script>
+        $('.select2').select2();
+    </script>
     <script type="text/javascript">
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -3741,11 +3649,11 @@
             countdown.innerHTML =
                 '<span>' +
                 days +
-                '</span><span>' +
+                '</span> : <span>' +
                 hours +
-                '</span><span>' +
+                '</span> : <span>' +
                 minutes +
-                '</span><span>' +
+                '</span> : <span>' +
                 seconds +
                 '</span>';
         }

@@ -280,32 +280,39 @@ $('.right-bottom-slider-wrapper').slick({
   arrows: false,
   infinite: true,
 });
+
 $('.secondary-first-wraper').slick({
-  dots: true,
+  dots: false,
   infinite: false,
-  slidesToShow: 1,
+  slidesToShow: 8,
   slidesToScroll: 1,
   autoplay: true,
   arrows: false,
   infinite: true,
-});
-$('.secondary-second-wraper').slick({
-  dots: true,
-  infinite: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  arrows: false,
-  infinite: true,
-});
-$('.secondary-third-wraper').slick({
-  dots: true,
-  infinite: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  arrows: false,
-  infinite: true,
+
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 // homepage main slider end here
 
