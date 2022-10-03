@@ -27,16 +27,13 @@
 @mixin pp-addtocart-btn {
   color: #fff;
   text-transform: capitalize;
-  font-size: 17px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  font-size: 13px;
+
   margin: 0 3px;
   min-width: 47%;
   max-width: 100%;
   padding: 5px;
+  @include no-radious;
 }
 
 @mixin addtocart-qty {
@@ -61,7 +58,7 @@
 
 @mixin common-slick-prev {
   z-index: 1;
-  // border: 1px solid #004a96;
+
   background: #fff;
   color: $logo-blue;
   left: 0px;
@@ -74,7 +71,7 @@
 }
 @mixin common-slick-next {
   z-index: 1;
-  // border: 1px solid #004a96;
+
   color: $logo-blue;
   background: #fff;
   right: 0px;
@@ -83,4 +80,22 @@
   height: 45px;
   @include circle-radious;
   box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+}
+
+@mixin discount-tag-square {
+  height: 100px;
+  width: 100px;
+  background: #000;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
 }
