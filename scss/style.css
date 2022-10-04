@@ -1553,4 +1553,114 @@ a {
 .pantry-main .small-product-card .card-body .discount-tag-square .text h4.disc {
   margin-bottom: 5px;
   font-size: 20px;
+}
+
+.testimonials-clean {
+  color: #313437;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.testimonials-clean p {
+  color: #7d8285;
+}
+.testimonials-clean h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #7d8285;
+}
+.testimonials-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.testimonials-clean .intro p {
+  margin-bottom: 0;
+}
+.testimonials-clean .people {
+  padding: 50px 0 20px;
+}
+.testimonials-clean .item {
+  margin-bottom: 32px;
+}
+.testimonials-clean .item .box {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #004a96;
+  position: relative;
+}
+.testimonials-clean .item .box:after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-width: 12px 15px;
+  border-top-color: #004a96;
+}
+.testimonials-clean .item .author {
+  margin-top: 28px;
+  padding-left: 25px;
+}
+.testimonials-clean .item .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.testimonials-clean .item .title {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.testimonials-clean .item .description {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.testimonials-clean .item img {
+  max-width: 40px;
+  float: left;
+  margin-right: 12px;
+  margin-top: -5px;
+}
+.testimonials-clean .slick-slide {
+  margin-left: 20px;
+}
+.testimonials-clean .slick-list {
+  margin-left: -20px;
+}
+.testimonials-clean .slick-next {
+  z-index: 1;
+  color: #004a96;
+  background: #fff;
+  right: 0px;
+  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  top: 35%;
+  right: -10px;
+}
+.testimonials-clean .slick-prev {
+  z-index: 1;
+  background: #fff;
+  color: #004a96;
+  left: 0px;
+  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  top: 35%;
+  left: -26px;
 }/*# sourceMappingURL=style.css.map */

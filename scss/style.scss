@@ -1507,3 +1507,94 @@ a {
 //  pantry section end here
 
 // = = = = = = = = = = = = = = = = = = = =
+
+// testimonial section start from here
+
+.testimonials-clean {
+  color: #313437;
+  // background-color: #eef4f7;
+  background: #fff;
+  margin-bottom: 30px;
+  p {
+    color: #7d8285;
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #7d8285;
+  }
+  .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .people {
+    padding: 50px 0 20px;
+  }
+  .item {
+    margin-bottom: 32px;
+    .box {
+      padding: 30px;
+      background-color: #fff;
+      border: 1px solid $logo-blue;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        bottom: -24px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-width: 12px 15px;
+        border-top-color: $logo-blue;
+      }
+    }
+    .author {
+      margin-top: 28px;
+      padding-left: 25px;
+    }
+    .name {
+      font-weight: bold;
+      margin-bottom: 2px;
+      color: $text-color;
+    }
+    .title {
+      font-size: 13px;
+      color: $text-color;
+    }
+    .description {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 40px;
+      float: left;
+      margin-right: 12px;
+      margin-top: -5px;
+    }
+  }
+  .slick-slide {
+    margin-left: 20px;
+  }
+  .slick-list {
+    margin-left: -20px;
+  }
+  .slick-next {
+    @include common-slick-next;
+    top: 35%;
+    right: -10px;
+  }
+  .slick-prev {
+    @include common-slick-prev;
+    top: 35%;
+    left: -26px;
+  }
+}
+
+// testimonial section end here
