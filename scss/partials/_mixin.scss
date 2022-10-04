@@ -83,9 +83,7 @@
 }
 
 @mixin discount-tag-square {
-  height: 100px;
-  width: 100px;
-  background: #000;
+  background: $logo-red;
   position: absolute;
   top: 40px;
   right: 50px;
@@ -98,4 +96,14 @@
   flex-wrap: wrap;
   align-items: center;
   color: #fff;
+}
+@mixin discount-tag-square-text {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  text-align: center;
+  flex-basis: 100%;
 }
