@@ -1,8 +1,8 @@
 @import 'partials/variables';
 @import 'partials/mixin';
 @import 'partials/classes';
-
 @import 'partials/colors';
+
 body {
   font-size: 17px;
   font-family: $roboto-font;
@@ -330,7 +330,6 @@ a {
         }
         a.dropdown-item {
           text-transform: uppercase;
-
           font-size: 13px;
           letter-spacing: 0.3px;
           color: $text-color;
