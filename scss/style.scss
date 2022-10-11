@@ -220,12 +220,91 @@ a {
           min-width: 200px;
           @include no-radious;
           border-color: #137bc2;
+          padding: 0.5rem;
           a.dropdown-item {
             &:hover {
               padding-left: 30px;
               background: #004a96;
               color: #fff;
               font-weight: normal;
+            }
+          }
+          .short-cart-main {
+            background: #fff;
+            width: 100%;
+            min-height: 50px;
+            margin-bottom: 5px;
+            border: 1px solid $l-gray;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            align-items: center;
+            padding: 5px;
+            font-size: 14px;
+            position: relative;
+            .qty-box {
+              min-width: 40px;
+              max-width: 40px;
+              margin-right: 5px;
+              text-align: center;
+              .form-control {
+                width: 40px;
+                border: 1px solid $l-gray;
+                height: 40px;
+                padding: 0;
+                text-align: center;
+                border-radius: 0px !important;
+                -webkit-border-radius: 0px !important;
+                -moz-border-radius: 0px !important;
+                -ms-border-radius: 0px !important;
+                -o-border-radius: 0px !important;
+                font-size: 12px;
+              }
+              .plus-btn {
+                color: $logo-blue;
+                font-size: 15px;
+              }
+              .minus-btn {
+                color: $logo-blue;
+                font-size: 15px;
+              }
+            }
+            .product-image {
+              width: 40px;
+              margin-right: 5px;
+              img {
+                width: 100%;
+                margin-right: 5px;
+                max-height: 40px;
+              }
+            }
+            .product-description {
+              min-width: 150px;
+              h5.prodcut-title {
+                font-size: 12px;
+                line-height: 1.5;
+                text-transform: capitalize;
+                margin-bottom: 3px;
+              }
+              h6.price {
+                font-size: 11px;
+                font-weight: 600;
+                margin-bottom: 0;
+              }
+            }
+            .delete-product {
+              width: 20px;
+              height: 20px;
+              background: #ec2028;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              color: #fff;
+
+              text-align: center;
+              i {
+                font-size: 12px;
+              }
             }
           }
         }

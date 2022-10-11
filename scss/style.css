@@ -215,12 +215,90 @@ a {
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
   border-color: #137bc2;
+  padding: 0.5rem;
 }
 .header-top .navbar .topcart-nav li.nav-item .dropdown-menu a.dropdown-item:hover {
   padding-left: 30px;
   background: #004a96;
   color: #fff;
   font-weight: normal;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main {
+  background: #fff;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 5px;
+  border: 1px solid #e9e7e7;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  position: relative;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .qty-box {
+  min-width: 40px;
+  max-width: 40px;
+  margin-right: 5px;
+  text-align: center;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .qty-box .form-control {
+  width: 40px;
+  border: 1px solid #e9e7e7;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  font-size: 12px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .qty-box .plus-btn {
+  color: #004a96;
+  font-size: 15px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .qty-box .minus-btn {
+  color: #004a96;
+  font-size: 15px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-image {
+  width: 40px;
+  margin-right: 5px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-image img {
+  width: 100%;
+  margin-right: 5px;
+  max-height: 40px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description {
+  min-width: 150px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description h5.prodcut-title {
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description h6.price {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .delete-product {
+  width: 20px;
+  height: 20px;
+  background: #ec2028;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .delete-product i {
+  font-size: 12px;
 }
 .header-top .navbar .topcart-nav li.nav-item .dropdown-item {
   text-transform: uppercase;
