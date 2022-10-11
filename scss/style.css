@@ -1455,6 +1455,14 @@ a {
 .shop-category-main .common-fieldset-main .common-fieldset .card .card-body .product-title h4 {
   color: rgba(0, 0, 0, 0.87);
   font-size: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.shop-category-main .common-fieldset-main .common-fieldset .card .card-body .product-title h6 {
+  color: #828282;
+  font-size: 13px;
   margin-bottom: 0;
   text-align: center;
   text-transform: capitalize;
