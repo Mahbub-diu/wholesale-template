@@ -277,10 +277,15 @@ a {
   min-width: 150px;
 }
 .header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description h5.prodcut-title {
+  margin-bottom: 3px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description h5.prodcut-title a {
   font-size: 12px;
   line-height: 1.5;
   text-transform: capitalize;
-  margin-bottom: 3px;
+  color: #004a96;
 }
 .header-top .navbar .topcart-nav li.nav-item .dropdown-menu .short-cart-main .product-description h6.price {
   font-size: 11px;
