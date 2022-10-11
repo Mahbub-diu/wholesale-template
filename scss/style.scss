@@ -922,24 +922,15 @@ a {
     .popularproduct-wrapper {
       margin-top: 30px;
       .card {
-        transition: all 0.3s;
-        position: relative;
-        border: 1px solid #f1f1f1;
-        border-radius: 0.25rem;
+        @include popularproduct-wrapper-card;
         &:hover {
           box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
         }
         .card-body {
           .image-box {
-            min-height: 200px;
-            border-bottom: 1px solid $l-gray;
-            margin-bottom: 7px;
-            max-height: 200px;
-            text-align: center;
+            @include pp-image-box;
             img {
-              height: 100%;
-              max-height: 180px;
-              margin: 0px auto;
+              @include pp-image-box-img;
             }
           }
           .brand-image-box {
@@ -953,9 +944,7 @@ a {
             }
           }
           .description-box {
-            min-height: 130px;
-            border-bottom: 1px solid $l-gray;
-            margin-bottom: 7px;
+            @include pp-description-box;
             h4.product-title {
               text-align: center;
               a {
@@ -971,32 +960,15 @@ a {
               }
             }
             h3.product-price {
-              color: $logo-blue;
-              font-size: 17px;
-              text-align: center;
-              font-weight: normal;
+              @include pp-h3-product-price;
               span {
-                color: $tag-grey;
-                font-weight: normal;
-                font-size: 14px;
-                text-transform: capitalize;
+                @include pp-h3-product-price-span;
               }
             }
             .moredetails-main {
-              border: 1px solid $l-gray;
-              padding-left: 5px;
-              border-bottom: none;
-              color: $tag-grey;
-              font-weight: normal;
-              font-size: 14px;
-              text-transform: capitalize;
+              @include pp-moredetails-main;
               .more-options {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                @include pp-more-options;
                 .all-more {
                   display: inline-flex;
                   flex-wrap: wrap;
@@ -1596,3 +1568,177 @@ a {
 }
 
 // testimonial section end here
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  shop page start from here
+
+// = = = = = = = = = = = = = = = = = = = =
+
+.shopsorting-category-nav {
+  margin: 20px 0;
+  ul.nav {
+    background: #ffff;
+    @include brr-fivepx;
+    padding: 15px 0;
+
+    li.nav-item {
+      padding-left: 20px;
+      padding-right: 20px;
+      a.nav-link {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        color: $text-color;
+        transition: all 0.3s;
+        border-bottom: 1px solid transparent;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        &:hover {
+          color: $logo-blue;
+          border-color: $logo-blue;
+        }
+      }
+      a.nav-link.active {
+        color: $logo-blue;
+        border-color: $logo-blue;
+      }
+    }
+  }
+}
+.shop-product-sorting {
+  .sorting-flex-main {
+    background: #fff;
+    border-top: 1px solid $l-gray;
+    border-bottom: 1px solid $l-gray;
+    padding: 35px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .breadcrumb-main {
+      flex-basis: 25%;
+      .breadcrumb {
+        margin-bottom: 0;
+        .breadcrumb-item {
+          a {
+            color: $logo-blue;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
+        }
+        .breadcrumb-item + .breadcrumb-item {
+          text-transform: capitalize;
+          font-size: 14px;
+
+          &::before {
+            content: '\f054' !important;
+            font-weight: 900;
+            font-family: 'Font Awesome 6 Free';
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .price-range-main {
+      flex-basis: 18.75%;
+      padding-left: 25px;
+      padding-right: 25px;
+      #slider {
+        margin: 0px;
+      }
+      .value {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin: 0 0 0 -20px;
+        width: 40px;
+        text-align: center;
+        display: block;
+
+        font-size: 14px;
+        color: #333;
+      }
+
+      .price-range-both.value {
+        width: 100px;
+        margin: 0 0 0 -50px;
+        top: 26px;
+      }
+
+      .price-range-both {
+        display: none;
+      }
+
+      .value i {
+        font-style: normal;
+      }
+      .ui-slider-range.ui-widget-header {
+        background: $logo-blue;
+      }
+      .ui-state-hover,
+      .ui-widget-content .ui-state-hover,
+      .ui-widget-header .ui-state-hover,
+      .ui-state-focus,
+      .ui-widget-content .ui-state-focus,
+      .ui-widget-header .ui-state-focus {
+        background: $logo-blue !important;
+        cursor: pointer;
+      }
+      .ui-state-default,
+      .ui-widget-content .ui-state-default,
+      .ui-widget-header .ui-state-default {
+        background: #fff !important;
+        border-radius: 50%;
+        font-size: 21px;
+        border: none !important;
+        box-shadow: 0 0 7px $logo-blue;
+        &:focus {
+          outline: none;
+        }
+      }
+      span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
+        outline: none;
+      }
+    }
+    .sortby-main {
+      flex-basis: 18.75%;
+      .sortby-dropdown {
+        border: 1px solid $logo-blue;
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 15px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+      }
+      .dropdown-menu {
+        width: 80%;
+        li {
+          a.dropdown-item {
+            transition: all 0.3s;
+            font-size: 15px;
+            &:hover {
+              padding-left: 20px;
+              background: $logo-blue;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .viewall-main {
+      flex-basis: 18.75%;
+    }
+  }
+}
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  shop page end here
+
+// = = = = = = = = = = = = = = = = = = = =
