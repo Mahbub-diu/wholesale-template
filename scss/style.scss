@@ -2,6 +2,7 @@
 @import 'partials/mixin';
 @import 'partials/classes';
 @import 'partials/colors';
+@import 'partials/common';
 
 body {
   font-size: 17px;
@@ -635,13 +636,7 @@ a {
       text-align: right;
       margin-bottom: 50px;
       .apply-online-btn {
-        background: $green;
-        display: inline-block;
-        font-size: 18px;
-        text-transform: capitalize;
-        color: #fff;
-        padding: 10px 20px;
-        font-weight: 600;
+        @include apply-online-btn;
       }
     }
   }
@@ -1833,5 +1828,72 @@ a {
 //  = = = = = = = = = = = = = = = = = = = =
 
 //  shop page end here
+
+// = = = = = = = = = = = = = = = = = = = =
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  job apply form start from here
+
+// = = = = = = = = = = = = = = = = = = = =
+.job-apply-main {
+  .common-gap {
+    .subtitle {
+      color: $logo-red;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 27px;
+      margin-bottom: 9px;
+      text-align: left;
+      span {
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          margin-top: -1px;
+          height: 2px;
+          right: -40px;
+          width: 25px;
+          background: $logo-red;
+        }
+      }
+    }
+    .main-title {
+      h2 {
+        color: $logo-blue;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+    .form-group {
+      margin-bottom: 15px;
+      .form-label {
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+      .form-select {
+        @include no-radious;
+        &:focus {
+          box-shadow: none;
+          border-color: $logo-blue;
+        }
+      }
+    }
+    .apply-online-btn {
+      @include apply-online-btn;
+    }
+  }
+}
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  job apply form end here
 
 // = = = = = = = = = = = = = = = = = = = =

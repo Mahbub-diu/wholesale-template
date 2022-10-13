@@ -1,3 +1,29 @@
+.common-fieldset-main {
+  margin-bottom: 20px;
+}
+.common-fieldset-main .common-fieldset {
+  padding: 15px 19px 19px 19px !important;
+  border: 1px solid #e9ebec !important;
+  border-radius: 4px;
+}
+.common-fieldset-main .common-fieldset legend {
+  text-align: left !important;
+  color: #004a96;
+  margin: 0 auto;
+  width: auto;
+  float: none;
+  font-size: 18px;
+  padding: 2px 20px;
+  background: #e9ebec;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.common-gap {
+  background: #fff;
+  padding: 20px;
+}
+
 body {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -1912,4 +1938,64 @@ a {
 }
 .shop-product-sorting .sorting-flex-main .viewall-main {
   flex-basis: 18.75%;
+}
+
+.job-apply-main .common-gap .subtitle {
+  color: #ec2028;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 9px;
+  text-align: left;
+}
+.job-apply-main .common-gap .subtitle span {
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.job-apply-main .common-gap .subtitle span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+  right: -40px;
+  width: 25px;
+  background: #ec2028;
+}
+.job-apply-main .common-gap .main-title h2 {
+  color: #004a96;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.job-apply-main .common-gap .form-group {
+  margin-bottom: 15px;
+}
+.job-apply-main .common-gap .form-group .form-label {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.job-apply-main .common-gap .form-group .form-select {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.job-apply-main .common-gap .form-group .form-select:focus {
+  box-shadow: none;
+  border-color: #004a96;
+}
+.job-apply-main .common-gap .apply-online-btn {
+  background: #2b882f;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

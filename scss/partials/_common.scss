@@ -1,0 +1,24 @@
+.common-fieldset-main {
+  margin-bottom: 20px;
+  .common-fieldset {
+    padding: 15px 19px 19px 19px !important;
+    border: 1px solid #e9ebec !important;
+    border-radius: 4px;
+    legend {
+      text-align: left !important;
+      color: $logo-blue;
+      margin: 0 auto;
+      width: auto;
+      float: none;
+      font-size: 18px;
+      padding: 2px 20px;
+      background: #e9ebec;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+  }
+}
+.common-gap {
+  background: #fff;
+  padding: 20px;
+}

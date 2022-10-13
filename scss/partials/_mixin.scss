@@ -170,3 +170,13 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@mixin apply-online-btn {
+  background: $green;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+}
