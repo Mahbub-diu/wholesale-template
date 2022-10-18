@@ -473,7 +473,48 @@ a {
           margin-bottom: 0px;
         }
       }
-
+      .threelink-flex {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .box {
+          flex-basis: 32%;
+          background: #fff;
+          min-height: 50px;
+          border: 1px solid $logo-red;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          padding: 5px;
+          text-align: center;
+          img {
+            max-height: 30px;
+            display: block;
+            margin: 0px auto;
+          }
+          .title {
+            font-size: 12px;
+            color: $text-color;
+            text-transform: capitalize;
+            margin-top: 5px;
+            display: block;
+          }
+          &:hover {
+            cursor: pointer;
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 6px;
+            transition: all 0.3s ease 0s;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+          }
+        }
+      }
       li {
         .submenu {
           list-style: none;
@@ -1570,7 +1611,7 @@ a {
 
 .testimonials-clean {
   color: #313437;
-  // background-color: #eef4f7;
+
   background: #fff;
   margin-bottom: 30px;
   p {
@@ -1594,7 +1635,7 @@ a {
     padding: 50px 0 20px;
   }
   .item {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
     .box {
       padding: 30px;
       background-color: #fff;
@@ -2027,3 +2068,131 @@ a {
 //  login page  end here
 
 // = = = = = = = = = = = = = = = = = = = =
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  help section start from here
+
+// = = = = = = = = = = = = = = = = = = = =
+.help-main {
+  background: #fff;
+  min-height: 100px;
+  margin-bottom: 50px;
+  padding: 50px 0;
+  .support-box {
+    width: 100%;
+
+    background: #fff;
+    border: 1px solid $l-gray;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 20px;
+    .icon-box {
+      height: 80px;
+      text-align: center;
+      margin-bottom: 15px;
+      img {
+        max-height: 70px;
+      }
+    }
+    .content-box {
+      min-height: 120px;
+
+      width: 100%;
+      text-align: center;
+      h3.title {
+        font-size: 17px;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        color: $text-color;
+        font-weight: 600;
+      }
+      p {
+        font-size: 15px;
+        color: $d-grey;
+        margin-bottom: 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.download-app {
+  background: #fff;
+  padding: 50px 0;
+  .subscribe-bg {
+    width: 100%;
+    background: $logo-blue;
+    padding: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    h2 {
+      text-transform: capitalize;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      text-transform: capitalize;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    h5 {
+      text-transform: capitalize;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .phone-box {
+      padding: 10px 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .input-box {
+        flex-basis: calc(100% - 80px);
+        .form-control {
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid #fff;
+          color: #fff;
+          font-size: 15px;
+        }
+        ::placeholder {
+          color: #fff;
+        }
+        .plan-box {
+          flex-basis: 70px;
+          text-align: center;
+          .plain-btn {
+            padding: 0;
+            background: transparent;
+            @include no-radious;
+            color: #fff;
+            border: none;
+            i {
+              font-size: 30px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .mockup-box {
+      text-align: center;
+    }
+    .playstore-box {
+      padding: 0 30px;
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        max-width: 220px;
+      }
+    }
+  }
+}

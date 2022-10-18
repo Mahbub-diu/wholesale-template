@@ -474,6 +474,48 @@ a {
   font-size: 18px;
   margin-bottom: 0px;
 }
+.layout-main #sidebar .sidebar .threelink-flex {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout-main #sidebar .sidebar .threelink-flex .box {
+  flex-basis: 32%;
+  background: #fff;
+  min-height: 50px;
+  border: 1px solid #ec2028;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.layout-main #sidebar .sidebar .threelink-flex .box img {
+  max-height: 30px;
+  display: block;
+  margin: 0px auto;
+}
+.layout-main #sidebar .sidebar .threelink-flex .box .title {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: capitalize;
+  margin-top: 5px;
+  display: block;
+}
+.layout-main #sidebar .sidebar .threelink-flex .box:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
 .layout-main #sidebar .sidebar li .submenu {
   list-style: none;
   margin: 0;
@@ -1702,7 +1744,7 @@ a {
   padding: 50px 0 20px;
 }
 .testimonials-clean .item {
-  margin-bottom: 32px;
+  margin-bottom: 0px;
 }
 .testimonials-clean .item .box {
   padding: 30px;
@@ -2128,4 +2170,135 @@ a {
   -o-border-radius: 0 !important;
   font-size: 17px;
   text-transform: capitalize;
+}
+
+.help-main {
+  background: #fff;
+  min-height: 100px;
+  margin-bottom: 50px;
+  padding: 50px 0;
+}
+.help-main .support-box {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e9e7e7;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 20px;
+}
+.help-main .support-box .icon-box {
+  height: 80px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.help-main .support-box .icon-box img {
+  max-height: 70px;
+}
+.help-main .support-box .content-box {
+  min-height: 120px;
+  width: 100%;
+  text-align: center;
+}
+.help-main .support-box .content-box h3.title {
+  font-size: 17px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+}
+.help-main .support-box .content-box p {
+  font-size: 15px;
+  color: #a1a1a1;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.download-app {
+  background: #fff;
+  padding: 50px 0;
+}
+.download-app .subscribe-bg {
+  width: 100%;
+  background: #004a96;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #fff;
+}
+.download-app .subscribe-bg h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.download-app .subscribe-bg h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.download-app .subscribe-bg h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.download-app .subscribe-bg .phone-box {
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-app .subscribe-bg .phone-box .input-box {
+  flex-basis: calc(100% - 80px);
+}
+.download-app .subscribe-bg .phone-box .input-box .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 15px;
+}
+.download-app .subscribe-bg .phone-box .input-box ::-moz-placeholder {
+  color: #fff;
+}
+.download-app .subscribe-bg .phone-box .input-box :-ms-input-placeholder {
+  color: #fff;
+}
+.download-app .subscribe-bg .phone-box .input-box ::placeholder {
+  color: #fff;
+}
+.download-app .subscribe-bg .phone-box .input-box .plan-box {
+  flex-basis: 70px;
+  text-align: center;
+}
+.download-app .subscribe-bg .phone-box .input-box .plan-box .plain-btn {
+  padding: 0;
+  background: transparent;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  color: #fff;
+  border: none;
+}
+.download-app .subscribe-bg .phone-box .input-box .plan-box .plain-btn i {
+  font-size: 30px;
+  color: #fff;
+}
+.download-app .subscribe-bg .mockup-box {
+  text-align: center;
+}
+.download-app .subscribe-bg .playstore-box {
+  padding: 0 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.download-app .subscribe-bg .playstore-box img {
+  max-width: 220px;
 }/*# sourceMappingURL=style.css.map */
