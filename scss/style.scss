@@ -2122,11 +2122,11 @@ a {
 
 .download-app {
   background: #fff;
-  padding: 50px 0;
+  // padding: 50px 0;
   .subscribe-bg {
     width: 100%;
     background: $logo-blue;
-    padding: 40px;
+    padding: 70px 40px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2166,32 +2166,60 @@ a {
         ::placeholder {
           color: #fff;
         }
-        .plan-box {
-          flex-basis: 70px;
-          text-align: center;
-          .plain-btn {
-            padding: 0;
-            background: transparent;
-            @include no-radious;
+      }
+      .plan-box {
+        flex-basis: 70px;
+        text-align: center;
+        .plain-btn {
+          padding: 0;
+          background: transparent;
+          @include no-radious;
+          color: #fff;
+          border: none;
+          i {
+            font-size: 30px;
             color: #fff;
-            border: none;
-            i {
-              font-size: 30px;
-              color: #fff;
-            }
           }
         }
       }
     }
-    .mockup-box {
-      text-align: center;
+  }
+  .mockup-box {
+    text-align: center;
+  }
+  .playstore-box {
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    img {
+      max-width: 220px;
     }
-    .playstore-box {
-      padding: 0 30px;
-      text-align: center;
-      margin-bottom: 30px;
-      img {
-        max-width: 220px;
+  }
+  .newsletter-main {
+    margin-top: 30px;
+    .form-label {
+      font-size: 15px;
+      text-transform: capitalize;
+      color: $text-color;
+      margin-bottom: 5px;
+    }
+    .newsletter-flex {
+      position: relative;
+      .form-control {
+        font-size: 14px;
+        padding-right: 90px;
+      }
+      .go-btn {
+        position: absolute;
+        right: 0;
+        text-transform: capitalize;
+        font-size: 17px;
+        background: $logo-blue;
+        color: #fff;
+        @include no-radious;
+        top: 0;
+        padding: 5px 20px;
+        border: none;
       }
     }
   }

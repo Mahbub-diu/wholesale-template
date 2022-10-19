@@ -2218,12 +2218,11 @@ a {
 
 .download-app {
   background: #fff;
-  padding: 50px 0;
 }
 .download-app .subscribe-bg {
   width: 100%;
   background: #004a96;
-  padding: 40px;
+  padding: 70px 40px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2272,11 +2271,11 @@ a {
 .download-app .subscribe-bg .phone-box .input-box ::placeholder {
   color: #fff;
 }
-.download-app .subscribe-bg .phone-box .input-box .plan-box {
+.download-app .subscribe-bg .phone-box .plan-box {
   flex-basis: 70px;
   text-align: center;
 }
-.download-app .subscribe-bg .phone-box .input-box .plan-box .plain-btn {
+.download-app .subscribe-bg .phone-box .plan-box .plain-btn {
   padding: 0;
   background: transparent;
   border-radius: 0 !important;
@@ -2287,18 +2286,50 @@ a {
   color: #fff;
   border: none;
 }
-.download-app .subscribe-bg .phone-box .input-box .plan-box .plain-btn i {
+.download-app .subscribe-bg .phone-box .plan-box .plain-btn i {
   font-size: 30px;
   color: #fff;
 }
-.download-app .subscribe-bg .mockup-box {
+.download-app .mockup-box {
   text-align: center;
 }
-.download-app .subscribe-bg .playstore-box {
+.download-app .playstore-box {
   padding: 0 30px;
   text-align: center;
   margin-bottom: 30px;
 }
-.download-app .subscribe-bg .playstore-box img {
+.download-app .playstore-box img {
   max-width: 220px;
+}
+.download-app .newsletter-main {
+  margin-top: 30px;
+}
+.download-app .newsletter-main .form-label {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 5px;
+}
+.download-app .newsletter-main .newsletter-flex {
+  position: relative;
+}
+.download-app .newsletter-main .newsletter-flex .form-control {
+  font-size: 14px;
+  padding-right: 90px;
+}
+.download-app .newsletter-main .newsletter-flex .go-btn {
+  position: absolute;
+  right: 0;
+  text-transform: capitalize;
+  font-size: 17px;
+  background: #004a96;
+  color: #fff;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  top: 0;
+  padding: 5px 20px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
