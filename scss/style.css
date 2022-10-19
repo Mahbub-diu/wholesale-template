@@ -989,7 +989,6 @@ a {
 
 .popularproduct-main {
   margin: 30px 0;
-  background: #fff;
   padding: 30px 0;
 }
 .popularproduct-main h3.common-title {
@@ -1030,7 +1029,7 @@ a {
   border-right: none;
 }
 .popularproduct-main .popularproduct-tabs .popularproduct-wrapper {
-  margin-top: 30px;
+  background: #fff;
 }
 .popularproduct-main .popularproduct-tabs .popularproduct-wrapper .card {
   transition: all 0.3s;
@@ -1391,6 +1390,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background: #fff;
+  padding: 20px 17px;
 }
 .popularproduct-main .common-title-flex .left-box {
   flex-basis: 33.3333%;
@@ -2026,6 +2027,8 @@ a {
 
 .product-view-main {
   margin: 20px 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 .product-view-main .tab-content {
   background: #fff;
