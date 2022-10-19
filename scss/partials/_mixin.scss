@@ -180,3 +180,64 @@
   padding: 10px 20px;
   font-weight: 600;
 }
+
+@mixin pp-brand-image-box {
+  min-height: 298px;
+  max-height: 298px;
+}
+@mixin pp-brand-image-box-img {
+  height: 100%;
+  min-height: 298px;
+  max-height: 298px;
+  margin: 0px auto;
+}
+
+@mixin moredetails-main-dropdown {
+  @include no-radious;
+  inset: unset !important;
+  left: 50% !important;
+  width: 90%;
+  bottom: 100px !important;
+  padding: 15px;
+  font-size: 14px;
+  min-height: 150px;
+  text-align: center;
+  transform: unset !important ;
+  -webkit-transform: unset !important ;
+  -moz-transform: unset !important ;
+  -ms-transform: unset !important ;
+  -o-transform: unset !important ;
+  transform: translateX(-50%) !important;
+}
+
+@mixin all-offer-p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: $tag-grey;
+}
+
+@mixin pp-dropdown-toggle {
+  padding: 0;
+  @include no-radious;
+  border: none;
+  width: 50px;
+  margin-left: 20px;
+  background: transparent;
+}
+@mixin pp-dropdown-toggle-after {
+  border: none;
+  content: '\f078';
+  font-weight: 900;
+  font-family: 'Font Awesome 6 Free';
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+@mixin product-grid-common {
+  display: grid;
+  grid-gap: 17px;
+}
