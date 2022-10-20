@@ -63,7 +63,7 @@ a {
           position: relative;
           font-size: 20px;
           font-weight: 600;
-          background: $logo-blue;
+          background: $light-blue;
           border-radius: 5px;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
@@ -202,7 +202,7 @@ a {
         margin-right: 10px;
         a.nav-link {
           padding: 0 0.4em 0 0.4em;
-          color: $text-color;
+          color: $light-blue;
           text-transform: uppercase;
           &:hover {
             color: $logo-blue;
@@ -379,19 +379,23 @@ a {
 // = = = = = = = = = = = = = = = = = = = =
 .main-header {
   .navbar {
-    background: $logo-blue;
+    // background: $logo-blue;
+    background: $l-gray;
     color: #fff;
     padding: 0;
     height: 43px;
     .sidebar-show-btn {
-      background: transparent;
+      background: $logo-blue;
       @include no-radious;
+      height: 43px;
       border: none;
       color: #fff;
       text-transform: uppercase;
       display: flex;
       align-items: center;
       margin-right: 10px;
+      min-width: 300px;
+      max-width: 300px;
 
       svg {
         margin-right: 10px;
@@ -403,13 +407,17 @@ a {
         height: 43px;
         display: flex;
         align-items: center;
+        // background: $logo-blue;
         a.nav-link {
-          color: #fff;
+          color: $logo-blue;
           letter-spacing: 0.3px;
           font-size: 13px;
           font-weight: normal;
           text-transform: uppercase;
           padding: 4px 15px;
+          img {
+            max-height: 30px;
+          }
         }
         .dropdown-toggle::after {
           display: none;
@@ -531,7 +539,7 @@ a {
       .nav-link {
         font-weight: 500;
         text-transform: capitalize;
-        color: $text-color;
+        color: $d-grey;
         font-size: 15px;
       }
       .parent-link {
@@ -635,7 +643,12 @@ a {
   }
   .home-slider-main {
     margin-bottom: 20px;
-
+    .slick-dots {
+      bottom: 18px;
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
     .slick-prev {
       z-index: 1;
       border: 1px solid $logo-blue;
@@ -837,8 +850,10 @@ a {
 
 // = = = = = = = = = = = = = = = = = = = =
 .second-footer {
-  background: $second-footer-bg;
-  padding: 50px 0;
+  .newshape-bg {
+    background: $second-footer-bg;
+    padding: 50px 17px;
+  }
 
   h4.second-footer-title {
     @include job-title;
@@ -918,10 +933,25 @@ a {
       flex-basis: 48%;
     }
   }
+  ul.social-nav {
+    background: $logo-blue;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-left: 20px;
+    .nav-item {
+      .nav-link {
+        color: #fff !important;
+        &:hover {
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
 }
 .ssl-footer {
-  background: $logo-blue;
-  padding: 20px 0;
   .footer-border {
     margin: 20px 0;
     border-bottom: 1px solid #fff;
@@ -937,6 +967,32 @@ a {
   }
   p.text-end {
     color: #fff;
+  }
+}
+.newssl-footer {
+  .newssl-bg {
+    background: $logo-blue;
+    padding: 20px 17px;
+    .ssl-image {
+      max-width: 1140px;
+      margin: 0px auto;
+    }
+    .footer-border {
+      margin: 20px 0;
+      border-bottom: 1px solid #fff;
+    }
+    p {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: normal;
+      a {
+        color: #fff;
+      }
+    }
+    p.text-end {
+      color: #fff;
+    }
   }
 }
 .jobdetails-main {
@@ -1004,9 +1060,9 @@ a {
 
 // = = = = = = = = = = = = = = = = = = = =
 .popularproduct-main {
-  margin: 30px 0;
-  // background: #fff;
-  padding: 30px 0;
+  margin: 20px 0;
+
+  // padding: 30px 0;
   h3.common-title {
     @include h3-common-title;
   }
@@ -1014,9 +1070,11 @@ a {
     color: $ex-red;
   }
   .popularproduct-tabs {
+    background: #fff;
+    // padding-top: 30px;
     ul.nav-tabs {
       border: none;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       li.nav-item {
         .nav-link {
           @include no-radious;
@@ -1340,6 +1398,11 @@ a {
       }
     }
   }
+  .pb-thirty {
+    .slick-dots {
+      bottom: -38px;
+    }
+  }
 }
 //  = = = = = = = = = = = = = = = = = = = =
 
@@ -1353,9 +1416,12 @@ a {
 
 // = = = = = = = = = = = = = = = = = = = =
 .advertise-main {
-  background: #fff;
-  padding: 30px 0;
+  // padding: 30px 0;
   margin-bottom: 30px;
+  .advertise-image-box {
+    padding: 20px 17px;
+    background: #fff;
+  }
 }
 
 //  = = = = = = = = = = = = = = = = = = = =
@@ -1371,9 +1437,9 @@ a {
 // = = = = = = = = = = = = = = = = = = = =
 
 .shop-category-main {
-  padding: 30px 0;
-  background: #fff;
   .common-fieldset-main {
+    padding: 30px 17px;
+    background: #fff;
     margin-bottom: 0px;
     .common-fieldset {
       padding: 15px 19px 19px 19px !important;
@@ -1443,18 +1509,23 @@ a {
           }
         }
       }
-    }
-    .slick-slide {
-      margin-left: 10px;
-    }
-    .slick-list {
-      margin-left: -10px;
-    }
-    .slick-next {
-      @include common-slick-next;
-    }
-    .slick-prev {
-      @include common-slick-prev;
+      .fd-wrapper {
+        .card {
+          margin-bottom: 0;
+        }
+      }
+      .slick-slide {
+        margin-left: 10px;
+      }
+      .slick-list {
+        margin-left: -10px;
+      }
+      .slick-next {
+        @include common-slick-next;
+      }
+      .slick-prev {
+        @include common-slick-prev;
+      }
     }
   }
 }
@@ -1471,14 +1542,16 @@ a {
 
 // = = = = = = = = = = = = = = = = = = = =
 .pantry-main {
-  padding: 30px 0;
-  margin-bottom: 30px;
-  background: #fff;
+  .newshape-bg {
+    padding: 30px 17px;
+
+    background: #fff;
+  }
   .card {
     border-color: #f1f1f1;
 
     border-radius: 0.25rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     .card-body {
       position: relative;
 
@@ -1583,8 +1656,11 @@ a {
 .testimonials-clean {
   color: #313437;
 
-  background: #fff;
   margin-bottom: 30px;
+  .newshape-bg {
+    background: #fff;
+    padding: 30px 17px;
+  }
   p {
     color: #7d8285;
   }
@@ -1602,9 +1678,9 @@ a {
       margin-bottom: 0;
     }
   }
-  .people {
-    padding: 50px 0 20px;
-  }
+  // .people {
+  //    padding: 50px 0 20px;
+  // }
   .item {
     margin-bottom: 0px;
     .box {
@@ -1657,13 +1733,13 @@ a {
   }
   .slick-next {
     @include common-slick-next;
-    top: 35%;
-    right: -10px;
+    top: 31%;
+    right: 0px;
   }
   .slick-prev {
     @include common-slick-prev;
-    top: 35%;
-    left: -26px;
+    top: 31%;
+    left: 0px;
   }
 }
 
@@ -2291,10 +2367,12 @@ a {
 
 // = = = = = = = = = = = = = = = = = = = =
 .help-main {
-  background: #fff;
   min-height: 100px;
-  margin-bottom: 50px;
-  padding: 50px 0;
+
+  .newshape-bg {
+    background: #fff;
+    padding: 30px 17px;
+  }
   .support-box {
     width: 100%;
 
@@ -2337,8 +2415,10 @@ a {
 }
 
 .download-app {
-  background: #fff;
-  // padding: 50px 0;
+  .newshape-bg {
+    background: #fff;
+    padding: 30px 17px;
+  }
   .subscribe-bg {
     width: 100%;
     background: $logo-blue;
@@ -2436,6 +2516,83 @@ a {
         top: 0;
         padding: 5px 20px;
         border: none;
+      }
+    }
+  }
+}
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  help section end here
+
+// = = = = = = = = = = = = = = = = = = = =
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  recipe page start from here
+
+// = = = = = = = = = = = = = = = = = = = =
+
+.recipe-sm-slider {
+  margin: 10px 0;
+  .recipe-sm-slider-wrapper {
+    background: #fff;
+    padding: 10px;
+  }
+}
+
+//  = = = = = = = = = = = = = = = = = = = =
+
+//  recipe page end here
+
+// = = = = = = = = = = = = = = = = = = = =
+
+.fashion-main {
+  margin-bottom: 30px;
+  .newshape-bg {
+    padding: 30px 17px;
+    background: #fff;
+    .card {
+      border-color: #f1f1f1;
+      border-radius: 0.25rem;
+      -webkit-border-radius: 0.25rem;
+      -moz-border-radius: 0.25rem;
+      -ms-border-radius: 0.25rem;
+      -o-border-radius: 0.25rem;
+      transition: all 0.3s;
+      margin-bottom: 20px;
+      .image-box {
+        min-height: 150px;
+        max-height: 150px;
+        text-align: center;
+        margin-bottom: 15px;
+        img {
+          max-height: 150px;
+          margin: 0px auto;
+        }
+      }
+      .description-box {
+        // @include pp-description-box;
+        h4.product-title {
+          text-align: center;
+          a {
+            font-size: 14px;
+            text-transform: capitalize;
+            color: $tag-grey;
+            line-height: 1.5;
+
+            margin-bottom: 15px;
+            &:hover {
+              color: $logo-blue;
+            }
+          }
+        }
+        h3.product-price {
+          @include pp-h3-product-price;
+          span {
+            @include pp-h3-product-price-span;
+          }
+        }
       }
     }
   }

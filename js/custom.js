@@ -31,7 +31,7 @@ $('.addto-quote-btn').click(function () {
 $('.brand-shop').slick({
   dots: true,
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 2,
   autoplay: true,
   arrows: true,
@@ -71,7 +71,7 @@ $('.brand-shop').slick({
 $('.fruits-slider').slick({
   dots: true,
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 2,
   autoplay: true,
   arrows: true,
@@ -112,7 +112,7 @@ $('.fruits-slider').slick({
 $('.hotsale-slider').slick({
   dots: true,
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 2,
   autoplay: true,
   arrows: true,
@@ -153,7 +153,7 @@ $('.hotsale-slider').slick({
 $('.popularproduct-slider').slick({
   dots: true,
   infinite: false,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 2,
   autoplay: true,
   arrows: true,
@@ -196,7 +196,7 @@ $('.always-offer-main').slick({
   arrows: false,
   autoplay: true,
   autoplaySpeed: 3000,
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 2,
   responsive: [
     {
@@ -381,7 +381,7 @@ $('.main-slider-wrapper').slick({
 $('.fd-wrapper').slick({
   dots: false,
   infinite: false,
-  slidesToShow: 8,
+  slidesToShow: 6,
   slidesToScroll: 2,
   autoplay: true,
   arrows: true,
@@ -395,7 +395,7 @@ $('.fd-wrapper').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 3,
       },
     },
@@ -434,7 +434,7 @@ $('.testimonial-wrapper').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 3,
       },
     },
