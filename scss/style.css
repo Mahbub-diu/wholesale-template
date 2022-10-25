@@ -3012,6 +3012,12 @@ a {
   padding: 10px;
   border-radius: 0.25rem;
 }
+.recipe-ingredients-main .all-ingredients .single-recipe {
+  margin-bottom: 20px;
+}
+.recipe-ingredients-main .all-ingredients .single-recipe:last-child {
+  margin-bottom: 0;
+}
 .recipe-ingredients-main .all-ingredients .common-fieldset-main {
   margin-bottom: 0px;
 }

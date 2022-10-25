@@ -2742,6 +2742,12 @@ a {
 
     padding: 10px;
     border-radius: 0.25rem;
+    .single-recipe {
+      margin-bottom: 20px;
+    }
+    .single-recipe:last-child {
+      margin-bottom: 0;
+    }
     .common-fieldset-main {
       margin-bottom: 0px;
 
