@@ -2883,11 +2883,11 @@ a {
           max-width: 300px;
           min-height: 100px;
           position: absolute;
-          bottom: calc(100% + 20px);
+          bottom: calc(100% + 10px);
           padding: 0;
           min-width: 300px;
           border-radius: 0.25rem;
-          border: 1px solid $l-gray;
+          border: 1px solid $logo-blue;
           box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
           @include transX-center;
 
@@ -2943,9 +2943,22 @@ a {
             }
           }
           &::before {
-            width: 10px;
-            height: 10px;
-            background: red;
+            border: 10px solid $logo-blue;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            @include transX-center;
+          }
+        }
+        .c-rating-dropdown {
+          li.nav-item {
+            a.nav-link {
+              background: none !important;
+              color: $text-color;
+            }
           }
         }
       }

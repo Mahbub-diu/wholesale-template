@@ -508,3 +508,10 @@ $('.recipe-sm-slider-wrapper').slick({
     },
   ],
 });
+
+$('.show-share').click(function () {
+  $('.c-share-dropdown').toggleClass('d-none');
+});
+$('.show-rating').click(function () {
+  $('.c-rating-dropdown').toggleClass('d-none');
+});
