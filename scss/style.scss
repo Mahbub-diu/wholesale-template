@@ -1335,6 +1335,191 @@ a {
         color: $logo-blue;
       }
     }
+    .five-col-grid-container {
+      @include product-grid-common;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      .single-product {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        width: 100%;
+        .card {
+          @include popularproduct-wrapper-card;
+          &:hover {
+            box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+          }
+          .card-body {
+            .image-box {
+              @include pp-image-box;
+              img {
+                @include pp-image-box-img;
+              }
+            }
+            .brand-image-box {
+              @include pp-brand-image-box;
+              img {
+                @include pp-brand-image-box-img;
+              }
+            }
+            .description-box {
+              @include pp-description-box;
+              h4.product-title {
+                text-align: center;
+                a {
+                  font-size: 14px;
+                  text-transform: capitalize;
+                  color: $tag-grey;
+                  line-height: 1.5;
+
+                  margin-bottom: 15px;
+                  &:hover {
+                    color: $logo-blue;
+                  }
+                }
+              }
+              h3.product-price {
+                @include pp-h3-product-price;
+                span {
+                  @include pp-h3-product-price-span;
+                }
+              }
+              .moredetails-main {
+                @include pp-moredetails-main;
+
+                .more-options {
+                  @include pp-more-options;
+                  .all-more {
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    .dropdown-menu {
+                      @include moredetails-main-dropdown;
+
+                      h4.product-name {
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                      }
+                      .all-offer {
+                        p {
+                          @include all-offer-p;
+                          span.disc-qty {
+                            color: $logo-red;
+                          }
+                        }
+                      }
+                      .form-select {
+                        @include no-radious;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        &:focus {
+                          box-shadow: none;
+                          outline: none;
+                        }
+                      }
+                    }
+                    .dropdown-toggle {
+                      @include pp-dropdown-toggle;
+                      &::after {
+                        @include pp-dropdown-toggle-after;
+                      }
+                      &:focus {
+                        border: none;
+                      }
+                    }
+                    .dropdown-toggle-up {
+                      &::after {
+                        content: '\f077' !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .addtocart-section {
+              .addtocart-btn {
+                background: $logo-blue;
+
+                @include pp-addtocart-btn;
+                i {
+                  margin-right: 5px;
+                }
+                &:hover {
+                  background: #fff;
+                  border-color: $logo-blue;
+                  color: $logo-blue;
+                }
+              }
+
+              .requestto-stock-btn {
+                @include pp-addtocart-btn;
+                background: $ex-red;
+                i {
+                  margin-right: 5px;
+                }
+                &:hover {
+                  background: #fff;
+                  border-color: $ex-red;
+                  color: $ex-red;
+                }
+              }
+              .addto-quote-btn {
+                @include pp-addtocart-btn;
+                background: $light-blue;
+                i {
+                  margin-right: 5px;
+                }
+                &:hover {
+                  background: #fff;
+                  border-color: $light-blue;
+                  color: $light-blue;
+                }
+              }
+              .add-req-flex {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .btn {
+                  // flex-basis: 49%;
+                  flex-basis: auto;
+                }
+              }
+              .quantity-box {
+                @include pp-addtocart-btn;
+                background: $logo-blue;
+                position: relative;
+                .form-control {
+                  text-align: center;
+                  background: transparent;
+                  font-size: 17px;
+                  color: #fff;
+                  padding: 0;
+                  height: 27px;
+                  border: none;
+                }
+                .qty-minus-btn {
+                  @include addtocart-qty;
+                  top: 9px;
+                  left: 50px;
+                  color: $logo-blue;
+                  &:hover {
+                    color: $logo-blue;
+                  }
+                }
+                .qty-plus-btn {
+                  @include addtocart-qty;
+                  top: 9px;
+                  right: 50px;
+                  color: $logo-blue;
+                  &:hover {
+                    color: $logo-blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .common-title-flex {
     display: flex;
@@ -1989,18 +2174,18 @@ a {
     padding: 20px 17px;
     .four-col-grid-container {
       @include product-grid-common;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       .moredetails-main {
         border-bottom: 1px solid $l-gray !important;
       }
     }
     .five-col-grid-container {
       @include product-grid-common;
-      grid-template-columns: auto auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .six-col-grid-container {
       @include product-grid-common;
-      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .single-product {
       background-color: rgba(255, 255, 255, 0.8);
@@ -2582,10 +2767,15 @@ a {
         margin-bottom: 10px;
 
         img {
+          height: 100px;
           max-height: 100px;
           width: 100px;
           border-radius: 0.25rem;
           margin: 0px auto;
+          -webkit-border-radius: 0.25rem;
+          -moz-border-radius: 0.25rem;
+          -ms-border-radius: 0.25rem;
+          -o-border-radius: 0.25rem;
         }
       }
       .product-title {
@@ -2988,4 +3178,86 @@ a {
 
 .product-view-main.all-ingredients {
   margin-top: 0;
+}
+
+.instant-delivery-main {
+  .delivery-bg {
+    background: #fff;
+    padding: 30px 17px;
+    border-radius: 0.25rem;
+    .image-box {
+      img {
+        max-width: 100%;
+        border-radius: 0.25rem;
+        -webkit-border-radius: 0.25rem;
+        -moz-border-radius: 0.25rem;
+        -ms-border-radius: 0.25rem;
+        -o-border-radius: 0.25rem;
+      }
+    }
+    .delivery-descriptions {
+      h3 {
+        @include h3-common-title;
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: $logo-red;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      p {
+        margin-bottom: 30px;
+        color: $d-grey;
+        font-size: 17px;
+
+        text-align: justify;
+      }
+      .order-flex-main {
+        .order-box {
+          padding: 20px 0;
+          padding-bottom: 0;
+          td {
+            width: 33.33%;
+            vertical-align: middle;
+          }
+          h4 {
+            color: $logo-red;
+            font-size: 20px;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: $d-grey;
+            text-transform: uppercase;
+            text-align: left;
+          }
+          a.cake-order-now {
+            background: #ec2028;
+            padding: 8px 20px;
+            width: 100%;
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 20px;
+            margin-top: 20px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            border: 1px solid transparent;
+            &:hover {
+              background: #fff;
+              color: $logo-red;
+              border-color: $logo-red;
+            }
+          }
+        }
+      }
+    }
+  }
 }
