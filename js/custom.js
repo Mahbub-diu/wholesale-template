@@ -114,7 +114,7 @@ $('.hotsale-slider').slick({
   infinite: false,
   slidesToShow: 5,
   slidesToScroll: 2,
-  autoplay: true,
+  autoplay: false,
   arrows: true,
   infinite: true,
   dots: false,
@@ -514,4 +514,29 @@ $('.show-share').click(function () {
 });
 $('.show-rating').click(function () {
   $('.c-rating-dropdown').toggleClass('d-none');
+});
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  autoplay: false,
+  prevArrow:
+    "<button type='button' class='slick-prev'><i class='fa-solid fa-chevron-left'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next'><i class='fa-solid fa-chevron-right'></i></button>",
+});
+
+$('.promotion-toggle-btn').click(function () {
+  $('.offer-dropdown-main').toggleClass('d-none');
 });

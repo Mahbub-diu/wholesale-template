@@ -745,6 +745,23 @@
                                         <div class="card-body">
                                             <div class="image-box">
                                                 <img src="images/products/1.png" alt="" class="img-fluid">
+                                                <div class="quickview-main">
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="javascript:void(0);"
+                                                                data-bs-toggle="modal" data-bs-target="#quickviewModal">
+                                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="description-box">
                                                 <h4 class="product-title">
@@ -5178,8 +5195,297 @@
     </section>
 
 
+    <!-- ========================================================== -->
+    <!-- quick view modal start from here  -->
+    <!-- ========================================================== -->
+    <div class="modal fade quickview-modal" id="quickviewModal" tabindex="-1" aria-labelledby="quickviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
+                            <div class="items-slider-container js-items-slider-container">
+                                <div class="slider slider-for">
+                                    <div>
+                                        <img src="images/qv/1.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/2.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/3.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/4.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider slider-nav">
+                                    <div>
+                                        <img src="images/qv/11.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/22.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/33.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/44.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="images/qv/55.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="product-name-section">
+                                <h4>melco cool orange juice 250 ml</h4>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-star"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-star"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-star"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-star"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-star"></i></a>
+                                    </li>
+                                    <li class="nav-item me-3 ms-3">
+                                        <a class="nav-link disabled">4.7 (71 reviews & 15 answared questions)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Write a Review</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-section">
+                                <div class="brand-tag">Brand: <span>Melco</span> </div>
+                                <div class="price-tag">price : </div>
+                                <div class="old-price">&#2547; 1780 (BDT)</div>
+                                <div class="current-price">&#2547; 1200 (BDT)</div>
+                            </div>
+                            <div class="qv-hotsale">
+                                <div class="qv-hotsale-title">hot sale</div>
+                                <div id="countdown">
 
+                                    <div id='qv-tiles'></div>
+
+                                </div>
+                            </div>
+                            <div class="promotion-tags-main">
+                                <h6 class="promotion-title">available offers</h6>
+                                <div class="promotion-content">
+                                    <div class="tag-list">
+                                        <div class="promotion-tag-item  has-arrow promotion-toggle-btn">
+                                            <div class="tag-name">Min spend ৳ 300</div>
+                                        </div>
+                                    </div>
+                                    <div class="offer-dropdown-main shadow d-none">
+                                        <div class="voucher-main">
+                                            <div class="voucher-item-left">
+                                                <img src="./images/logo.png" alt="" class="img-fluid">
+
+                                            </div>
+                                            <div class="voucher-item-right">
+                                                <div class="voucher-conditions">
+                                                    <div class="discont">৳ 15 Off</div>
+                                                    <div class="condition">Min spend ৳ 300</div>
+                                                </div>
+                                            </div>
+                                            <button class="voucher-item-button  " type="button">Collect</button>
+                                        </div>
+                                        <div class="voucher-main">
+                                            <div class="voucher-item-left">
+                                                <img src="./images/logo.png" alt="" class="img-fluid">
+
+                                            </div>
+                                            <div class="voucher-item-right">
+                                                <div class="voucher-conditions">
+                                                    <div class="discont">৳ 25 Off</div>
+                                                    <div class="condition">Min spend ৳ 500</div>
+                                                </div>
+                                            </div>
+                                            <button class="voucher-item-button  " type="button">Collect</button>
+                                        </div>
+                                        <div class="voucher-main">
+                                            <div class="voucher-item-left">
+                                                <img src="./images/logo.png" alt="" class="img-fluid">
+
+                                            </div>
+                                            <div class="voucher-item-right">
+                                                <div class="voucher-conditions">
+                                                    <div class="discont">৳ 50 Off</div>
+                                                    <div class="condition">Min spend ৳ 1500</div>
+                                                </div>
+                                            </div>
+                                            <button class="voucher-item-button  " type="button">Collect</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-3">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                    <label for="inputPassword6" class="col-form-label">select size</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-3">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                    <label for="inputPassword6" class="col-form-label">select color</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="will-pay">
+                                <p> You will pay <span class="text-danger">৳ 300 .</span>
+                                    Buy <span class="text-danger">4</span> and save
+                                    <span class="text-danger">৳ 30.</span>
+                                </p>
+
+                            </div>
+                            <div class="addtocart-section">
+
+                                <div class="add-req-flex">
+                                    <button class="btn addtocart-btn">
+
+                                        add to cart
+                                    </button>
+
+                                    <button class="btn addto-quote-btn" tabindex="0">
+
+                                        add to quote
+                                    </button>
+                                </div>
+                                <div class="quantity-box d-none">
+                                    <button class="btn qty-minus-btn">
+                                        <i class="icofont-minus"></i>
+                                    </button>
+                                    <input type="text" class="form-control" value="0">
+                                    <button class="btn qty-plus-btn">
+                                        <i class="icofont-plus"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="short-msg">
+                                <label for="" class="form-label">short message</label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="2"
+                                    placeholder="Enter your Short message / Instruction"></textarea>
+                            </div>
+                            <div class="monthly-list-flex">
+                                <a href="" class="btn save-month-btn">save monthly list</a>
+                                <a href="" class="btn save-month-btn"><i class="fa-regular fa-heart"></i> add to
+                                    wishlist</a>
+                                <a href="" class="btn save-month-btn">add to compare</a>
+                            </div>
+                            <div class="sku-main-flex">
+                                <div class="sku">sku : fg-16223017-131700057</div>
+                                <div class="available-stock">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            stock available
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-10">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="product-details" data-bs-toggle="tab"
+                                        data-bs-target="#product-details-pane" type="button" role="tab"
+                                        aria-controls="product-details-pane" aria-selected="true">product
+                                        details</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="specification" data-bs-toggle="tab"
+                                        data-bs-target="#specification-pane" type="button" role="tab"
+                                        aria-controls="specification-pane" aria-selected="false">specifications</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="ingredients" data-bs-toggle="tab"
+                                        data-bs-target="#ingredients-pane" type="button" role="tab"
+                                        aria-controls="ingredients-pane" aria-selected="false">ingredients</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab"
+                                        data-bs-target="#reviews-tab-pane" type="button" role="tab"
+                                        aria-controls="reviews-tab-pane" aria-selected="false">Customer reviews &
+                                        questions</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="product-details-pane" role="tabpanel"
+                                    aria-labelledby="product-details" tabindex="0">
+                                    product details
+                                </div>
+                                <div class="tab-pane fade" id="specification-pane" role="tabpanel"
+                                    aria-labelledby="specification" tabindex="0">
+                                    specifications
+                                </div>
+                                <div class="tab-pane fade" id="ingredients-pane" role="tabpanel"
+                                    aria-labelledby="ingredients" tabindex="0">
+                                    ingredients
+                                </div>
+
+                                <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel"
+                                    aria-labelledby="reviews-tab" tabindex="0">
+                                    Customer reviews & questions
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-10">
+                        <div class="col-12">
+                            <div class="product-disclaimer">
+                                <p>Disclaimers : All prices are approximate. Product will be delivered at current
+                                    store/body price & availability. In-case of unavailability,alternative product will
+                                    be delivered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================== -->
+    <!-- quick view modal end here  -->
+    <!-- ========================================================== -->
 
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -5276,7 +5582,52 @@
 
       // home page hot sale counter end here
     </script>
+    <script>
 
+        var target_date = new Date().getTime() + 1000 * 3600 * 48;
+        var days, hours, minutes, seconds;
+
+        var countdown = document.getElementById('qv-tiles');
+
+        getCountdown();
+
+        setInterval(function () {
+            getCountdown();
+        }, 1000);
+
+        function getCountdown() {
+
+            var current_date = new Date().getTime();
+            var seconds_left = (target_date - current_date) / 1000;
+
+            days = pad(parseInt(seconds_left / 86400));
+            seconds_left = seconds_left % 86400;
+
+            hours = pad(parseInt(seconds_left / 3600));
+            seconds_left = seconds_left % 3600;
+
+            minutes = pad(parseInt(seconds_left / 60));
+            seconds = pad(parseInt(seconds_left % 60));
+
+
+            countdown.innerHTML =
+                '<span>' +
+                days +
+                '</span> : <span>' +
+                hours +
+                '</span> : <span>' +
+                minutes +
+                '</span> : <span>' +
+                seconds +
+                '</span>';
+        }
+
+        function pad(n) {
+            return (n < 10 ? '0' : '') + n;
+        }
+
+  // home page hot sale counter end here
+    </script>
     <script>
         function collision($div1, $div2) {
             var x1 = $div1.offset().left;
