@@ -4585,6 +4585,9 @@ a {
       font-size: 14px;
       text-transform: capitalize;
       padding: 5px 20px;
+      &:hover {
+        color: $logo-blue;
+      }
     }
   }
   .nav-item:first-child {

@@ -5112,6 +5112,9 @@ a {
   text-transform: capitalize;
   padding: 5px 20px;
 }
+.morecategory-main .nav-item .nav-link:hover {
+  color: #004a96;
+}
 .morecategory-main .nav-item:first-child .nav-link {
   padding-left: 0;
 }/*# sourceMappingURL=style.css.map */
