@@ -5117,4 +5117,255 @@ a {
 }
 .morecategory-main .nav-item:first-child .nav-link {
   padding-left: 0;
+}
+
+.membership-main {
+  margin: 20px 0;
+}
+.membership-main .membership-bg {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.membership-main .common-fieldset-main {
+  margin-bottom: 0;
+}
+.membership-main .common-fieldset-main .card {
+  border-color: #e9e7e7;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.membership-main .common-fieldset-main .card img {
+  height: 100%;
+  width: 100%;
+}
+.membership-main .common-fieldset-main .card .card-body .card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.membership-main .common-fieldset-main .card .card-body p.instant-saving {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  color: #ec2028;
+}
+.membership-main .common-fieldset-main .card .card-body .purchase-membership {
+  min-width: 200px;
+  background: #004a96;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 7px 15px;
+  color: #fff;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.membership-main .common-fieldset-main .card .card-body p.membership-price {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.brand-partner-main {
+  margin-bottom: 20px;
+}
+.brand-partner-main .bp-bg {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+}
+.brand-partner-main .common-title-flex {
+  margin-bottom: 20px;
+}
+.brand-partner-main .image-box {
+  height: 70px;
+  max-height: 70px;
+  margin-bottom: 10px;
+}
+.brand-partner-main .image-box img {
+  max-width: 100%;
+  max-height: 70px;
+  margin: 0px auto;
+}
+.brand-partner-main .slick-slide {
+  margin: 0 10px;
+}
+.brand-partner-main .slick-list {
+  margin: 0 -10px;
+}
+.brand-partner-main .discount {
+  text-align: center;
+  color: #ec2028;
+  font-size: 17px;
+  font-weight: 600;
+}
+.brand-partner-main .slick-next {
+  z-index: 1;
+  color: #004a96;
+  background: #fff;
+  right: 0px;
+  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.brand-partner-main .slick-prev {
+  z-index: 1;
+  background: #fff;
+  color: #004a96;
+  left: 0px;
+  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.discount-chart {
+  margin-bottom: 20px;
+}
+.discount-chart .chart-bg {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+}
+.discount-chart .common-fieldset-main {
+  margin-bottom: 0;
+  position: relative;
+}
+.discount-chart .common-fieldset-main .downoload-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: #004a96;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discount-chart .common-fieldset-main .downoload-btn a {
+  color: #fff;
+  font-size: 16px;
+}
+.discount-chart .table-responsive .table {
+  margin-bottom: 0;
+}
+.discount-chart .table-responsive thead th {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.discount-chart .table-responsive tbody tr th {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.discount-chart .table-responsive tbody tr td {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.discount-chart .table-responsive tbody tr td:nth-child(3) {
+  text-transform: uppercase;
+}
+
+.club-register {
+  margin-bottom: 20px;
+}
+.club-register .club-bg {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.club-register .club-bg img {
+  border-radius: 0.25rem;
+}
+.club-register .club-reg-content {
+  padding: 100px 0;
+}
+.club-register .club-reg-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-bottom: 20px;
+  color: #137bc2;
+}
+.club-register .club-reg-content p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.club-register .club-reg-content .register-membership {
+  border: 1px solid #004a96;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.club-renew {
+  margin-bottom: 20px;
+}
+.club-renew .renew-bg {
+  padding: 70px 17px;
+  background: #004a96;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.club-renew .renew-bg h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.club-renew .renew-bg .renew-btn {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: #fff;
+  font-size: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: #004a96;
+  min-width: 300px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

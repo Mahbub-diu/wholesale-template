@@ -4596,3 +4596,233 @@ a {
     }
   }
 }
+.membership-main {
+  margin: 20px 0;
+  .membership-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+  }
+  .common-fieldset-main {
+    margin-bottom: 0;
+    .card {
+      border-color: $l-gray;
+      @include no-radious;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .card-body {
+        .card-title {
+          text-transform: capitalize;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 7px;
+        }
+        p.instant-saving {
+          text-transform: capitalize;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 7px;
+          color: $logo-red;
+        }
+        .purchase-membership {
+          min-width: 200px;
+          background: $logo-blue;
+          font-size: 15px;
+          text-transform: capitalize;
+          padding: 7px 15px;
+          color: #fff;
+          @include no-radious;
+        }
+        p.membership-price {
+          text-transform: capitalize;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+.brand-partner-main {
+  margin-bottom: 20px;
+  .bp-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+  }
+  .common-title-flex {
+    margin-bottom: 20px;
+  }
+  .image-box {
+    height: 70px;
+    max-height: 70px;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      max-height: 70px;
+      margin: 0px auto;
+    }
+  }
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .slick-list {
+    margin: 0 -10px;
+  }
+  .discount {
+    text-align: center;
+    color: $logo-red;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .slick-next {
+    @include common-slick-next;
+  }
+  .slick-prev {
+    @include common-slick-prev;
+  }
+}
+.discount-chart {
+  margin-bottom: 20px;
+  .chart-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+  }
+  .common-fieldset-main {
+    margin-bottom: 0;
+    position: relative;
+    .downoload-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      background: #004a96;
+      text-align: center;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+  .table-responsive {
+    .table {
+      margin-bottom: 0;
+    }
+    thead {
+      th {
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+    tbody {
+      tr {
+        th {
+          text-transform: capitalize;
+          font-size: 15px;
+        }
+        td {
+          text-transform: capitalize;
+          font-size: 15px;
+        }
+      }
+      tr {
+        td:nth-child(3) {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.club-register {
+  margin-bottom: 20px;
+  .club-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    img {
+      border-radius: 0.25rem;
+    }
+  }
+  .club-reg-content {
+    padding: 100px 0;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 0;
+      margin-bottom: 20px;
+      color: $light-blue;
+    }
+    p {
+      font-size: 16px;
+      color: $text-color;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    .register-membership {
+      border: 1px solid $logo-blue;
+      text-transform: uppercase;
+      padding: 7px 20px;
+
+      font-size: 15px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+  }
+}
+
+.club-renew {
+  margin-bottom: 20px;
+  .renew-bg {
+    padding: 70px 17px;
+    background: $logo-blue;
+    border-radius: 0.25rem;
+    text-align: center;
+    h3 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 0;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .renew-btn {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background: #fff;
+      font-size: 15px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      color: $logo-blue;
+      min-width: 300px;
+      display: inline-block;
+    }
+  }
+}
