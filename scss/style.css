@@ -5326,15 +5326,22 @@ a {
   margin-bottom: 20px;
 }
 .club-register .club-reg-content .register-membership {
-  border: 1px solid #004a96;
+  background: #004a96;
   text-transform: uppercase;
   padding: 7px 20px;
+  min-width: 300px;
+  color: #fff;
   font-size: 15px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  border: 1px solid #004a96;
+}
+.club-register .club-reg-content .register-membership:hover {
+  background: #fff;
+  color: #004a96;
 }
 
 .club-renew {
@@ -5342,9 +5349,22 @@ a {
 }
 .club-renew .renew-bg {
   padding: 70px 17px;
-  background: #004a96;
+  background: url(../images/club/wicked-bg-the7-5.svg);
   border-radius: 0.25rem;
   text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.club-renew .renew-bg::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 74, 150, 0.4784313725);
+  content: "";
 }
 .club-renew .renew-bg h3 {
   color: #fff;
@@ -5354,6 +5374,8 @@ a {
   margin-bottom: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 .club-renew .renew-bg .renew-btn {
   text-transform: uppercase;
@@ -5368,4 +5390,6 @@ a {
   color: #004a96;
   min-width: 300px;
   display: inline-block;
+  position: relative;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
