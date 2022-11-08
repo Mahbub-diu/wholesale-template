@@ -4847,6 +4847,10 @@ a {
       display: inline-block;
       position: relative;
       z-index: 1;
+      &:hover {
+        background: $logo-blue;
+        color: #fff;
+      }
     }
   }
 }

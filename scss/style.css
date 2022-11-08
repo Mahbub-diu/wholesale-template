@@ -5392,4 +5392,8 @@ a {
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+.club-renew .renew-bg .renew-btn:hover {
+  background: #004a96;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
