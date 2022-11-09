@@ -61,3 +61,19 @@
 .mt-10 {
   margin-top: 10px;
 }
+
+.four-col-grid-container {
+  @include product-grid-common;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .moredetails-main {
+    border-bottom: 1px solid $l-gray !important;
+  }
+}
+.five-col-grid-container {
+  @include product-grid-common;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.six-col-grid-container {
+  @include product-grid-common;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}

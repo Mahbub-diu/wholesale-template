@@ -67,6 +67,27 @@
   margin-top: 10px;
 }
 
+.four-col-grid-container {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.four-col-grid-container .moredetails-main {
+  border-bottom: 1px solid #e9e7e7 !important;
+}
+
+.five-col-grid-container {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.six-col-grid-container {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 body {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -5396,4 +5417,60 @@ a {
 .club-renew .renew-bg .renew-btn:hover {
   background: #004a96;
   color: #fff;
+}
+
+.all-brand-main {
+  margin: 20px 0;
+}
+.all-brand-main .tab-content {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.all-brand-main .tab-content .card {
+  border-color: #f1f1f1;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+.all-brand-main .tab-content .card .card-body .image-box {
+  min-height: 150px;
+  max-height: 150px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.all-brand-main .tab-content .card .card-body .image-box img {
+  max-height: 150px;
+  margin: 0px auto;
+}
+.all-brand-main .tab-content .card .card-body .product-title h4 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.all-brand-main .tab-content .card .card-body .product-title h6 {
+  color: #828282;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.all-brand-main .tab-content .card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.all-brand-main .tab-content .card:hover .product-title h4 {
+  color: #004a96;
 }/*# sourceMappingURL=style.css.map */

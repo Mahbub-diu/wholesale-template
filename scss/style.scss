@@ -1731,45 +1731,22 @@ a {
         text-transform: uppercase;
       }
       .card {
-        border-color: #f1f1f1;
-
-        border-radius: 0.25rem;
-        -webkit-border-radius: 0.25rem;
-        -moz-border-radius: 0.25rem;
-        -ms-border-radius: 0.25rem;
-        -o-border-radius: 0.25rem;
-        transition: all 0.3s;
-        margin-bottom: 20px;
+        @include shop-category-card;
 
         .card-body {
           .image-box {
-            min-height: 150px;
-            max-height: 150px;
-            text-align: center;
-
-            margin-bottom: 15px;
+            @include shop-category-card-image-box;
 
             img {
-              max-height: 150px;
-              margin: 0px auto;
+              @include shop-category-card-image-box-img;
             }
           }
           .product-title {
             h4 {
-              color: $text-color;
-              font-size: 15px;
-              margin-bottom: 5px;
-              text-align: center;
-              text-transform: capitalize;
-              font-weight: normal;
+              @include shop-category-card-prodcut-title-h4;
             }
             h6 {
-              color: $tag-grey;
-              font-size: 13px;
-              margin-bottom: 0;
-              text-align: center;
-              text-transform: capitalize;
-              font-weight: normal;
+              @include shop-category-card-prodcut-title-h6;
             }
           }
         }
@@ -2231,6 +2208,7 @@ a {
   .tab-content {
     background: #fff;
     padding: 20px 17px;
+
     .four-col-grid-container {
       @include product-grid-common;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -4850,6 +4828,49 @@ a {
       &:hover {
         background: $logo-blue;
         color: #fff;
+      }
+    }
+  }
+}
+
+.all-brand-main {
+  margin: 20px 0;
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    .card {
+      @include shop-category-card;
+      margin-bottom: 0;
+
+      .card-body {
+        .image-box {
+          @include shop-category-card-image-box;
+
+          img {
+            @include shop-category-card-image-box-img;
+          }
+        }
+        .product-title {
+          h4 {
+            @include shop-category-card-prodcut-title-h4;
+          }
+          h6 {
+            @include shop-category-card-prodcut-title-h6;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+        .product-title {
+          h4 {
+            color: $logo-blue;
+          }
+        }
       }
     }
   }
