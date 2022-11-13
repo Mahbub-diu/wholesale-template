@@ -5277,10 +5277,14 @@ a {
 .product-details-main .details-bg .review-main .rate-nav li.nav-item a.nav-link.active {
   color: #004a96;
 }
+.product-details-main .details-bg .review-main ul.nav {
+  margin-bottom: 10px;
+}
 .product-details-main .details-bg .review-main .single-review {
   border: 1px solid #e9e7e7;
   padding: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 .product-details-main .details-bg .review-main .single-review .review-date {
   position: absolute;
@@ -5288,6 +5292,51 @@ a {
   top: 10px;
   text-transform: capitalize;
   font-size: 12px;
+}
+.product-details-main .details-bg .review-main .seller-single-review {
+  background-color: #e9e7e7;
+  position: relative;
+}
+.product-details-main .details-bg .review-main .seller-single-review::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 18px 18px 18px;
+  border-color: transparent transparent #e9e7e7 transparent;
+  transform: rotate(0deg);
+}
+.product-details-main .details-bg .review-main .seller-single-review .review-data .nav .nav-item .nav-link.disabled {
+  background-color: transparent;
+}
+.product-details-main .details-bg .review-main .seller-single-review .review-data .nav .nav-item .nav-link {
+  background-color: #f7f8fa;
+}
+.product-details-main .details-bg .review-main .write-review-form {
+  margin-bottom: 20px;
+}
+.product-details-main .details-bg .review-main .write-review-form form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+.product-details-main .details-bg .review-main .write-review-form form .form-floating button {
+  background: #004a96;
+  width: 10%;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  margin-top: 20px !important;
+  border: none;
+  padding: 8px 10px;
 }
 .product-details-main .details-bg .review-main .purchaser-name-flex {
   display: flex;
@@ -5327,11 +5376,10 @@ a {
 .product-details-main .details-bg .review-main .review-data li.nav-item:first-child a.nav-link {
   background: transparent;
 }
-
-.morecategory-main {
+.product-details-main .morecategory-main {
   margin: 20px 0;
 }
-.morecategory-main .more-bg {
+.product-details-main .morecategory-main .more-bg {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
@@ -5340,27 +5388,26 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.morecategory-main .more-bg h3.common-title {
+.product-details-main .morecategory-main .more-bg h3.common-title {
   color: #004a96;
   margin-bottom: 10px;
 }
-.morecategory-main .nav-item .nav-link {
+.product-details-main .morecategory-main .nav-item .nav-link {
   color: #a1a1a1;
   font-size: 14px;
   text-transform: capitalize;
   padding: 5px 20px;
 }
-.morecategory-main .nav-item .nav-link:hover {
+.product-details-main .morecategory-main .nav-item .nav-link:hover {
   color: #004a96;
 }
-.morecategory-main .nav-item:first-child .nav-link {
+.product-details-main .morecategory-main .nav-item:first-child .nav-link {
   padding-left: 0;
 }
-
-.membership-main {
+.product-details-main .membership-main {
   margin: 20px 0;
 }
-.membership-main .membership-bg {
+.product-details-main .membership-main .membership-bg {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
@@ -5369,10 +5416,10 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.membership-main .common-fieldset-main {
+.product-details-main .membership-main .common-fieldset-main {
   margin-bottom: 0;
 }
-.membership-main .common-fieldset-main .card {
+.product-details-main .membership-main .common-fieldset-main .card {
   border-color: #e9e7e7;
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
@@ -5380,24 +5427,24 @@ a {
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
 }
-.membership-main .common-fieldset-main .card img {
+.product-details-main .membership-main .common-fieldset-main .card img {
   height: 100%;
   width: 100%;
 }
-.membership-main .common-fieldset-main .card .card-body .card-title {
+.product-details-main .membership-main .common-fieldset-main .card .card-body .card-title {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 7px;
 }
-.membership-main .common-fieldset-main .card .card-body p.instant-saving {
+.product-details-main .membership-main .common-fieldset-main .card .card-body p.instant-saving {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 7px;
   color: #ec2028;
 }
-.membership-main .common-fieldset-main .card .card-body .purchase-membership {
+.product-details-main .membership-main .common-fieldset-main .card .card-body .purchase-membership {
   min-width: 200px;
   background: #004a96;
   font-size: 15px;
@@ -5410,48 +5457,47 @@ a {
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
 }
-.membership-main .common-fieldset-main .card .card-body p.membership-price {
+.product-details-main .membership-main .common-fieldset-main .card .card-body p.membership-price {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.87);
 }
-
-.brand-partner-main {
+.product-details-main .brand-partner-main {
   margin-bottom: 20px;
 }
-.brand-partner-main .bp-bg {
+.product-details-main .brand-partner-main .bp-bg {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
 }
-.brand-partner-main .common-title-flex {
+.product-details-main .brand-partner-main .common-title-flex {
   margin-bottom: 20px;
 }
-.brand-partner-main .image-box {
+.product-details-main .brand-partner-main .image-box {
   height: 70px;
   max-height: 70px;
   margin-bottom: 10px;
 }
-.brand-partner-main .image-box img {
+.product-details-main .brand-partner-main .image-box img {
   max-width: 100%;
   max-height: 70px;
   margin: 0px auto;
 }
-.brand-partner-main .slick-slide {
+.product-details-main .brand-partner-main .slick-slide {
   margin: 0 10px;
 }
-.brand-partner-main .slick-list {
+.product-details-main .brand-partner-main .slick-list {
   margin: 0 -10px;
 }
-.brand-partner-main .discount {
+.product-details-main .brand-partner-main .discount {
   text-align: center;
   color: #ec2028;
   font-size: 17px;
   font-weight: 600;
 }
-.brand-partner-main .slick-next {
+.product-details-main .brand-partner-main .slick-next {
   z-index: 1;
   color: #004a96;
   background: #fff;
@@ -5466,7 +5512,7 @@ a {
   -o-border-radius: 50% !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-.brand-partner-main .slick-prev {
+.product-details-main .brand-partner-main .slick-prev {
   z-index: 1;
   background: #fff;
   color: #004a96;
@@ -5482,20 +5528,19 @@ a {
   transition: all 0.3s;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
-.discount-chart {
+.product-details-main .discount-chart {
   margin-bottom: 20px;
 }
-.discount-chart .chart-bg {
+.product-details-main .discount-chart .chart-bg {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
 }
-.discount-chart .common-fieldset-main {
+.product-details-main .discount-chart .common-fieldset-main {
   margin-bottom: 0;
   position: relative;
 }
-.discount-chart .common-fieldset-main .downoload-btn {
+.product-details-main .discount-chart .common-fieldset-main .downoload-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -5508,33 +5553,32 @@ a {
   align-items: center;
   justify-content: center;
 }
-.discount-chart .common-fieldset-main .downoload-btn a {
+.product-details-main .discount-chart .common-fieldset-main .downoload-btn a {
   color: #fff;
   font-size: 16px;
 }
-.discount-chart .table-responsive .table {
+.product-details-main .discount-chart .table-responsive .table {
   margin-bottom: 0;
 }
-.discount-chart .table-responsive thead th {
+.product-details-main .discount-chart .table-responsive thead th {
   text-transform: uppercase;
   font-size: 18px;
 }
-.discount-chart .table-responsive tbody tr th {
+.product-details-main .discount-chart .table-responsive tbody tr th {
   text-transform: capitalize;
   font-size: 15px;
 }
-.discount-chart .table-responsive tbody tr td {
+.product-details-main .discount-chart .table-responsive tbody tr td {
   text-transform: capitalize;
   font-size: 15px;
 }
-.discount-chart .table-responsive tbody tr td:nth-child(3) {
+.product-details-main .discount-chart .table-responsive tbody tr td:nth-child(3) {
   text-transform: uppercase;
 }
-
-.club-register {
+.product-details-main .club-register {
   margin-bottom: 20px;
 }
-.club-register .club-bg {
+.product-details-main .club-register .club-bg {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
@@ -5543,13 +5587,13 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.club-register .club-bg img {
+.product-details-main .club-register .club-bg img {
   border-radius: 0.25rem;
 }
-.club-register .club-reg-content {
+.product-details-main .club-register .club-reg-content {
   padding: 100px 0;
 }
-.club-register .club-reg-content h3 {
+.product-details-main .club-register .club-reg-content h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
@@ -5557,13 +5601,13 @@ a {
   margin-bottom: 20px;
   color: #137bc2;
 }
-.club-register .club-reg-content p {
+.product-details-main .club-register .club-reg-content p {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
   font-weight: normal;
   margin-bottom: 20px;
 }
-.club-register .club-reg-content .register-membership {
+.product-details-main .club-register .club-reg-content .register-membership {
   background: #004a96;
   text-transform: uppercase;
   padding: 7px 20px;
@@ -5577,15 +5621,14 @@ a {
   -o-border-radius: 20px;
   border: 1px solid #004a96;
 }
-.club-register .club-reg-content .register-membership:hover {
+.product-details-main .club-register .club-reg-content .register-membership:hover {
   background: #fff;
   color: #004a96;
 }
-
-.club-renew {
+.product-details-main .club-renew {
   margin-bottom: 20px;
 }
-.club-renew .renew-bg {
+.product-details-main .club-renew .renew-bg {
   padding: 70px 17px;
   background: url(../images/club/wicked-bg-the7-5.svg);
   border-radius: 0.25rem;
@@ -5595,7 +5638,7 @@ a {
   background-repeat: no-repeat;
   position: relative;
 }
-.club-renew .renew-bg::before {
+.product-details-main .club-renew .renew-bg::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -5604,7 +5647,7 @@ a {
   background: rgba(0, 74, 150, 0.4784313725);
   content: "";
 }
-.club-renew .renew-bg h3 {
+.product-details-main .club-renew .renew-bg h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -5615,7 +5658,7 @@ a {
   position: relative;
   z-index: 1;
 }
-.club-renew .renew-bg .renew-btn {
+.product-details-main .club-renew .renew-bg .renew-btn {
   text-transform: uppercase;
   padding: 10px 20px;
   background: #fff;
@@ -5631,15 +5674,14 @@ a {
   position: relative;
   z-index: 1;
 }
-.club-renew .renew-bg .renew-btn:hover {
+.product-details-main .club-renew .renew-bg .renew-btn:hover {
   background: #004a96;
   color: #fff;
 }
-
-.all-brand-main {
+.product-details-main .all-brand-main {
   margin: 20px 0;
 }
-.all-brand-main .tab-content {
+.product-details-main .all-brand-main .tab-content {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
@@ -5648,7 +5690,7 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.all-brand-main .tab-content .card {
+.product-details-main .all-brand-main .tab-content .card {
   border-color: #f1f1f1;
   border-radius: 0.25rem;
   -webkit-border-radius: 0.25rem;
@@ -5659,17 +5701,17 @@ a {
   margin-bottom: 20px;
   margin-bottom: 0;
 }
-.all-brand-main .tab-content .card .card-body .image-box {
+.product-details-main .all-brand-main .tab-content .card .card-body .image-box {
   min-height: 150px;
   max-height: 150px;
   text-align: center;
   margin-bottom: 15px;
 }
-.all-brand-main .tab-content .card .card-body .image-box img {
+.product-details-main .all-brand-main .tab-content .card .card-body .image-box img {
   max-height: 150px;
   margin: 0px auto;
 }
-.all-brand-main .tab-content .card .card-body .product-title h4 {
+.product-details-main .all-brand-main .tab-content .card .card-body .product-title h4 {
   color: rgba(0, 0, 0, 0.87);
   font-size: 15px;
   margin-bottom: 5px;
@@ -5677,7 +5719,7 @@ a {
   text-transform: capitalize;
   font-weight: normal;
 }
-.all-brand-main .tab-content .card .card-body .product-title h6 {
+.product-details-main .all-brand-main .tab-content .card .card-body .product-title h6 {
   color: #828282;
   font-size: 13px;
   margin-bottom: 0;
@@ -5685,17 +5727,16 @@ a {
   text-transform: capitalize;
   font-weight: normal;
 }
-.all-brand-main .tab-content .card:hover {
+.product-details-main .all-brand-main .tab-content .card:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-.all-brand-main .tab-content .card:hover .product-title h4 {
+.product-details-main .all-brand-main .tab-content .card:hover .product-title h4 {
   color: #004a96;
 }
-
-.single-brand-main {
+.product-details-main .single-brand-main {
   margin: 20px 0;
 }
-.single-brand-main .tab-content {
+.product-details-main .single-brand-main .tab-content {
   background: #fff;
   padding: 20px 17px;
   border-radius: 0.25rem;
@@ -5704,7 +5745,7 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.single-brand-main .tab-content .card {
+.product-details-main .single-brand-main .tab-content .card {
   border-color: #f1f1f1;
   margin-bottom: 0;
   position: relative;
