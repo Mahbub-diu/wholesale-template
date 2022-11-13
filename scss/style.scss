@@ -4719,7 +4719,9 @@ a {
               color: #a1a1a1;
             }
             .form-floating{
-              textarea{}
+              textarea{
+                height: 115px !important;
+              }
               button{
                 background: #004a96;
                 width: 10%;
@@ -4733,7 +4735,6 @@ a {
                 -o-border-radius: 0 !important;
                 margin-top: 20px !important;
                 border: none;
-                padding: 8px 10px;
               }
             }
           }

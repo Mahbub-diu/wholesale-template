@@ -5323,6 +5323,9 @@ a {
   font-size: 14px;
   color: #a1a1a1;
 }
+.product-details-main .details-bg .review-main .write-review-form form .form-floating textarea {
+  height: 115px !important;
+}
 .product-details-main .details-bg .review-main .write-review-form form .form-floating button {
   background: #004a96;
   width: 10%;
@@ -5336,7 +5339,6 @@ a {
   -o-border-radius: 0 !important;
   margin-top: 20px !important;
   border: none;
-  padding: 8px 10px;
 }
 .product-details-main .details-bg .review-main .purchaser-name-flex {
   display: flex;
