@@ -4320,6 +4320,7 @@ a {
     .form-select {
       @include no-radious;
       font-size: 14px;
+      border-color: #f7f8f9;
       &:focus {
         box-shadow: none;
         outline: none;
@@ -4428,6 +4429,7 @@ a {
       .form-control {
         font-size: 14px;
         color: $text-color;
+        border-color: #f7f8f9;
       }
     }
     .monthly-list-flex {
@@ -4493,7 +4495,7 @@ a {
         width: 25%;
         .nav-link {
           @include no-radious;
-          border: 1px solid $d-grey;
+          border: 1px solid #f7f8f9;
           width: 100%;
           text-transform: uppercase;
           font-size: 13px;
@@ -4502,7 +4504,7 @@ a {
         .nav-link.active {
           background: $l-gray;
           color: $text-color;
-          border-color: $logo-blue;
+          // border-color: $logo-blue;
         }
       }
       .nav-item:not(:last-child) {
@@ -4512,7 +4514,7 @@ a {
       }
     }
     .tab-content {
-      border: 1px solid $d-grey;
+      border: 1px solid #f7f8f9;
       padding: 20px 17px;
     }
     .product-disclaimer {
@@ -4526,7 +4528,7 @@ a {
       }
     }
     .accordion-item {
-      border: 1px solid $d-grey;
+      border: 1px solid #f7f8f9;
       .accordion-button {
         text-transform: uppercase;
         font-size: 13px;
@@ -4535,6 +4537,173 @@ a {
         &:focus {
           box-shadow: none;
           outline: none;
+        }
+      }
+    }
+    .review-main {
+      .review-filters {
+        padding: 10px 0px;
+        border-top: 1px solid $l-gray;
+        border-bottom: 1px solid $l-gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .search-box {
+          flex-basis: 35%;
+          position: relative;
+          .form-control {
+            padding: 8px 17px;
+            width: calc(100% - 80px);
+            font-size: 14px;
+          }
+          .review-search-btn {
+            background: $d-grey;
+            color: #fff;
+            font-size: 14px;
+            @include no-radious;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 8px 32px;
+          }
+        }
+        .rating-overview {
+          flex-basis: 65%;
+          text-align: center;
+          display: flex;
+          justify-content: space-around;
+          .single-rating {
+            text-align: center;
+            margin: 0 20px;
+
+            h3 {
+              margin-bottom: 3px;
+              color: $d-grey;
+              font-size: 18px;
+              text-transform: capitalize;
+              font-weight: 700;
+            }
+            p {
+              margin-bottom: 0px;
+              color: $logo-blue;
+              font-size: 14px;
+              text-transform: capitalize;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .progress-bg {
+        background-color: #f4f4f4;
+        padding: 20px 10px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      .progress-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .star-box {
+          width: 30px;
+        }
+        .star-count {
+          width: 70px;
+        }
+        .progress {
+          flex-basis: calc(100% - 120px);
+          @include no-radious;
+          .progress-bar {
+            background: $logo-blue;
+          }
+        }
+      }
+      .progress-flex:last-child {
+        margin-bottom: 0;
+      }
+      .write-review-btn {
+        background: $logo-blue;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        text-transform: capitalize;
+        @include no-radious;
+        margin-top: 20px;
+      }
+      .form-select {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      .rate-nav {
+        li.nav-item {
+          a.nav-link {
+            padding: 0;
+            font-size: 14px;
+            color: $d-grey;
+          }
+          a.nav-link.active {
+            color: $logo-blue;
+          }
+        }
+      }
+      .single-review {
+        border: 1px solid $l-gray;
+        padding: 10px;
+        position: relative;
+        .review-date {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          text-transform: capitalize;
+          font-size: 12px;
+        }
+      }
+      .purchaser-name-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .user-name {
+          margin-right: 10px;
+          font-size: 16px;
+          color: $text-color;
+          text-transform: capitalize;
+          margin-top: 10px;
+        }
+        .verified {
+          color: $green;
+          font-size: 12px;
+          text-transform: capitalize;
+        }
+      }
+      .review-data {
+        p {
+          font-size: 14px;
+          color: $text-color;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+        p:last-child {
+          margin-bottom: 0;
+        }
+        li.nav-item {
+          margin-right: 10px;
+          a.nav-link {
+            background: $l-gray;
+            font-size: 12px;
+            text-transform: capitalize;
+            color: $text-color;
+          }
+        }
+        li.nav-item:first-child {
+          a.nav-link {
+            background: transparent;
+          }
         }
       }
     }
@@ -4872,6 +5041,24 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.single-brand-main {
+  margin: 20px 0;
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    .card {
+      border-color: #f1f1f1;
+      margin-bottom: 0;
+      position: relative;
     }
   }
 }

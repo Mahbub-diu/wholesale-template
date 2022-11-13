@@ -844,10 +844,9 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="product-details"
-                                                    data-bs-toggle="tab" data-bs-target="#product-details-pane"
-                                                    type="button" role="tab" aria-controls="product-details-pane"
-                                                    aria-selected="true">product
+                                                <button class="nav-link " id="product-details" data-bs-toggle="tab"
+                                                    data-bs-target="#product-details-pane" type="button" role="tab"
+                                                    aria-controls="product-details-pane" aria-selected="true">product
                                                     details</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
@@ -864,7 +863,7 @@
                                             </li>
 
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab"
+                                                <button class="nav-link active" id="reviews-tab" data-bs-toggle="tab"
                                                     data-bs-target="#reviews-tab-pane" type="button" role="tab"
                                                     aria-controls="reviews-tab-pane" aria-selected="false">Customer
                                                     reviews &
@@ -873,8 +872,8 @@
 
                                         </ul>
                                         <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="product-details-pane"
-                                                role="tabpanel" aria-labelledby="product-details" tabindex="0">
+                                            <div class="tab-pane fade " id="product-details-pane" role="tabpanel"
+                                                aria-labelledby="product-details" tabindex="0">
                                                 product details
                                             </div>
                                             <div class="tab-pane fade" id="specification-pane" role="tabpanel"
@@ -886,9 +885,260 @@
                                                 ingredients
                                             </div>
 
-                                            <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel"
+                                            <div class="tab-pane fade show active" id="reviews-tab-pane" role="tabpanel"
                                                 aria-labelledby="reviews-tab" tabindex="0">
-                                                Customer reviews & questions
+                                                <div class="review-main">
+                                                    <div class="review-filters">
+                                                        <div class="search-box">
+                                                            <form action="">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Search topics & reviews">
+                                                                    <button class="btn review-search-btn"><i
+                                                                            class="icofont-search"></i></button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="rating-overview">
+                                                            <div class="single-rating">
+                                                                <h3>4.7</h3>
+                                                                <p>avg. customer ratings</p>
+                                                            </div>
+                                                            <div class="single-rating">
+                                                                <h3>47</h3>
+                                                                <p>reviews</p>
+                                                            </div>
+                                                            <div class="single-rating">
+                                                                <h3>47</h3>
+                                                                <p>questions</p>
+                                                            </div>
+                                                            <div class="single-rating">
+                                                                <h3>47</h3>
+                                                                <p>answer</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                            <div class="progress-bg">
+                                                                <div class="progress-flex">
+                                                                    <div class="star-box">5 <i class="icofont-star"></i>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            aria-label="Basic example"
+                                                                            style="width: 75%" aria-valuenow="75"
+                                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <div class="star-count">5000</div>
+
+                                                                </div>
+                                                                <div class="progress-flex">
+                                                                    <div class="star-box">4 <i class="icofont-star"></i>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            aria-label="Basic example"
+                                                                            style="width: 55%" aria-valuenow="55"
+                                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <div class="star-count">200</div>
+
+                                                                </div>
+                                                                <div class="progress-flex">
+                                                                    <div class="star-box">3 <i class="icofont-star"></i>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            aria-label="Basic example"
+                                                                            style="width: 25%" aria-valuenow="25"
+                                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <div class="star-count">100</div>
+
+                                                                </div>
+                                                                <div class="progress-flex">
+                                                                    <div class="star-box">2<i class="icofont-star"></i>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            aria-label="Basic example"
+                                                                            style="width: 25%" aria-valuenow="25"
+                                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <div class="star-count">100</div>
+
+                                                                </div>
+                                                                <div class="progress-flex">
+                                                                    <div class="star-box">1 <i class="icofont-star"></i>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            aria-label="Basic example"
+                                                                            style="width: 25%" aria-valuenow="25"
+                                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <div class="star-count">50</div>
+
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="btn write-review-btn">write a review</a>
+
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                                    <div class="mb-3 row">
+                                                                        <label for=""
+                                                                            class="col-sm-4 col-form-label">sort
+                                                                            by</label>
+                                                                        <div class="col-sm-8">
+                                                                            <select class="form-select"
+                                                                                aria-label="Default select">
+                                                                                <option selected>rating
+                                                                                </option>
+                                                                                <option value="1">One</option>
+                                                                                <option value="2">Two</option>
+                                                                                <option value="3">Three</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                                    <div class="mb-3 row">
+                                                                        <label for=""
+                                                                            class="col-sm-4 col-form-label">sort
+                                                                            by</label>
+                                                                        <div class="col-sm-8">
+                                                                            <select class="form-select"
+                                                                                aria-label="Default select">
+                                                                                <option selected>most helpful</option>
+                                                                                <option value="1">One</option>
+                                                                                <option value="2">Two</option>
+                                                                                <option value="3">Three</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                                    <div class="mb-3 row">
+                                                                        <label for=""
+                                                                            class="col-sm-4 col-form-label">show</label>
+                                                                        <div class="col-sm-8">
+                                                                            <select class="form-select"
+                                                                                aria-label="Default select example">
+                                                                                <option selected>4
+                                                                                </option>
+                                                                                <option value="1">8</option>
+                                                                                <option value="2">16</option>
+
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                                    <div class="single-review">
+                                                                        <ul class="nav rate-nav">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" href="#"><i
+                                                                                        class="icofont-star"></i></a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" href="#"><i
+                                                                                        class="icofont-star"></i></a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" href="#"><i
+                                                                                        class="icofont-star"></i></a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" href="#"><i
+                                                                                        class="icofont-star"></i></a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#"><i
+                                                                                        class="icofont-star"></i></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="purchaser-name-flex">
+                                                                            <h3 class="user-name">mr. ashiqur rahman
+                                                                            </h3>
+                                                                            <div class="verified"><i
+                                                                                    class="fa-regular fa-circle-check"></i>
+                                                                                verified purchase</div>
+                                                                        </div>
+                                                                        <div class="review-date">4 month ago</div>
+                                                                        <div class="review-data">
+                                                                            <p>Lorem ipsum, dolor sit amet consectetur
+                                                                                adipisicing elit. Laborum aliquid nulla
+                                                                                illum nobis quae, qui magnam mollitia
+                                                                                deleniti illo, eveniet modi. Mollitia
+                                                                                nobis inventore odit ad sequi officiis,
+                                                                                tempore ea!
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Beatae natus non nulla
+                                                                                dignissimos quasi aspernatur, voluptates
+                                                                                commodi laudantium earum explicabo minus
+                                                                                animi numquam molestiae inventore
+                                                                                accusantium quaerat eos eveniet libero!
+                                                                            </p>
+                                                                            <p>Lorem ipsum, dolor sit amet consectetur
+                                                                                adipisicing elit. Laborum aliquid nulla
+                                                                                illum nobis quae, qui magnam mollitia
+                                                                                deleniti illo, eveniet modi. Mollitia
+                                                                                nobis inventore odit ad sequi officiis,
+                                                                                tempore ea!
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Beatae natus non nulla
+                                                                                dignissimos quasi aspernatur, voluptates
+                                                                                commodi laudantium earum explicabo minus
+                                                                                animi numquam molestiae inventore
+                                                                                accusantium quaerat eos eveniet libero!
+                                                                            </p>
+                                                                            <p>Lorem ipsum, dolor sit amet consectetur
+                                                                                adipisicing elit. Laborum aliquid nulla
+                                                                                illum nobis quae, qui magnam mollitia
+                                                                                deleniti illo, eveniet modi. Mollitia
+                                                                                nobis inventore odit ad sequi officiis,
+                                                                                tempore ea!
+                                                                                Lorem ipsum dolor sit amet consectetur
+                                                                                adipisicing elit. Beatae natus non nulla
+                                                                                dignissimos quasi aspernatur, voluptates
+                                                                                commodi laudantium earum explicabo minus
+                                                                                animi numquam molestiae inventore
+                                                                                accusantium quaerat eos eveniet libero!
+                                                                            </p>
+                                                                            <ul class="nav">
+                                                                                <li class="nav-item">
+                                                                                    <a
+                                                                                        class="nav-link disabled">helpful?</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" href="#">yes .
+                                                                                        100</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" href="#">no .
+                                                                                        20</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link"
+                                                                                        href="#">report</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

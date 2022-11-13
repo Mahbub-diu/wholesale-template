@@ -77,3 +77,51 @@
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+.new-tag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: $logo-red;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.discount-tag {
+  width: 60px;
+  height: 40px;
+  background: #ec2028;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  right: 0;
+  text-align: center;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -60 px;
+    content: '';
+    border: 30px solid $logo-red;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
