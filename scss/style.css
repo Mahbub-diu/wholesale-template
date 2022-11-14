@@ -809,6 +809,26 @@ a {
   font-weight: normal;
   letter-spacing: 1px;
 }
+.layout-main .home-slider-main .calendar-box {
+  position: absolute;
+  right: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 20%;
+  min-height: 40%;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #fff;
+}
 .layout-main .online-apply .online-apply-border {
   border-bottom: 1px solid #828282;
   text-align: right;
