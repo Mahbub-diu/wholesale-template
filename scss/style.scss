@@ -5224,6 +5224,40 @@ a {
           }
         }
       }
+      label {
+        font-size: 14px;
+
+        letter-spacing: 0.3px;
+        text-transform: capitalize;
+      }
+      .form-control {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        font-size: 13px;
+
+        margin-bottom: 17px;
+        letter-spacing: 0.3px;
+      }
+      .profile-update-btn {
+        border: none;
+        border-radius: 0px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        background: $logo-blue;
+        z-index: 0;
+        text-transform: capitalize;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 14px;
+
+        min-width: 150px;
+      }
     }
   }
 }
