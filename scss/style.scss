@@ -683,6 +683,7 @@ a {
         color: $logo-red;
       }
     }
+    
     .ingredients-box {
       position: absolute;
       right: 100px;
@@ -712,6 +713,26 @@ a {
         letter-spacing: 1px;
       }
     }
+
+    .calendar-box {
+      position: absolute;
+      right: 300px;
+      @include transY-center;
+      width: 20%;
+
+      min-height: 40%;
+      // background: rgba(0, 0, 0, 0.63);
+      z-index: 1;
+      padding: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      color: #fff;
+      
+    }
+
   }
   .online-apply {
     .online-apply-border {
