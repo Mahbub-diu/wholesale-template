@@ -5751,4 +5751,93 @@ a {
   border-color: #f1f1f1;
   margin-bottom: 0;
   position: relative;
+}
+
+.userprofile-banner .banner-bg {
+  background: #004a96;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.userprofile-banner .banner-bg h4 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.user-info-main {
+  margin-bottom: 20px;
+}
+.user-info-main .user-info-bg {
+  background: #fff;
+  padding: 20px 17px;
+}
+.user-info-main .user-info-bg .profile-sidebar {
+  min-height: 100%;
+  padding: 20px;
+  min-height: 50vh;
+}
+.user-info-main .user-info-bg .profile-sidebar h2 {
+  font-size: 17px;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #ec2028;
+}
+.user-info-main .user-info-bg .profile-sidebar .profile-menubox .nav-item .nav-link {
+  padding: 5px 0px 5px 15px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #a1a1a1;
+  font-size: 15px;
+  border-bottom: 1px solid #f7f7f7;
+  text-transform: capitalize;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+}
+.user-info-main .user-info-bg .profile-sidebar .profile-menubox .nav-item .nav-link i {
+  color: #a1a1a1;
+  width: 20px;
+  text-align: center;
+  margin-right: 7px;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+}
+.user-info-main .user-info-bg .profile-sidebar .profile-menubox .nav-item .nav-link.active {
+  color: #004a96;
+}
+.user-info-main .user-info-bg .profile-sidebar .profile-menubox .nav-item .nav-link.active i {
+  color: #004a96;
+}
+.user-info-main .user-info-bg .order-information-main {
+  margin-top: 30px;
+}
+.user-info-main .user-info-bg .order-information-main .table {
+  margin-bottom: 0;
+}
+.user-info-main .user-info-bg .order-information-main .table tr td {
+  vertical-align: middle;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.user-info-main .user-info-bg .order-information-main .table tr td a {
+  padding: 5px 10px;
+  color: #121314;
+}
+.user-info-main .user-info-bg .order-information-main .table tr:nth-child(1) td {
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=style.css.map */
