@@ -683,7 +683,7 @@ a {
         color: $logo-red;
       }
     }
-    
+
     .ingredients-box {
       position: absolute;
       right: 100px;
@@ -730,9 +730,7 @@ a {
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
       color: #fff;
-      
     }
-
   }
   .online-apply {
     .online-apply-border {
@@ -5280,5 +5278,18 @@ a {
         min-width: 150px;
       }
     }
+  }
+}
+
+.full-year-main {
+  margin: 20px 0;
+  .full-year-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
   }
 }
