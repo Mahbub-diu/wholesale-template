@@ -168,3 +168,11 @@ span.confirmed {
   min-width: 80px;
   display: inline-block;
 }
+.two-col-grid-container {
+  @include product-grid-common;
+  grid-template-columns: 1fr 1fr;
+}
+.three-col-grid-container {
+  @include product-grid-common;
+  grid-template-columns: 1fr 1fr 1fr;
+}
