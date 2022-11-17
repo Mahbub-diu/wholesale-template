@@ -176,3 +176,16 @@ span.confirmed {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.search-history-btn {
+  @include no-radious;
+  background: $logo-blue;
+  color: #fff;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  // width: 100%;
+  &:hover {
+    background: $logo-blue !important;
+    color: #fff !important;
+  }
+}

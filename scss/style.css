@@ -193,6 +193,22 @@ span.confirmed {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.search-history-btn {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  background: #004a96;
+  color: #fff;
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+.search-history-btn:hover {
+  background: #004a96 !important;
+  color: #fff !important;
+}
+
 body {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -6049,4 +6065,18 @@ a {
   background: #004a96;
   width: 100%;
   font-size: 13px;
+}
+
+.table.payment-history thead th {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px !important;
+}
+.table.payment-history tbody tr td {
+  font-size: 13px !important;
+  text-transform: capitalize;
+  text-align: center;
+}
+.table.payment-history tbody tr td.failed {
+  color: #ec2028;
 }/*# sourceMappingURL=style.css.map */
