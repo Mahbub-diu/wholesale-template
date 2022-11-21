@@ -6109,4 +6109,11 @@ a {
   text-transform: capitalize;
   text-align: center;
   vertical-align: middle;
+}
+
+.upload-form-wrapper {
+  padding: 50px 150px;
+}
+.upload-form-wrapper form.upload-form .form-select {
+  border-radius: 0 !important;
 }/*# sourceMappingURL=style.css.map */

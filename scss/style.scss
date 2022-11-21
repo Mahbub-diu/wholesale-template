@@ -4981,6 +4981,8 @@ a {
           }
         }
       }
+
+
     }
   }
   .club-register {
@@ -5389,6 +5391,7 @@ a {
     }
   }
 }
+
 .supplier-reg-layout {
   .supplier-reg-bg {
     background: #fff;
@@ -5425,6 +5428,17 @@ a {
           }
         }
       }
+    }
+    
+  }
+}
+
+.upload-form-wrapper{
+  padding: 50px 150px;
+  
+  form.upload-form{
+    .form-select{
+      border-radius: 0 !important;
     }
   }
 }
