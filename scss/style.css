@@ -6079,4 +6079,34 @@ a {
 }
 .table.payment-history tbody tr td.failed {
   color: #ec2028;
+}
+
+.supplier-reg-layout .supplier-reg-bg {
+  background: #fff;
+  padding: 20px 17px;
+  min-height: 70vh;
+}
+.supplier-reg-layout .supplier-reg-bg .form-label {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.supplier-reg-layout .supplier-reg-bg .form-check-label {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.supplier-reg-layout .supplier-reg-bg .form-control {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.supplier-reg-layout .supplier-reg-bg .table.key-person thead th {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px !important;
+  vertical-align: middle;
+}
+.supplier-reg-layout .supplier-reg-bg .table.key-person tbody tr td {
+  font-size: 13px !important;
+  text-transform: capitalize;
+  text-align: center;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
