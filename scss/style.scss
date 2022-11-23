@@ -5151,7 +5151,66 @@ a {
       }
     }
   }
+
+
 }
+
+.affiliate-main{
+  padding: 80px;
+  // background-color: $white;
+  margin: 50px 0;
+.row{
+  background-color: $white;
+  padding: 50px;
+  margin: 50px 0;
+  .card{
+    text-align: center;
+    min-height: 200px;
+    // width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 0;
+    .card-icon{
+      width: 40px;
+      height: 40px;
+      background-color: $logo-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      color: $white;
+      font-size: 20px;
+      border-radius: 999px;
+    }
+  }
+
+  .copy-url{
+    background-color: $white;
+    form{
+      .class-control{
+
+      }
+
+      .btn{
+        background-color: $logo-blue;
+        color: $white;
+        padding: 8px 40px;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .data-box{
+    .data-box-header{
+      
+    }
+  }
+}
+
+  
+}
+
 .userprofile-banner {
   .banner-bg {
     background: $logo-blue;
@@ -5435,10 +5494,39 @@ a {
 
 .upload-form-wrapper{
   padding: 50px 150px;
-  
-  form.upload-form{
+
+  .form-title{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
     .form-select{
       border-radius: 0 !important;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+
+
+  .btn{
+    color: $white;
+    border-radius: 0;
+    &:hover{
+      color: $white;
     }
   }
+
+  .btn.upload{
+    background-color: $logo-blue;
+    border-color: $logo-blue;
+  }
+
+  .btn.cancel{
+    background-color: $d-grey;
+    border-color: $d-grey;
+  }
 }
+
+
+
+

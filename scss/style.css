@@ -5846,6 +5846,44 @@ a {
   position: relative;
 }
 
+.affiliate-main {
+  padding: 80px;
+  margin: 50px 0;
+}
+.affiliate-main .row {
+  background-color: #fff;
+  padding: 50px;
+  margin: 50px 0;
+}
+.affiliate-main .row .card {
+  text-align: center;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 0;
+}
+.affiliate-main .row .card .card-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #004a96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 999px;
+}
+.affiliate-main .row .copy-url {
+  background-color: #fff;
+}
+.affiliate-main .row .copy-url form .btn {
+  background-color: #004a96;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 0;
+}
 .userprofile-banner .banner-bg {
   background: #004a96;
   padding-top: 40px;
@@ -6114,6 +6152,28 @@ a {
 .upload-form-wrapper {
   padding: 50px 150px;
 }
-.upload-form-wrapper form.upload-form .form-select {
+.upload-form-wrapper .form-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.upload-form-wrapper .form-select {
   border-radius: 0 !important;
+}
+.upload-form-wrapper .form-select:focus {
+  box-shadow: none;
+}
+.upload-form-wrapper .btn {
+  color: #fff;
+  border-radius: 0;
+}
+.upload-form-wrapper .btn:hover {
+  color: #fff;
+}
+.upload-form-wrapper .btn.upload {
+  background-color: #004a96;
+  border-color: #004a96;
+}
+.upload-form-wrapper .btn.cancel {
+  background-color: #a1a1a1;
+  border-color: #a1a1a1;
 }/*# sourceMappingURL=style.css.map */

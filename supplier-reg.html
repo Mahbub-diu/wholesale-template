@@ -867,6 +867,7 @@
                           <legend class="rounded">
                             experiance
                           </legend>
+
                           <div class="table-responsive">
                             <table class="table table-bordered key-person">
                               <thead>
@@ -947,6 +948,7 @@
                               </tbody>
                             </table>
                           </div>
+
                           <div class="table-responsive">
                             <table class="table table-bordered key-person">
                               <thead>
@@ -1076,6 +1078,7 @@
                               </tbody>
                             </table>
                           </div>
+
                           <div class="table-responsive">
                             <table class="table table-bordered key-person">
                               <thead>
@@ -1116,15 +1119,18 @@
                               </tbody>
                             </table>
                           </div>
+
                           <div class="upload-form-wrapper">
-                            <form action="" class="upload-form">
+                            <form action="" class="upload-form dropzone"  id="myDropZone">
                               <h4 class="form-title text-center mb-3">Upload Document</h4>
+                                                          
                               <div class="mb-3 row">
                                 <label for="document" class="col-sm-2 col-form-label">Document <sup class="text-danger">*</sup></label>
                                 <div class="col-sm-10">
                                   <input type="file" class="form-control" id="document">
                                 </div>
                               </div>
+                              
                               <div class="mb-3 row">
                                 <label class="col-sm-2 col-form-label">Document Type <sup class="text-danger">*</sup></label>
                                 <div class="col-sm-10">
@@ -1137,17 +1143,22 @@
                                   </select>
                                 </div>
                               </div>
+
                               <div class=" row">
                                 <label for="comment" class="col-sm-2 col-form-label">Comment</label>
                                 <div class="col-sm-10">
                                   <input type="text" class="form-control" id="comment">
                                 </div>
                               </div>
+
                               <div class=" d-grid gap-2 d-md-flex justify-content-md-center">
-                                <button type="button" class="btn btn-primary">Primary</button>
-                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn upload">Upload</button>
+                                <button type="button" class="btn cancel">Cance</button>
                               </div>
                             </form>
+
+
+
                           </div>
                         </fieldset>
                       </div>
@@ -1470,9 +1481,11 @@
   <script src="./js/select2.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/slick.js"></script>
+
   <script src="./js/custom.js"></script>
 
 
+  
 
   <!-- script for main home page  -->
   <!-- this script wiil run only in home page  -->
