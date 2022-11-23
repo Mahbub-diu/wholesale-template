@@ -5846,44 +5846,6 @@ a {
   position: relative;
 }
 
-.affiliate-main {
-  padding: 80px;
-  margin: 50px 0;
-}
-.affiliate-main .row {
-  background-color: #fff;
-  padding: 50px;
-  margin: 50px 0;
-}
-.affiliate-main .row .card {
-  text-align: center;
-  min-height: 200px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 0;
-}
-.affiliate-main .row .card .card-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #004a96;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 999px;
-}
-.affiliate-main .row .copy-url {
-  background-color: #fff;
-}
-.affiliate-main .row .copy-url form .btn {
-  background-color: #004a96;
-  color: #fff;
-  padding: 8px 40px;
-  border-radius: 0;
-}
 .userprofile-banner .banner-bg {
   background: #004a96;
   padding-top: 40px;
@@ -6002,6 +5964,92 @@ a {
   padding-bottom: 7px;
   font-size: 14px;
   min-width: 150px;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-card {
+  height: 180px;
+  border-radius: 0;
+  border: 1px solid #e9ebec !important;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-card .card-icon {
+  background-color: #004a96;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  margin: 30px auto 0 auto;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-card .card-body {
+  text-align: center;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-card .card-body .card-title {
+  font-size: 22px;
+  color: #004a96;
+}
+.user-info-main .user-info-bg .order-information-main .referral-link-wrapper {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #e9ebec !important;
+}
+.user-info-main .user-info-bg .order-information-main .referral-link-wrapper .form-control {
+  margin-bottom: 0;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats {
+  border-radius: 0;
+  border: 1px solid #e9ebec !important;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-head {
+  padding: 20px;
+  border-bottom: 1px solid #ebedf2;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-head .form-select {
+  border-radius: 0;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-head .form-select:focus {
+  box-shadow: none;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-head .filter-btn {
+  border-radius: 0;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body {
+  padding: 50px 20px;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body .stat-card {
+  background-color: #fff;
+  text-align: center;
+  min-height: 120px;
+  padding-top: 20px;
+  box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body .stat-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body .stat-card .stat-card-number {
+  background-color: #a1a1a1;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 30px;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body .stat-card .stat-card-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #004a96;
+}
+.user-info-main .user-info-bg .order-information-main .affiliate-stats .card-body .table tr td {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .full-year-main {

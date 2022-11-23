@@ -5155,61 +5155,6 @@ a {
 
 }
 
-.affiliate-main{
-  padding: 80px;
-  // background-color: $white;
-  margin: 50px 0;
-.row{
-  background-color: $white;
-  padding: 50px;
-  margin: 50px 0;
-  .card{
-    text-align: center;
-    min-height: 200px;
-    // width: 400px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 0;
-    .card-icon{
-      width: 40px;
-      height: 40px;
-      background-color: $logo-blue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 0 auto;
-      color: $white;
-      font-size: 20px;
-      border-radius: 999px;
-    }
-  }
-
-  .copy-url{
-    background-color: $white;
-    form{
-      .class-control{
-
-      }
-
-      .btn{
-        background-color: $logo-blue;
-        color: $white;
-        padding: 8px 40px;
-        border-radius: 0;
-      }
-    }
-  }
-
-  .data-box{
-    .data-box-header{
-      
-    }
-  }
-}
-
-  
-}
 
 .userprofile-banner {
   .banner-bg {
@@ -5339,6 +5284,113 @@ a {
 
         min-width: 150px;
       }
+
+
+
+      .affiliate-card{
+        height: 180px;
+        border-radius: 0;
+        border: 1px solid #e9ebec !important;
+
+        .card-icon{
+          background-color: $logo-blue;
+          height: 50px;
+          width: 50px;
+          border-radius: 999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          color: $white;
+          margin: 30px auto 0 auto;
+        }
+
+        .card-body{
+          text-align: center;
+
+          .card-title{
+            font-size: 22px;
+            color: $logo-blue;
+          }
+
+        }
+      }
+
+      .referral-link-wrapper{
+        padding: 30px;
+        background-color: $white;
+        border: 1px solid #e9ebec !important;
+        .form-control{
+          margin-bottom: 0;
+        }
+      }
+
+      .affiliate-stats{
+        border-radius: 0;
+        border: 1px solid #e9ebec !important;
+
+        .card-head{
+          padding: 20px;
+          border-bottom: 1px solid #ebedf2;
+          .form-select{
+            border-radius: 0;
+            &:focus{
+              box-shadow: none;
+            }
+          }
+  
+          .filter-btn{
+            border-radius: 0;
+          }
+        }
+
+        .card-body{
+          padding: 50px 20px;
+
+          .stat-card{
+            background-color: $white;
+            text-align: center;
+            min-height: 120px;
+            padding-top: 20px;
+            box-shadow: 0px 3px 6px -4px rgb(0 0 0 / 70%);
+            -webkit-box-shadow: 0px 3px 6px -4px rgb(0 0 0 / 70%);
+            -moz-box-shadow: 0px 3px 6px -4px rgb(0 0 0 / 70%);
+            transition: 0.5s;
+
+            &:hover{
+              transform: translateY(-10px);
+              cursor: pointer;
+            }
+
+            .stat-card-number{
+              background-color: $d-grey;
+              width: 50px;
+              height: 50px;
+              margin: 0 auto 5px auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 999px;
+              font-size: 30px;
+            }
+            .stat-card-title{
+              font-size: 20px;
+              font-weight: 400;
+              color: $logo-blue;
+            }
+          }
+
+          .table{
+            tr{
+              td{
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }
