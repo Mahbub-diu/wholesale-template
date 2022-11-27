@@ -6064,6 +6064,45 @@ a {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
+.full-year-main .accordion .accordion-item {
+  margin-bottom: 5px;
+}
+.full-year-main .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #dbe8f2;
+  color: #004a96;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+.full-year-main .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+.full-year-main .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z' fill='%23004a96'/%3e%3c/svg%3e");
+  transition: 0.5s;
+}
+.full-year-main .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #004a96;
+  box-shadow: none;
+}
+.full-year-main .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z' fill='%23004a96'/%3e%3c/svg%3e");
+  transition: 0.5s;
+}
+.full-year-main .accordion .accordion-item .accordion-body .card {
+  border-radius: 0;
+}
+.full-year-main .accordion .accordion-item .accordion-body .card .row .col-md-8 .card-body .card-title {
+  color: #004a96;
+}
+.full-year-main .accordion .accordion-item .accordion-body .card .row .col-md-8 .card-body .card-text {
+  font-weight: 400;
+}
+.full-year-main .accordion .accordion-item .accordion-body .card .row .col-md-8 .card-body a {
+  background-color: #004a96;
+  color: #fff;
+  border-radius: 0;
+}
 
 .single-celebration {
   border: 1px solid #e9e7e7;
