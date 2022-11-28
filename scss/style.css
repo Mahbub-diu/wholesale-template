@@ -6466,6 +6466,7 @@ a {
   margin: 8px 5px;
   padding: 3px 15px;
   transition: 0.3s;
+  position: relative;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio img {
   width: 40px;
@@ -6479,34 +6480,100 @@ a {
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
 }
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio.selected::after {
+  font-family: FontAwesome;
+  content: "\f00c";
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #004a96;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  z-index: 99;
+  -webkit-animation: scaleBounce 0.5s;
+          animation: scaleBounce 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  transform: scale(1);
+}
+@-webkit-keyframes scaleBounce {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scaleBounce {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .fit-image {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .check-img {
+  -webkit-animation: scaleBounce 0.5s;
+          animation: scaleBounce 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  transform: scale(1);
+}
+@keyframes scaleBounce {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
-  width: 100px;
+  width: 200px;
   background: #004a96;
   font-weight: bold;
   color: white;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 20px 5px;
   margin: 10px 5px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #004a96;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous {
-  width: 100px;
+  width: 200px;
   background: #616161;
   font-weight: bold;
   color: white;
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 20px 5px;
   margin: 10px 5px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:focus {
