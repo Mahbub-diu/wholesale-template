@@ -6336,6 +6336,21 @@ a {
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:active::before, .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:active::after {
   background: skyblue;
 }
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li.active {
+  list-style-type: none;
+  font-size: 12px;
+  width: 25%;
+  float: left;
+  position: relative;
+  color: #004a96;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li.active:before {
+  color: #ffffff;
+  background: #004a96;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li.active:after {
+  background: #004a96;
+}
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #account:before {
   font-family: FontAwesome;
   content: "\f023";
