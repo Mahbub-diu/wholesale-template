@@ -6263,4 +6263,237 @@ a {
 .upload-form-wrapper .btn.cancel {
   background-color: #a1a1a1;
   border-color: #a1a1a1;
+}
+
+.multistep-form-main {
+  margin: 20px 0;
+}
+.multistep-form-main .multistep-form-bg {
+  background: #fff;
+  padding: 20px 17px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.multistep-form-main .multistep-form-bg #grad1 .card {
+  z-index: 0;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid #a1a1a1;
+  padding: 40px 20px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform h2 {
+  color: #004a96;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform p {
+  margin-bottom: 50px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar:active {
+  color: #000000;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:active::before, .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li:active::after {
+  background: skyblue;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f023";
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f09d";
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card {
+  background: white;
+  border: 0 none;
+  border-radius: 0px;
+  padding: 20px 40px 30px 40px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+  position: relative;
+  text-align: left;
+  color: #9e9e9e;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .fs-title {
+  font-size: 25px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card input {
+  padding: 0px 8px 8px 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card input:focus {
+  box-shadow: none !important;
+  border: none;
+  font-weight: bold;
+  border-bottom: 2px solid skyblue;
+  outline-width: 0;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card textarea {
+  padding: 0px 8px 4px 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card textarea:focus {
+  box-shadow: none !important;
+  border: none;
+  font-weight: bold;
+  border-bottom: 2px solid skyblue;
+  outline-width: 0;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card select.list-dt {
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 5px 3px 5px;
+  margin: 2px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card select.list-dt:focus {
+  border-bottom: 2px solid skyblue;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group {
+  position: relative;
+  margin-bottom: 25px;
+  min-height: 150px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio {
+  display: inline-block;
+  border-radius: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px 5px;
+  padding: 3px 15px;
+  transition: 0.3s;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio img {
+  width: 40px;
+  transition: 0.3s;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio.selected {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .fit-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
+  width: 100px;
+  background: #004a96;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #004a96;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
 }/*# sourceMappingURL=style.css.map */
