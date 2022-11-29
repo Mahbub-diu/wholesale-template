@@ -6486,8 +6486,8 @@ a {
   position: absolute;
   top: -6px;
   right: -6px;
-  background-color: #004a96;
-  color: #fff;
+  background-color: #fff;
+  color: #004a96;
   width: 20px;
   height: 20px;
   font-size: 10px;
@@ -6503,6 +6503,7 @@ a {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
   transform: scale(1);
+  border: 2px solid #004a96;
 }
 @-webkit-keyframes scaleBounce {
   0% {
@@ -6561,9 +6562,7 @@ a {
   cursor: pointer;
   padding: 20px 5px;
   margin: 10px 5px;
-}
-.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #004a96;
+  font-size: 16px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous {
   width: 200px;
@@ -6575,7 +6574,5 @@ a {
   cursor: pointer;
   padding: 20px 5px;
   margin: 10px 5px;
-}
-.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:hover, .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button-previous:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

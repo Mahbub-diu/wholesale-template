@@ -5909,8 +5909,8 @@ a {
                   position: absolute;
                   top: -6px;
                   right: -6px;
-                  background-color: $logo-blue;
-                  color: $white;
+                  background-color: $white;
+                  color: $logo-blue;
                   width: 20px;
                   height: 20px;
                   font-size: 10px;
@@ -5923,6 +5923,7 @@ a {
                   animation-iteration-count: 1;
                   animation-timing-function: ease-out;
                   transform: scale(1);
+                  border: 2px solid $logo-blue;
                 }
 
     
@@ -5964,10 +5965,11 @@ a {
             cursor: pointer;
             padding: 20px 5px;
             margin: 10px 5px;
+            font-size: 16px;
 
             &:hover,
             &:focus {
-              box-shadow: 0 0 0 2px white, 0 0 0 3px $logo-blue;
+              // box-shadow: 0 0 0 2px white, 0 0 0 3px $logo-blue;
             }
           }
 
@@ -5981,10 +5983,11 @@ a {
             cursor: pointer;
             padding: 20px 5px;
             margin: 10px 5px;
+            font-size: 16px;
 
             &:hover,
             &:focus {
-              box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+              // box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
             }
           }
         }
