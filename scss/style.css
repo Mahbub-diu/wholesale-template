@@ -6340,6 +6340,7 @@ a {
   margin-bottom: 30px;
   overflow: hidden;
   color: lightgrey;
+  padding: 0 50px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar:active {
   color: #000000;
@@ -6347,7 +6348,7 @@ a {
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li {
   list-style-type: none;
   font-size: 12px;
-  width: 25%;
+  width: 33.33%;
   float: left;
   position: relative;
 }
@@ -6379,7 +6380,7 @@ a {
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar li.active {
   list-style-type: none;
   font-size: 12px;
-  width: 25%;
+  width: 33.33%;
   float: left;
   position: relative;
   color: #004a96;
@@ -6441,12 +6442,7 @@ a {
   text-align: left;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card input {
-  padding: 0px 8px 8px 8px;
-  border: none;
-  border-bottom: 1px solid #ccc;
   border-radius: 0px;
-  margin-bottom: 25px;
-  margin-top: 2px;
   width: 100%;
   box-sizing: border-box;
   color: #2c3e50;
@@ -6455,15 +6451,11 @@ a {
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card input:focus {
   box-shadow: none !important;
-  border: none;
   font-weight: bold;
-  border-bottom: 2px solid skyblue;
   outline-width: 0;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card textarea {
   padding: 0px 8px 4px 8px;
-  border: none;
-  border-bottom: 1px solid #ccc;
   border-radius: 0px;
   margin-bottom: 25px;
   margin-top: 2px;
@@ -6591,6 +6583,36 @@ a {
   100% {
     transform: scale(1);
   }
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main {
+  color: rgba(0, 0, 0, 0.87);
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main select {
+  border-radius: 0;
+  color: #a1a1a1;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main select:focus {
+  box-shadow: none;
+  border-color: #004a96;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main select option:hover {
+  background: #004a96 !important;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main .form-check {
+  display: flex;
+  align-items: center;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main .form-check .form-check-input {
+  width: 20px;
+  height: 20px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main .form-check .form-check-label {
+  display: inline-block;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main vr {
+  width: 1px solid;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
   width: 200px;

@@ -5677,8 +5677,6 @@ a {
     -o-border-radius: 0.25rem;
 
     #grad1 {
-      
-
       .card {
         z-index: 0;
         border: none;
@@ -5702,6 +5700,7 @@ a {
           margin-bottom: 30px;
           overflow: hidden;
           color: lightgrey;
+          padding: 0 50px;
 
           &:active {
             color: #000000;
@@ -5710,7 +5709,7 @@ a {
           li {
             list-style-type: none;
             font-size: 12px;
-            width: 25%;
+            width: 33.33%;
             float: left;
             position: relative;
 
@@ -5752,7 +5751,7 @@ a {
           li.active {
             list-style-type: none;
             font-size: 12px;
-            width: 25%;
+            width: 33.33%;
             float: left;
             position: relative;
             color: $logo-blue;
@@ -5839,12 +5838,12 @@ a {
             }
 
             input {
-              padding: 0px 8px 8px 8px;
-              border: none;
-              border-bottom: 1px solid #ccc;
+              // padding: 0px 8px 8px 8px;
+              // border: none;
+              // border-bottom: 1px solid #ccc;
               border-radius: 0px;
-              margin-bottom: 25px;
-              margin-top: 2px;
+              // margin-bottom: 25px;
+              // margin-top: 2px;
               width: 100%;
               box-sizing: border-box;
               // font-family: montserrat;
@@ -5856,17 +5855,17 @@ a {
                 -moz-box-shadow: none !important;
                 -webkit-box-shadow: none !important;
                 box-shadow: none !important;
-                border: none;
+                // border: none;
                 font-weight: bold;
-                border-bottom: 2px solid skyblue;
+                // border-bottom: 2px solid skyblue;
                 outline-width: 0;
               }
             }
 
             textarea {
               padding: 0px 8px 4px 8px;
-              border: none;
-              border-bottom: 1px solid #ccc;
+              // border: none;
+              // border-bottom: 1px solid #ccc;
               border-radius: 0px;
               margin-bottom: 25px;
               margin-top: 2px;
@@ -5988,6 +5987,47 @@ a {
               50% {transform: scale(1.5)}
               100% {transform: scale(1);}
             }
+
+            .checkout-fieldset-main{
+              color: $text-color;
+              select{
+                // border: none;
+                // border-bottom: 1px solid #ced4da;
+                border-radius: 0;
+                color: $d-grey;
+
+                &:focus{
+                  box-shadow: none;
+                  border-color: $logo-blue;
+                }
+
+                option{
+                  &:hover{
+                    background: $logo-blue !important;
+                  }
+                }
+              }
+
+              .form-check{
+                display: flex;
+                align-items: center;
+                .form-check-input{
+                  width: 20px;
+                  height: 20px;
+                }
+                .form-check-label{
+                  display: inline-block;
+                  margin-left: 10px;
+                  color: $text-color;
+                }
+              }
+
+              vr{
+                width: 1px solid;
+              }
+              
+            }
+
           }
 
           .action-button {
