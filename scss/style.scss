@@ -5798,6 +5798,7 @@ a {
             }
           }
         }
+        
 
         fieldset {
           background: white;
@@ -5814,6 +5815,8 @@ a {
           &:not(:first-of-type) {
             display: none;
           }
+
+          
 
           .form-card {
             background: white;
@@ -5897,6 +5900,7 @@ a {
                 border-bottom: 2px solid skyblue;
               }
             }
+            
 
             .radio-group {
               position: relative;
@@ -5906,12 +5910,9 @@ a {
               .radio {
                 display: inline-block;
                 border-radius: 0;
-                // background: rgb(255, 255, 255);
-                // box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
                 box-sizing: border-box;
                 cursor: pointer;
                 margin: 8px 5px;
-                // padding: 3px 15px;
                 transition: 0.3s;
                 position: relative;
 
@@ -5924,18 +5925,15 @@ a {
                 }
 
                 &:hover {
-                  // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
                   transform: scale(1.1);
                 }
               }
 
               .radio.selected {
-                // box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
                 transform: scale(1);
                 animation: cardBounce 0.2s;
-                  animation-iteration-count: 1;
-                  animation-timing-function: ease-out;
-                  // transform: scale(1);
+                animation-iteration-count: 1;
+                animation-timing-function: ease-out;
 
                 @keyframes cardBounce {
                   0% {transform: scale(1)}
@@ -6015,8 +6013,7 @@ a {
             .checkout-fieldset-main {
               color: $text-color;
               select {
-                // border: none;
-                // border-bottom: 1px solid #ced4da;
+                
                 border-radius: 0;
                 color: $d-grey;
 
@@ -6047,35 +6044,8 @@ a {
                 }
               }
 
-              vr {
-                width: 1px solid;
-              }
-
-              .table-responsive {
-                .table {
-                  margin-bottom: 0;
-                  border-color: red;
-                }
-                thead {
-                  th {
-                    text-transform: uppercase;
-                    font-size: 18px !important;
-                  }
-                }
-                tbody {
-                  tr {
-                    th {
-                      
-                    }
-                    td {
-                      
-                    }
-                  }
-                  tr {
-                    
-                  }
-                }
-              }
+             
+               
             }
 
             
@@ -6114,10 +6084,7 @@ a {
             margin: 10px 5px;
             font-size: 16px;
 
-            &:hover,
-            &:focus {
-              // box-shadow: 0 0 0 2px white, 0 0 0 3px $logo-blue;
-            }
+           
           }
 
           .action-button-previous {
@@ -6132,14 +6099,39 @@ a {
             margin: 10px 5px;
             font-size: 16px;
 
-            &:hover,
-            &:focus {
-              // box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
-            }
+            
           }
         }
       }
     }
   }
+  .checkout-table{
+    thead{
+      tr{
+        th{
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 18px !important;
+          vertical-align: middle;
+          color: $logo-blue;
+          border: none;
+        }
+      }
+    }
+
+    tbody{
+      tr{
+        td{
+          border: none;
+          padding: 20px 0;
+          font-size: 14px;
+          font-weight: 400;
+        }
+        .total-title{
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
-   
