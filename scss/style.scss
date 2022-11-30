@@ -5687,7 +5687,7 @@ a {
         text-align: center;
         position: relative;
         margin-top: 20px;
-        border: 1px solid $d-grey;
+        // border: 1px solid $d-grey;
         padding: 40px 20px;
 
         h2{
@@ -5819,7 +5819,7 @@ a {
             border: 0 none;
             border-radius: 0px;
             // box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-            padding: 20px 40px 30px 40px;
+            padding: 20px 0px 30px 0px;
             box-sizing: border-box;
             width: 94%;
             margin: 0 3% 20px 3%;
@@ -5906,17 +5906,17 @@ a {
               .radio {
                 display: inline-block;
                 border-radius: 0;
-                background: rgb(255, 255, 255);
-                box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+                // background: rgb(255, 255, 255);
+                // box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
                 box-sizing: border-box;
                 cursor: pointer;
                 margin: 8px 5px;
-                padding: 3px 15px;
+                // padding: 3px 15px;
                 transition: 0.3s;
                 position: relative;
 
                 img{
-                  width: 40px;
+                  width: 150px;
                   transition: 0.3s;
 
                   &:hover{
@@ -5925,7 +5925,7 @@ a {
                 }
 
                 &:hover {
-                  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+                  // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
                   transform: scale(1.1);
                 }
 
@@ -5934,7 +5934,17 @@ a {
 
               .radio.selected {
                 box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
-                transform: scale(1.1);
+                transform: scale(1);
+                animation: cardBounce 0.2s;
+                  animation-iteration-count: 1;
+                  animation-timing-function: ease-out;
+                  // transform: scale(1);
+
+                @keyframes cardBounce {
+                  0% {transform: scale(1)}
+                  50% {transform: scale(0.9)}
+                  100% {transform: scale(1);}
+                }
 
                 &::after{
                   font-family: FontAwesome;
@@ -5944,9 +5954,9 @@ a {
                   right: -6px;
                   background-color: $white;
                   color: $logo-blue;
-                  width: 20px;
-                  height: 20px;
-                  font-size: 10px;
+                  width: 30px;
+                  height: 30px;
+                  font-size: 12px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -5956,7 +5966,7 @@ a {
                   animation-iteration-count: 1;
                   animation-timing-function: ease-out;
                   transform: scale(1);
-                  border: 2px solid $logo-blue;
+                  border: 4px solid $logo-blue;
                 }
 
     
@@ -6010,6 +6020,7 @@ a {
               .form-check{
                 display: flex;
                 align-items: center;
+                padding-left: 2em;
                 .form-check-input{
                   width: 20px;
                   height: 20px;
