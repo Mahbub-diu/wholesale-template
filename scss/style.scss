@@ -1,8 +1,8 @@
-@import "partials/variables";
-@import "partials/mixin";
-@import "partials/classes";
-@import "partials/colors";
-@import "partials/common";
+@import 'partials/variables';
+@import 'partials/mixin';
+@import 'partials/classes';
+@import 'partials/colors';
+@import 'partials/common';
 
 body {
   font-size: 17px;
@@ -549,9 +549,9 @@ a {
           right: 0;
           top: 10px;
 
-          content: "\f054";
+          content: '\f054';
           font-weight: 900;
-          font-family: "Font Awesome 6 Free";
+          font-family: 'Font Awesome 6 Free';
           color: $text-color;
 
           font-size: 13px;
@@ -1232,7 +1232,7 @@ a {
                   }
                   .dropdown-toggle-up {
                     &::after {
-                      content: "\f077" !important;
+                      content: '\f077' !important;
                     }
                   }
                 }
@@ -1446,7 +1446,7 @@ a {
                     }
                     .dropdown-toggle-up {
                       &::after {
-                        content: "\f077" !important;
+                        content: '\f077' !important;
                       }
                     }
                   }
@@ -1960,7 +1960,7 @@ a {
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 30px;
         bottom: -24px;
@@ -2079,9 +2079,9 @@ a {
           font-size: 14px;
 
           &::before {
-            content: "\f054" !important;
+            content: '\f054' !important;
             font-weight: 900;
-            font-family: "Font Awesome 6 Free";
+            font-family: 'Font Awesome 6 Free';
             font-size: 12px;
           }
         }
@@ -2336,7 +2336,7 @@ a {
                   }
                   .dropdown-toggle-up {
                     &::after {
-                      content: "\f077" !important;
+                      content: '\f077' !important;
                     }
                   }
                 }
@@ -2443,17 +2443,17 @@ a {
           }
 
           // ---------- sakib -------------
-          .remove-wishlist-section{
+          .remove-wishlist-section {
             position: absolute;
             top: 10px;
             right: 10px;
-            button{
+            button {
               background-color: transparent;
               border: none;
               font-size: 14px;
               transition: 0.5s;
               color: $logo-red;
-              &:hover{
+              &:hover {
                 transform: scale(1.2);
               }
             }
@@ -2488,7 +2488,7 @@ a {
         display: inline-block;
         text-transform: capitalize;
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           top: 50%;
           margin-top: -1px;
@@ -3150,7 +3150,7 @@ a {
             position: relative;
             &::after {
               position: absolute;
-              content: "";
+              content: '';
               top: 0;
               right: 0;
               width: 1px;
@@ -3229,7 +3229,7 @@ a {
             border-right-color: transparent;
             border-left-color: transparent;
             position: absolute;
-            content: "";
+            content: '';
             bottom: -20px;
             @include transX-center;
           }
@@ -3608,7 +3608,7 @@ a {
         margin-right: 20px;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           width: 100%;
           height: 1px;
           background: $logo-red;
@@ -3684,7 +3684,7 @@ a {
               position: absolute;
               top: 10px;
               right: 7px;
-              content: "";
+              content: '';
               border-color: #fff transparent transparent;
               border-style: solid;
               border-width: 5px 4px;
@@ -3694,7 +3694,7 @@ a {
               top: 0;
               right: -7px;
               display: inline-block;
-              content: "";
+              content: '';
               border-color: rgb(255 64 71) transparent;
               border-style: solid;
               border-width: 12px 7px;
@@ -4212,7 +4212,7 @@ a {
         margin-right: 20px;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           width: 100%;
           height: 1px;
           background: $logo-red;
@@ -4288,7 +4288,7 @@ a {
               position: absolute;
               top: 10px;
               right: 7px;
-              content: "";
+              content: '';
               border-color: #fff transparent transparent;
               border-style: solid;
               border-width: 5px 4px;
@@ -4298,7 +4298,7 @@ a {
               top: 0;
               right: -7px;
               display: inline-block;
-              content: "";
+              content: '';
               border-color: rgb(255 64 71) transparent;
               border-style: solid;
               border-width: 12px 7px;
@@ -4730,7 +4730,7 @@ a {
         position: relative;
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 100%;
           left: 50px;
@@ -4803,6 +4803,7 @@ a {
           text-transform: capitalize;
         }
       }
+
       .review-data {
         p {
           font-size: 14px;
@@ -4830,357 +4831,358 @@ a {
       }
     }
   }
+}
+.morecategory-main {
+  margin: 20px 0;
+  .more-bg {
+    background: #fff;
+    padding: 20px 17px;
 
-  .morecategory-main {
-    margin: 20px 0;
-    .more-bg {
-      background: #fff;
-      padding: 20px 17px;
-
-      border-radius: 0.25rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      -ms-border-radius: 0.25rem;
-      -o-border-radius: 0.25rem;
-      h3.common-title {
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    h3.common-title {
+      color: $logo-blue;
+      margin-bottom: 10px;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $d-grey;
+      font-size: 14px;
+      text-transform: capitalize;
+      padding: 5px 20px;
+      &:hover {
         color: $logo-blue;
-        margin-bottom: 10px;
-      }
-    }
-    .nav-item {
-      .nav-link {
-        color: $d-grey;
-        font-size: 14px;
-        text-transform: capitalize;
-        padding: 5px 20px;
-        &:hover {
-          color: $logo-blue;
-        }
-      }
-    }
-    .nav-item:first-child {
-      .nav-link {
-        padding-left: 0;
       }
     }
   }
-  .membership-main {
-    margin: 20px 0;
-    .membership-bg {
-      background: #fff;
-      padding: 20px 17px;
-      border-radius: 0.25rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      -ms-border-radius: 0.25rem;
-      -o-border-radius: 0.25rem;
+  .nav-item:first-child {
+    .nav-link {
+      padding-left: 0;
     }
-    .common-fieldset-main {
-      margin-bottom: 0;
-      .card {
-        border-color: $l-gray;
-        @include no-radious;
-        img {
-          height: 100%;
-          width: 100%;
+  }
+}
+
+.membership-main {
+  margin: 20px 0;
+
+  .membership-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+  }
+  .common-fieldset-main {
+    margin-bottom: 0;
+    .card {
+      border-color: $l-gray;
+      @include no-radious;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .card-body {
+        .card-title {
+          text-transform: capitalize;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 7px;
         }
-        .card-body {
-          .card-title {
-            text-transform: capitalize;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 7px;
-          }
-          p.instant-saving {
-            text-transform: capitalize;
-            font-size: 15px;
-            font-weight: 400;
-            margin-bottom: 7px;
-            color: $logo-red;
-          }
-          .purchase-membership {
-            min-width: 200px;
-            background: $logo-blue;
-            font-size: 15px;
-            text-transform: capitalize;
-            padding: 7px 15px;
-            color: #fff;
-            @include no-radious;
-          }
-          p.membership-price {
-            text-transform: capitalize;
-            font-size: 15px;
-            font-weight: 400;
-            margin-bottom: 10px;
-            color: $text-color;
-          }
+        p.instant-saving {
+          text-transform: capitalize;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 7px;
+          color: $logo-red;
+        }
+        .purchase-membership {
+          min-width: 200px;
+          background: $logo-blue;
+          font-size: 15px;
+          text-transform: capitalize;
+          padding: 7px 15px;
+          color: #fff;
+          @include no-radious;
+        }
+        p.membership-price {
+          text-transform: capitalize;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          color: $text-color;
         }
       }
     }
+  }
+}
+
+.brand-partner-main {
+  margin-bottom: 20px;
+  .bp-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+  }
+  .common-title-flex {
+    margin-bottom: 20px;
+  }
+  .image-box {
+    height: 70px;
+    max-height: 70px;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      max-height: 70px;
+      margin: 0px auto;
+    }
+  }
+  .slick-slide {
+    margin: 0 10px;
   }
 
-  .brand-partner-main {
-    margin-bottom: 20px;
-    .bp-bg {
-      background: #fff;
-      padding: 20px 17px;
+  .slick-list {
+    margin: 0 -10px;
+  }
+  .discount {
+    text-align: center;
+    color: $logo-red;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .slick-next {
+    @include common-slick-next;
+  }
+  .slick-prev {
+    @include common-slick-prev;
+  }
+}
+.discount-chart {
+  margin-bottom: 20px;
+  .chart-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+  }
+  .common-fieldset-main {
+    margin-bottom: 0;
+    position: relative;
+    .downoload-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      background: #004a96;
+      text-align: center;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+  .table-responsive {
+    .table {
+      margin-bottom: 0;
+    }
+    thead {
+      th {
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+    tbody {
+      tr {
+        th {
+          text-transform: capitalize;
+          font-size: 15px;
+        }
+        td {
+          text-transform: capitalize;
+          font-size: 15px;
+        }
+      }
+      tr {
+        td:nth-child(3) {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.club-register {
+  margin-bottom: 20px;
+  .club-bg {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    img {
       border-radius: 0.25rem;
     }
-    .common-title-flex {
+  }
+  .club-reg-content {
+    padding: 100px 0;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 0;
+      margin-bottom: 20px;
+      color: $light-blue;
+    }
+    p {
+      font-size: 16px;
+      color: $text-color;
+      font-weight: normal;
       margin-bottom: 20px;
     }
-    .image-box {
-      height: 70px;
-      max-height: 70px;
-      margin-bottom: 10px;
-
-      img {
-        max-width: 100%;
-        max-height: 70px;
-        margin: 0px auto;
+    .register-membership {
+      background: $logo-blue;
+      text-transform: uppercase;
+      padding: 7px 20px;
+      min-width: 300px;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      border: 1px solid $logo-blue;
+      &:hover {
+        background: #fff;
+        color: $logo-blue;
       }
     }
-    .slick-slide {
-      margin: 0 10px;
-    }
+  }
+}
 
-    .slick-list {
-      margin: 0 -10px;
+.club-renew {
+  margin-bottom: 20px;
+  .renew-bg {
+    padding: 70px 17px;
+    background: url(../images/club/wicked-bg-the7-5.svg);
+    border-radius: 0.25rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #004a967a;
+      content: '';
     }
-    .discount {
-      text-align: center;
-      color: $logo-red;
-      font-size: 17px;
+    h3 {
+      color: #fff;
+      font-size: 20px;
       font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 0;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
     }
-    .slick-next {
-      @include common-slick-next;
-    }
-    .slick-prev {
-      @include common-slick-prev;
+    .renew-btn {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background: #fff;
+      font-size: 15px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      color: $logo-blue;
+      min-width: 300px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        background: $logo-blue;
+        color: #fff;
+      }
     }
   }
-  .discount-chart {
-    margin-bottom: 20px;
-    .chart-bg {
-      background: #fff;
-      padding: 20px 17px;
-      border-radius: 0.25rem;
+}
+
+.all-brand-main {
+  margin: 20px 0;
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    .card {
+      @include shop-category-card;
+      margin-bottom: 0;
+
+      .card-body {
+        .image-box {
+          @include shop-category-card-image-box;
+
+          img {
+            @include shop-category-card-image-box-img;
+          }
+        }
+        .product-title {
+          h4 {
+            @include shop-category-card-prodcut-title-h4;
+          }
+          h6 {
+            @include shop-category-card-prodcut-title-h6;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+        .product-title {
+          h4 {
+            color: $logo-blue;
+          }
+        }
+      }
     }
-    .common-fieldset-main {
+  }
+}
+
+.single-brand-main {
+  margin: 20px 0;
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    .card {
+      border-color: #f1f1f1;
       margin-bottom: 0;
       position: relative;
-      .downoload-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 25px;
-        height: 25px;
-        background: #004a96;
-        text-align: center;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a {
-          color: #fff;
-          font-size: 16px;
-        }
-      }
-    }
-    .table-responsive {
-      .table {
-        margin-bottom: 0;
-      }
-      thead {
-        th {
-          text-transform: uppercase;
-          font-size: 18px;
-        }
-      }
-      tbody {
-        tr {
-          th {
-            text-transform: capitalize;
-            font-size: 15px;
-          }
-          td {
-            text-transform: capitalize;
-            font-size: 15px;
-          }
-        }
-        tr {
-          td:nth-child(3) {
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-  }
-  .club-register {
-    margin-bottom: 20px;
-    .club-bg {
-      background: #fff;
-      padding: 20px 17px;
-      border-radius: 0.25rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      -ms-border-radius: 0.25rem;
-      -o-border-radius: 0.25rem;
-      img {
-        border-radius: 0.25rem;
-      }
-    }
-    .club-reg-content {
-      padding: 100px 0;
-      h3 {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-bottom: 0;
-        margin-bottom: 20px;
-        color: $light-blue;
-      }
-      p {
-        font-size: 16px;
-        color: $text-color;
-        font-weight: normal;
-        margin-bottom: 20px;
-      }
-      .register-membership {
-        background: $logo-blue;
-        text-transform: uppercase;
-        padding: 7px 20px;
-        min-width: 300px;
-        color: #fff;
-        font-size: 15px;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        border: 1px solid $logo-blue;
-        &:hover {
-          background: #fff;
-          color: $logo-blue;
-        }
-      }
-    }
-  }
-
-  .club-renew {
-    margin-bottom: 20px;
-    .renew-bg {
-      padding: 70px 17px;
-      background: url(../images/club/wicked-bg-the7-5.svg);
-      border-radius: 0.25rem;
-      text-align: center;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      position: relative;
-
-      &::before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #004a967a;
-        content: "";
-      }
-      h3 {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-bottom: 0;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-      }
-      .renew-btn {
-        text-transform: uppercase;
-        padding: 10px 20px;
-        background: #fff;
-        font-size: 15px;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        color: $logo-blue;
-        min-width: 300px;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        &:hover {
-          background: $logo-blue;
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  .all-brand-main {
-    margin: 20px 0;
-    .tab-content {
-      background: #fff;
-      padding: 20px 17px;
-      border-radius: 0.25rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      -ms-border-radius: 0.25rem;
-      -o-border-radius: 0.25rem;
-      .card {
-        @include shop-category-card;
-        margin-bottom: 0;
-
-        .card-body {
-          .image-box {
-            @include shop-category-card-image-box;
-
-            img {
-              @include shop-category-card-image-box-img;
-            }
-          }
-          .product-title {
-            h4 {
-              @include shop-category-card-prodcut-title-h4;
-            }
-            h6 {
-              @include shop-category-card-prodcut-title-h6;
-            }
-          }
-        }
-        &:hover {
-          box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
-          .product-title {
-            h4 {
-              color: $logo-blue;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .single-brand-main {
-    margin: 20px 0;
-    .tab-content {
-      background: #fff;
-      padding: 20px 17px;
-      border-radius: 0.25rem;
-      -webkit-border-radius: 0.25rem;
-      -moz-border-radius: 0.25rem;
-      -ms-border-radius: 0.25rem;
-      -o-border-radius: 0.25rem;
-      .card {
-        border-color: #f1f1f1;
-        margin-bottom: 0;
-        position: relative;
-      }
     }
   }
 }
@@ -5544,7 +5546,7 @@ a {
             margin-right: 20px;
             &::before {
               position: absolute;
-              content: "";
+              content: '';
               width: 100%;
               height: 1px;
               background: $d-grey;
@@ -5690,10 +5692,12 @@ a {
         border: 1px solid $d-grey;
         padding: 40px 20px;
 
-        h2{
+        h2 {
           color: $logo-blue;
         }
-        p{margin-bottom: 50px;}
+        p {
+          margin-bottom: 50px;
+        }
 
         #progressbar {
           margin-bottom: 30px;
@@ -5729,7 +5733,7 @@ a {
             }
 
             &:after {
-              content: "";
+              content: '';
               width: 100%;
               height: 2px;
               background: lightgray;
@@ -5763,37 +5767,33 @@ a {
             &:after {
               background: $logo-blue;
             }
-
-            
           }
-
-         
 
           #account {
             &:before {
               font-family: FontAwesome;
-              content: "\f023";
+              content: '\f023';
             }
           }
 
           #personal {
             &:before {
               font-family: FontAwesome;
-              content: "\f007";
+              content: '\f007';
             }
           }
 
           #payment {
             &:before {
               font-family: FontAwesome;
-              content: "\f09d";
+              content: '\f09d';
             }
           }
 
           #confirm {
             &:before {
               font-family: FontAwesome;
-              content: "\f00c";
+              content: '\f00c';
             }
           }
         }
@@ -5915,12 +5915,11 @@ a {
                 transition: 0.3s;
                 position: relative;
 
-                img{
+                img {
                   width: 40px;
                   transition: 0.3s;
 
-                  &:hover{
-                    
+                  &:hover {
                   }
                 }
 
@@ -5928,17 +5927,15 @@ a {
                   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
                   transform: scale(1.1);
                 }
-
-
               }
 
               .radio.selected {
                 box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
                 transform: scale(1.1);
 
-                &::after{
+                &::after {
                   font-family: FontAwesome;
-                  content: "\f00c";
+                  content: '\f00c';
                   position: absolute;
                   top: -6px;
                   right: -6px;
@@ -5959,13 +5956,17 @@ a {
                   border: 2px solid $logo-blue;
                 }
 
-    
                 @keyframes scaleBounce {
-                  0% {transform: scale(0.5)}
-                  50% {transform: scale(1.1)}
-                  100% {transform: scale(1);}
+                  0% {
+                    transform: scale(0.5);
+                  }
+                  50% {
+                    transform: scale(1.1);
+                  }
+                  100% {
+                    transform: scale(1);
+                  }
                 }
-                
               }
             }
 
@@ -5974,7 +5975,7 @@ a {
               object-fit: cover;
             }
 
-            .check-img{
+            .check-img {
               animation: scaleBounce 0.5s;
               animation-iteration-count: 1;
               animation-timing-function: ease-out;
@@ -5982,51 +5983,55 @@ a {
             }
 
             @keyframes scaleBounce {
-              0% {transform: scale(0.5)}
-              50% {transform: scale(1.5)}
-              100% {transform: scale(1);}
+              0% {
+                transform: scale(0.5);
+              }
+              50% {
+                transform: scale(1.5);
+              }
+              100% {
+                transform: scale(1);
+              }
             }
 
-            .checkout-fieldset-main{
+            .checkout-fieldset-main {
               color: $text-color;
-              select{
+              select {
                 // border: none;
                 // border-bottom: 1px solid #ced4da;
                 border-radius: 0;
                 color: $d-grey;
 
-                &:focus{
+                &:focus {
                   box-shadow: none;
                   border-color: $logo-blue;
                 }
 
-                option{
-                  &:hover{
+                option {
+                  &:hover {
                     background: $logo-blue !important;
                   }
                 }
               }
 
-              .form-check{
+              .form-check {
                 display: flex;
                 align-items: center;
-                .form-check-input{
+                .form-check-input {
                   width: 20px;
                   height: 20px;
                 }
-                .form-check-label{
+                .form-check-label {
                   display: inline-block;
                   margin-left: 10px;
                   color: $text-color;
                 }
               }
 
-              vr{
+              vr {
                 width: 1px solid;
               }
-              
             }
-
           }
 
           .action-button {
