@@ -5915,13 +5915,8 @@ a {
                 transition: 0.3s;
                 position: relative;
 
-<<<<<<< HEAD
-                img {
-                  width: 40px;
-=======
                 img{
                   width: 150px;
->>>>>>> nazmus
                   transition: 0.3s;
 
                   &:hover {
@@ -6032,12 +6027,8 @@ a {
               .form-check {
                 display: flex;
                 align-items: center;
-<<<<<<< HEAD
-                .form-check-input {
-=======
                 padding-left: 2em;
                 .form-check-input{
->>>>>>> nazmus
                   width: 20px;
                   height: 20px;
                 }
@@ -6094,3 +6085,4 @@ a {
     }
   }
 }
+   
