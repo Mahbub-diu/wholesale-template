@@ -2913,15 +2913,15 @@ a {
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
-  background: #ec2028;
+  background: #c40000;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .save-monthly-btn i {
   margin-right: 5px;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .save-monthly-btn:hover {
   background: #fff;
-  border-color: #ec2028;
-  color: #ec2028;
+  border-color: #c40000;
+  color: #c40000;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .addto-quote-btn {
   color: #fff;
@@ -6402,10 +6402,6 @@ a {
   font-family: FontAwesome;
   content: "\f023";
 }
-.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007";
-}
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #payment:before {
   font-family: FontAwesome;
   content: "\f09d";
@@ -6646,6 +6642,28 @@ a {
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main vr {
   width: 1px solid;
 }
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main .table-responsive .table {
+  margin-bottom: 0;
+  border-color: red;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main .table-responsive thead th {
+  text-transform: uppercase;
+  font-size: 18px !important;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .form-control {
+  width: 50%;
+  font-size: 14px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .form-control:focus {
+  font-weight: normal;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .btn {
+  background-color: #004a96;
+  border-radius: 0;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
   width: 200px;
   background: #004a96;
@@ -6654,7 +6672,7 @@ a {
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 20px 5px;
+  padding: 15px 5px;
   margin: 10px 5px;
   font-size: 16px;
 }
@@ -6666,7 +6684,7 @@ a {
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 20px 5px;
+  padding: 15px 5px;
   margin: 10px 5px;
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
