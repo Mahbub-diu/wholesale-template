@@ -2975,15 +2975,15 @@ a {
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
-  background: #2b882f;
+  background: #c40000;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .save-monthly-btn i {
   margin-right: 5px;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .save-monthly-btn:hover {
   background: #fff;
-  border-color: #2b882f;
-  color: #2b882f;
+  border-color: #c40000;
+  color: #c40000;
 }
 .product-view-main .tab-content .single-product .card .card-body .addtocart-section .addto-quote-btn {
   color: #fff;
@@ -6464,10 +6464,6 @@ a {
   font-family: FontAwesome;
   content: "\f023";
 }
-.multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007";
-}
 .multistep-form-main .multistep-form-bg #grad1 #msform #progressbar #payment:before {
   font-family: FontAwesome;
   content: "\f09d";
@@ -6524,21 +6520,20 @@ a {
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card textarea {
   padding: 0px 8px 4px 8px;
+  border: 1px solid #ced4da;
   border-radius: 0px;
   margin-bottom: 25px;
   margin-top: 2px;
   width: 100%;
   box-sizing: border-box;
-  font-family: montserrat;
   color: #2c3e50;
   font-size: 16px;
   letter-spacing: 1px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card textarea:focus {
   box-shadow: none !important;
-  border: none;
   font-weight: bold;
-  border-bottom: 2px solid skyblue;
+  border-color: #004a96;
   outline-width: 0;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card select.list-dt {
@@ -6573,7 +6568,6 @@ a {
   transform: scale(1.1);
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .radio-group .radio.selected {
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   transform: scale(1);
   -webkit-animation: cardBounce 0.2s;
           animation: cardBounce 0.2s;
@@ -6608,10 +6602,10 @@ a {
   font-family: FontAwesome;
   content: "\f00c";
   position: absolute;
-  top: -6px;
-  right: -6px;
-  background-color: #fff;
-  color: #004a96;
+  top: -8px;
+  right: -8px;
+  background-color: #004a96;
+  color: #fff;
   width: 30px;
   height: 30px;
   font-size: 12px;
@@ -6627,7 +6621,7 @@ a {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
   transform: scale(1);
-  border: 4px solid #004a96;
+  border: 4px solid #fff;
 }
 @-webkit-keyframes scaleBounce {
   0% {
@@ -6650,6 +6644,9 @@ a {
   100% {
     transform: scale(1);
   }
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .additional-information label {
+  font-size: 16px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .fit-image {
   width: 100%;
@@ -6704,8 +6701,19 @@ a {
   margin-left: 10px;
   color: rgba(0, 0, 0, 0.87);
 }
-.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .checkout-fieldset-main vr {
-  width: 1px solid;
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .form-control {
+  width: 50%;
+  font-size: 14px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .form-control:focus {
+  font-weight: normal;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .cupon-input .btn {
+  background-color: #004a96;
+  border-radius: 0;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
   width: 200px;
@@ -6715,7 +6723,7 @@ a {
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 20px 5px;
+  padding: 15px 5px;
   margin: 10px 5px;
   font-size: 16px;
 }
@@ -6727,10 +6735,29 @@ a {
   border: 0 none;
   border-radius: 0px;
   cursor: pointer;
-  padding: 20px 5px;
+  padding: 15px 5px;
   margin: 10px 5px;
   font-size: 16px;
 }
+.multistep-form-main .checkout-table thead tr th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px !important;
+  vertical-align: middle;
+  color: #004a96;
+  border: none;
+}
+.multistep-form-main .checkout-table tbody tr td {
+  border: none;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.multistep-form-main .checkout-table tbody tr .total-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .bulk-sale-main {
   margin: 20px 0;
 }

@@ -12,7 +12,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i"
     rel="stylesheet" />
-    <link rel="stylesheet" href="/node_modules/multi-step-form-js/css/multi-step-form.css" type="text/css">
+  <!-- <link
+      rel="stylesheet"
+      href="/node_modules/multi-step-form-js/css/multi-step-form.css"
+      type="text/css"
+    /> -->
 
   <link rel="stylesheet" href="./fonts/icofont.min.css" />
   <link rel="stylesheet" href="./fonts/arial-font.css" />
@@ -542,443 +546,346 @@
           <div class="row">
             <div class="col-12">
               <div class="multistep-form-bg">
-
                 <!-- MultiStep Form -->
                 <div class="grad1" id="grad1">
-                    <div class="row justify-content-center mt-0">
-                        <div class="col-11 col-sm-9 col-md-8 col-lg-10 text-center p-0 mt-3 mb-2">
-                            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                                <div class="row">
-                                    <div class="col-md-12 mx-0">
+                  <div class="row justify-content-center mt-0">
+                    <div class="col-11 col-sm-9 col-md-8 col-lg-10 text-center p-0 mt-3 mb-2">
+                      <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                        <div class="row">
+                          <div class="col-md-12 mx-0">
+                            <div class="common-fieldset-main">
+                              <fieldset class="common-fieldset">
+                                <legend>Checkout Form</legend>
 
-                                      <div class="common-fieldset-main">
-                                        <fieldset class="common-fieldset">
-                                          <legend>
-                                            Checkout Form
-                                          </legend>
+                                <form id="msform">
+                                  <!-- <h2><strong>Checkout Form</strong></h2> -->
 
-                                          <form id="msform">
-                                            <!-- <h2><strong>Checkout Form</strong></h2> -->
-            
-                                            <!-- progressbar -->
-                                            <ul id="progressbar">
-                                                <li class="active" id="account"><strong>Address</strong></li>
-                                                <!-- <li id="personal"><strong>Personal</strong></li> -->
-                                                <li id="payment"><strong>Payment</strong></li>
-                                                <li id="confirm"><strong>Finish</strong></li>
-                                            </ul>
+                                  <!-- progressbar -->
+                                  <ul id="progressbar">
+                                    <li class="active" id="account">
+                                      <strong>Address</strong>
+                                    </li>
+                                    <!-- <li id="personal"><strong>Personal</strong></li> -->
+                                    <li id="payment">
+                                      <strong>Payment</strong>
+                                    </li>
+                                    <li id="confirm">
+                                      <strong>Finish</strong>
+                                    </li>
+                                  </ul>
 
-                                            <!-- fieldsets -->
-                                            <fieldset>
-                                                <div class="form-card">
-                                                  <div class="row">
-                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                      <div class="checkout-fieldset-main">
-                                                        <fieldset class="common-fieldset">
-                                                          <legend class="text-center rounded mb-5">Billing Address</legend>
-                                                        <div class="row">
-                                                          <div class="col-6">
-                                                                <div class="mb-3">
-                                                                  <label for="firstName" class="form-label">First Name</label>
-                                                                  <input type="text" class="form-control" id="firstName">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="district" class="form-label">District Name</label>
-                                                                  <select class="form-select" aria-label="Default select example" id="district">
-                                                                    <option selected>Select Your District</option>
-                                                                    <option value="dhaka">Dhaka</option>
-                                                                    <option value="khulna">Khulna</option>
-                                                                    <option value="chittagong">Chittagong</option>
-                                                                  </select>
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="postCode" class="form-label">Post Code</label>
-                                                                  <input type="number" class="form-control" id="postCode">
-                                                                </div>
-                                                          </div>
-                                                          <div class="col-6">
-                                                                <div class="mb-3">
-                                                                  <label for="lastName" class="form-label">Last Name</label>
-                                                                  <input type="text" class="form-control" id="lastName">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="streetAddress" class="form-label">Street Name</label>
-                                                                  <input type="text" class="form-control" id="streetAddress">
-                                                                </div>
-
-                                                              </div>
-                                                        </div>
-                                                        </fieldset>
-
-                                                      </div>
-                                                    </div>
-                                                    
-                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                      <div class="checkout-fieldset-main">
-                                                        <fieldset class="common-fieldset">
-                                                          <legend class="text-center rounded mb-5">Shipping Address</legend>
-                                                        <div class="row">
-                                                          <div class="col-12">
-
-                                                            <div class="mb-3">
-                                                              <label for="firstName" class="form-label">Delivery Option</label>
-                                                              <select class="form-select" id="delivery-option">
-                                                                <option selected>Delivery Option</option>
-                                                                <option value="store">Collect From Store</option>
-                                                                <option value="home">Home Delivery</option>
-                                                              </select>
-                                                            </div>
-                                                            <div class="mb-3 d-none" id="select-store-wrapper">
-                                                              <label for="firstName" class="form-label">Store</label>
-                                                              <select class="form-select" >
-                                                                <option selected>Select Our Store</option>
-                                                                <option value="1">Banani</option>
-                                                                <option value="2">Bashundhara</option>
-                                                                <option value="3">Gulshan</option>
-                                                                <option value="4">Baridhara</option>
-                                                                <option value="5">Uttara</option>
-                                                              </select>
-                                                            </div>
-                                                            
-                                                          </div>
-                                                        </div>
-                                                        <div class="row" id="shipping-address-wrapper">
-                                                          <div class="col-6">
-                                                                <div class="mb-3">
-                                                                  <label for="shipping-firstName" class="form-label">First Name</label>
-                                                                  <input type="text" class="form-control" id="shipping-firstName">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="shipping-district" class="form-label">District Name</label>
-                                                                  <select class="form-select" aria-label="district" id="shipping-district">
-                                                                    <option selected>Select Your District</option>
-                                                                    <option value="dhaka">Dhaka</option>
-                                                                    <option value="khulna">Khulna</option>
-                                                                    <option value="chittagong">Chittagong</option>
-                                                                  </select>
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="shipping-postCode" class="form-label">Post Code</label>
-                                                                  <input type="number" class="form-control" id="shipping-postCode">
-                                                                </div>
-                                                                
-                                                          </div>
-                                                          <div class="col-6">
-                                                                <div class="mb-3">
-                                                                  <label for="shipping-lastName" class="form-label">Last Name</label>
-                                                                  <input type="text" class="form-control" id="shipping-lastName">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                  <label for="shipping-streetAddress" class="form-label">Street Name</label>
-                                                                  <input type="text" class="form-control" id="shipping-streetAddress">
-                                                                </div>
-                                                                
-
-                                                          </div>
-                                                          <div class="col-12">
-                                                            <div class="form-check">
-                                                              <input class="form-check-input" type="checkbox" value="" id="sameAddress">
-                                                              <label class="form-check-label" for="sameAddress">
-                                                                Same as Billing Address
-                                                              </label>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        </fieldset>
-
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <input type="button" name="next" class="next action-button" value="Next Step"/>
-                                            </fieldset>
-
-
-                                            <fieldset>
+                                  <!-- fieldsets -->
+                                  <fieldset>
+                                    <div class="form-card">
+                                      <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                          <div class="checkout-fieldset-main">
+                                            <fieldset class="common-fieldset">
+                                              <legend class="text-center rounded mb-5">
+                                                Billing Address
+                                              </legend>
                                               <div class="row">
-                                                <div class="col-8">
-                                                  <div class="common-fieldset-main">
-                                                    <fieldset class="common-fieldset">
-                                                      <legend>
-                                                        Payment Information
-                                                      </legend>
-                                                      <div class="form-card">
-                                                        <!-- <h2 class="fs-title">Payment Information</h2> -->
-                                                        <div class="radio-group">
-                                                            <div class='radio' data-value="credit"><img src="./images/payment/sslcommerz.png"></div>
-                                                            <div class='radio' data-value="mastercard"><img src="./images/payment/cod.png"></div>
-                                                            <br>
-                                                        </div>
-                                                        
-                                                        <!-- <label class="pay">Card Holder Name*</label>
-                                                        <input type="text" name="holdername" placeholder=""/>
-                                                        <div class="row">
-                                                            <div class="col-9">
-                                                                <label class="pay">Card Number*</label>
-                                                                <input type="text" name="cardno" placeholder=""/>
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <label class="pay">CVC*</label>
-                                                                <input type="password" name="cvcpwd" placeholder="***"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-3">
-                                                                <label class="pay">Expiry Date*</label>
-                                                            </div>
-                                                            <div class="col-9">
-                                                                <select class="list-dt" id="month" name="expmonth">
-                                                                    <option selected>Month</option>
-                                                                    <option>January</option>
-                                                                    <option>February</option>
-                                                                    <option>March</option>
-                                                                    <option>April</option>
-                                                                    <option>May</option>
-                                                                    <option>June</option>
-                                                                    <option>July</option>
-                                                                    <option>August</option>
-                                                                    <option>September</option>
-                                                                    <option>October</option>
-                                                                    <option>November</option>
-                                                                    <option>December</option>
-                                                                </select>
-                                                                <select class="list-dt" id="year" name="expyear">
-                                                                    <option selected>Year</option>
-                                                                </select>
-                                                            </div>
-                                                        </div> -->
-
-                                                        
-                                                    </div>
-                                                    </fieldset>
+                                                <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="firstName" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="firstName" />
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="district" class="form-label">District Name</label>
+                                                    <select class="form-select" aria-label="Default select example"
+                                                      id="district">
+                                                      <option selected>
+                                                        Select Your District
+                                                      </option>
+                                                      <option value="dhaka">
+                                                        Dhaka
+                                                      </option>
+                                                      <option value="khulna">
+                                                        Khulna
+                                                      </option>
+                                                      <option value="chittagong">
+                                                        Chittagong
+                                                      </option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="postCode" class="form-label">Post Code</label>
+                                                    <input type="number" class="form-control" id="postCode" />
                                                   </div>
                                                 </div>
-                                                <div class="col-4"></div>
+                                                <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="lastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="lastName" />
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="streetAddress" class="form-label">Street Name</label>
+                                                    <input type="text" class="form-control" id="streetAddress" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                          <div class="checkout-fieldset-main">
+                                            <fieldset class="common-fieldset">
+                                              <legend class="text-center rounded mb-5">
+                                                Shipping Address
+                                              </legend>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <div class="mb-3">
+                                                    <label for="firstName" class="form-label">Delivery Option</label>
+                                                    <select class="form-select" id="delivery-option">
+                                                      <option selected>
+                                                        Delivery Option
+                                                      </option>
+                                                      <option value="store">
+                                                        Collect From Store
+                                                      </option>
+                                                      <option value="home">
+                                                        Home Delivery
+                                                      </option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="mb-3 d-none" id="select-store-wrapper">
+                                                    <label for="firstName" class="form-label">Store</label>
+                                                    <select class="form-select">
+                                                      <option selected>
+                                                        Select Our Store
+                                                      </option>
+                                                      <option value="1">
+                                                        Banani
+                                                      </option>
+                                                      <option value="2">
+                                                        Bashundhara
+                                                      </option>
+                                                      <option value="3">
+                                                        Gulshan
+                                                      </option>
+                                                      <option value="4">
+                                                        Baridhara
+                                                      </option>
+                                                      <option value="5">
+                                                        Uttara
+                                                      </option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row" id="shipping-address-wrapper">
+                                                <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="shipping-firstName" class="form-label">First
+                                                      Name</label>
+                                                    <input type="text" class="form-control" id="shipping-firstName" />
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="shipping-district" class="form-label">District
+                                                      Name</label>
+                                                    <select class="form-select" aria-label="district"
+                                                      id="shipping-district">
+                                                      <option selected>
+                                                        Select Your District
+                                                      </option>
+                                                      <option value="dhaka">
+                                                        Dhaka
+                                                      </option>
+                                                      <option value="khulna">
+                                                        Khulna
+                                                      </option>
+                                                      <option value="chittagong">
+                                                        Chittagong
+                                                      </option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="shipping-postCode" class="form-label">Post Code</label>
+                                                    <input type="number" class="form-control" id="shipping-postCode" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-6">
+                                                  <div class="mb-3">
+                                                    <label for="shipping-lastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="shipping-lastName" />
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="shipping-streetAddress" class="form-label">Street
+                                                      Name</label>
+                                                    <input type="text" class="form-control"
+                                                      id="shipping-streetAddress" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-12">
+                                                  <div class="form-check mb-3">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                      id="sameAddress" />
+                                                    <label class="form-check-label" for="sameAddress">
+                                                      Same as Billing Address
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <input type="button" name="next" class="next action-button" value="Next Step" />
+                                  </fieldset>
+
+                                  <fieldset>
+                                    <div class="row">
+                                      <div class="col-7">
+                                        <div class="common-fieldset-main">
+                                          <fieldset class="common-fieldset">
+                                            <legend>
+                                              Payment Information
+                                            </legend>
+                                            <div class="form-card">
+                                              
+                                              <div class="radio-group">
+                                                <div class="radio" data-value="credit" onclick="play()">
+                                                  <img src="./images/payment/sslcommerz.png" />
+                                                  <p class="text-center">
+                                                    sslcommerz
+                                                  </p>
+                                                </div>
+                                                <div class="radio" data-value="mastercard" onclick="play()">
+                                                  <img src="./images/payment/cod.png" />
+                                                  <p class="text-center">
+                                                    cash on delivery
+                                                  </p>
+                                                </div>
+                                                <br />
+
+                                                <audio id="audio" src="/images/mixkit-select-click-1109.wav"></audio>
                                               </div>
 
-                                                
-
-                                                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                                                <input type="button" name="make_payment" class="next action-button" value="Confirm"/>
-                                            </fieldset>
-
-                                            <fieldset>
-                                                <div class="form-card">
-                                                    <h2 class="fs-title text-center">Success !</h2>
-                                                    <br><br>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-3">
-                                                            <img src="./images/payment/check.png" class="check-img fit-image">
-                                                        </div>
-                                                    </div>
-                                                    <br><br>
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-7 text-center">
-                                                            <h5>You Have Successfully Signed Up</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                        </fieldset>
+                                              <div class="additional-information">
+                                                <label for="additional-information-input">Additional
+                                                  Information</label>
+                                                <textarea name="" id="additional-information-input" rows="5"></textarea>
+                                              </div>
+                                            </div>
+                                          </fieldset>
+                                        </div>
                                       </div>
-                                        
+                                      <div class="col-5">
+                                        <div class="common-fieldset-main">
+                                          <fieldset class="common-fieldset">
+                                            <legend>Summary</legend>
+                                            <div class="form-card">
+                                              <div class="table-resposive mb-5">
+                                                <table class="table table-bordered checkout-table mb-0">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col" class="text-center">
+                                                        Product
+                                                      </th>
+                                                      <th scope="col" class="text-center">
+                                                        Total
+                                                      </th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td class="text-start" style="width: 80%">
+                                                      SPRINT MEN'S
+                                                          CANVAS
+                                                        × 6
+                                                      </td>
+                                                      <td class="text-end">
+                                                        &#2547;1350.00
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="text-start" style="width: 80%">
+                                                        Subtotal
+                                                      </td>
+                                                      <td class="text-end">
+                                                      &#2547;1350.00
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="text-start" style="width: 80%">
+                                                        Tax
+                                                      </td>
+                                                      <td class="text-end">
+                                                        &#2547;100.00
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="text-start" style="width: 80%">
+                                                        Shipping
+                                                      </td>
+                                                      <td class="text-end">
+                                                        &#2547;100.00
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td class="text-start" style="width: 80%">
+                                                        Total
+                                                      </td>
+                                                      <td class="text-end">
+                                                        &#2547;1550.00
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <div class="input-group mb-3 d-flex cupon-input">
+                                                <input type="text" class="form-control"
+                                                  placeholder="Have a cupon code? Apply Here" />
+                                                <button class="btn make_payment" type="button" id="button-addon2">
+                                                  Apply
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </fieldset>
+                                        </div>
+                                      </div>
                                     </div>
-                                </div>
+
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                      value="Previous" />
+                                    <input type="button" name="make_payment" class="next action-button"
+                                      value="Confirm" />
+                                  </fieldset>
+
+                                  <fieldset>
+                                    <div class="form-card">
+                                      <h2 class="fs-title text-center">
+                                        Success !
+                                      </h2>
+                                      <br /><br />
+                                      <div class="row justify-content-center">
+                                        <div class="col-3">
+                                          <img src="./images/payment/check.png" class="check-img fit-image" />
+                                        </div>
+                                      </div>
+                                      <br /><br />
+                                      <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                          <h5>
+                                            You Have Successfully Signed Up
+                                          </h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </form>
+                              </fieldset>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <!-- <div class="container">
-                    <h3 class="multiform-title">Checkout Form</h3>
-                    <div class="progress-bar">
-                        <div class="step">
-                            <p>Info</p>
-                            <div class="bullet">
-                                <span>1</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Payment</p>
-                            <div class="bullet">
-                                <span>2</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Status</p>
-                            <div class="bullet">
-                                <span>3</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="progress-bar">
-                        <div class="row">
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
-                        </div>
-                        <div class="step">
-                            <p>Info</p>
-                            <div class="bullet">
-                                <span>1</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Payment</p>
-                            <div class="bullet">
-                                <span>2</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Status</p>
-                            <div class="bullet">
-                                <span>3</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                    </div>
-
-                    <div class="form-outer">
-                        <form action="#">
-                            <div class="page slide-page">
-                                <div class="title">Basic Info:</div>
-                                <div class="field">
-                                    <div class="label">First Name</div>
-                                    <input type="text" required />
-                                </div>
-                                <div class="field">
-                                    <div class="label">Last Name</div>
-                                    <input type="text" required />
-                                </div>
-                                <div class="field">
-                                    <button class="firstNext next">Next</button>
-                                </div>
-                            </div>
-        
-                            <div class="page">
-                                <div class="title">Contact Info:</div>
-                                <div class="field">
-                                    <div class="label">Email Address</div>
-                                    <input type="text" required />
-                                </div>
-                                <div class="field">
-                                    <div class="label">Phone Number</div>
-                                    <input type="Number" required />
-                                </div>
-                                <div class="field btns">
-                                    <button class="prev-1 prev">Previous</button>
-                                    <button class="next-1 next">Next</button>
-                                </div>
-                            </div>
-
-                            <div class="page">
-                                <div class="title">Contact Info 2:</div>
-                                <div class="field">
-                                    <div class="label">Email Address</div>
-                                    <input type="text" required />
-                                </div>
-                                <div class="field">
-                                    <div class="label">Phone Number</div>
-                                    <input type="Number" required />
-                                </div>
-                                <div class="field btns">
-                                    <button class="submitBtn">Submit</button>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                </div> -->
-            
-                <!-- <div class="container">
-
-                    <h3 class="text-center">Checkout Form</h3>
-
-                    <div class="progress-bar">
-                        <div class="step">
-                            <p>Info</p>
-                            <div class="bullet">
-                                <span>1</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Payment</p>
-                            <div class="bullet">
-                                <span>2</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                        <div class="step">
-                            <p>Status</p>
-                            <div class="bullet">
-                                <span>3</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-                    </div>
-
-                    <div class="form-outer">
-                    
-                        <form action="#">
-                            <div class="slidePage page">
-                                <div class="title">Basic Info:</div>
-                                <div class="field">
-                                    <div class="label">First Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <div class="label">Last Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <button class="nextBtn" id="nextBtn">Next</button>
-                                </div>
-                            </div>
-    
-                            <div class="slidePage page">
-                                <div class="title">Basic Info:</div>
-                                <div class="field">
-                                    <div class="label">First Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <div class="label">Last Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <button class="prev-1 prev">Prev</button>
-                                    <button class="next-1 next">Next</button>
-                                </div>
-                            </div>
-    
-                            <div class="slidePage page">
-                                <div class="title">Basic Info:</div>
-                                <div class="field">
-                                    <div class="label">First Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <div class="label">Last Name</div>
-                                    <input type="text">
-                                </div>
-                                <div class="field">
-                                    <button class="prev-2 prev">Prev</button>
-                                    <button class="next-2 next">Next</button>
-                                </div>
-                            </div>
-                            
-                        </form>
-                    </div>
-                </div> -->
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1187,9 +1094,6 @@
     </section>
   </section>
 
-
-
-
   <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="./js/select2.min.js"></script>
@@ -1204,162 +1108,192 @@
     $(".select2").select2();
   </script>
 
-<script>
-    $(document).ready(function(){
-    
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var opacity;
-    
-    $(".next").click(function(){
-        
+  <script>
+    $(document).ready(function () {
+      var current_fs, next_fs, previous_fs; //fieldsets
+      var opacity;
+
+      $(".next").click(function () {
         current_fs = $(this).parent();
         next_fs = $(this).parent().next();
-        
+
         //Add Class Active
-        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-        
-        //show the next fieldset
-        next_fs.show(); 
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now) {
-                // for making fielset appear animation
-                opacity = 1 - now;
-    
-                current_fs.css({
-                    'display': 'none',
-                    'position': 'relative'
-                });
-                next_fs.css({'opacity': opacity});
-            }, 
-            duration: 600
+        let currentIndex = $(this).parent().index();
+        $("#progressbar li").each((index, elm) => {
+          if (index === currentIndex) {
+            $(elm).addClass("active");
+          }
         });
-    });
-    
-    $(".previous").click(function(){
-        
+
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate(
+          { opacity: 0 },
+          {
+            step: function (now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+
+              current_fs.css({
+                display: "none",
+                position: "relative",
+              });
+              next_fs.css({ opacity: opacity });
+            },
+            duration: 600,
+          }
+        );
+      });
+
+      $(".previous").click(function () {
         current_fs = $(this).parent();
         previous_fs = $(this).parent().prev();
-        
+
+        let currentIndex = $(this).prev().index();
+        $("#progressbar li").each((index, elm) => {
+          if (index != currentIndex) {
+            $(elm).removeClass("active");
+          }
+        });
+
         //Remove class active
-        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-        
+        // $("#progressbar li")
+        //   .eq($("fieldset").index(current_fs))
+        //   .removeClass("active");
+
         //show the previous fieldset
         previous_fs.show();
-    
+
         //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now) {
-                // for making fielset appear animation
-                opacity = 1 - now;
-    
-                current_fs.css({
-                    'display': 'none',
-                    'position': 'relative'
-                });
-                previous_fs.css({'opacity': opacity});
-            }, 
-            duration: 600
-        });
-    });
-    
-    $('.radio-group .radio').click(function(){
-        $(this).parent().find('.radio').removeClass('selected');
-        $(this).addClass('selected');
-    });
-    
-    $(".submit").click(function(){
+        current_fs.animate(
+          { opacity: 0 },
+          {
+            step: function (now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+
+              current_fs.css({
+                display: "none",
+                position: "relative",
+              });
+              previous_fs.css({ opacity: opacity });
+            },
+            duration: 600,
+          }
+        );
+      });
+
+      $(".radio-group .radio").click(function () {
+        $(this).parent().find(".radio").removeClass("selected");
+        $(this).addClass("selected");
+      });
+
+      $(".submit").click(function () {
         return false;
-    })
-        
+      });
     });
 
-
     // ============== Select Deleiver Option==============
-    const selectStore = document.getElementById('select-store-wrapper');
+    const selectStore = document.getElementById("select-store-wrapper");
 
-    document.getElementById('delivery-option').addEventListener('change', function() {
-      let deliveryOption = this.value;
-      console.log('You selected: ', deliveryOption);
-      console.log(typeof(deliveryOption));
+    document.getElementById("delivery-option").addEventListener("change", function () {
+        let deliveryOption = this.value;
+        console.log("You selected: ", deliveryOption);
+        console.log(typeof deliveryOption);
 
-      if(deliveryOption === 'store'){
-         document.getElementById('select-store-wrapper').classList.remove('d-none')
-         document.getElementById('shipping-address-wrapper').classList.add('d-none')
-
-      }
-
-      else if(deliveryOption === 'home'){
-        document.getElementById('shipping-address-wrapper').classList.remove('d-none')
-        document.getElementById('select-store-wrapper').classList.add('d-none')
-
-      }
-    });
+        if (deliveryOption === "store") {
+          document
+            .getElementById("select-store-wrapper")
+            .classList.remove("d-none");
+          document
+            .getElementById("shipping-address-wrapper")
+            .classList.add("d-none");
+        } else if (deliveryOption === "home") {
+          document
+            .getElementById("shipping-address-wrapper")
+            .classList.remove("d-none");
+          document
+            .getElementById("select-store-wrapper")
+            .classList.add("d-none");
+        }
+      });
     // ============== Select Deleiver Option==============
-    
-    
+
     // ============== Select Same Address Option==============
     const checkbox = document.getElementById("sameAddress");
 
-    const firstName = document.getElementById('firstName');
-    const lastName = document.getElementById('lastName');
-    const postCode = document.getElementById('postCode');
-    const streetAddress = document.getElementById('streetAddress');
-    let district = document.getElementById('district').addEventListener('change', function() {
-      district = this.value;      
-    })
+    const firstName = document.getElementById("firstName");
+    const lastName = document.getElementById("lastName");
+    const postCode = document.getElementById("postCode");
+    const streetAddress = document.getElementById("streetAddress");
+    let district = document
+      .getElementById("district")
+      .addEventListener("change", function () {
+        district = this.value;
+      });
 
     const shippingFirstName = document.getElementById("shipping-firstName");
     const shippingLastName = document.getElementById("shipping-lastName");
     const shippingPostCode = document.getElementById("shipping-postCode");
-    const shippingStreetAddress = document.getElementById("shipping-streetAddress");
+    const shippingStreetAddress = document.getElementById(
+      "shipping-streetAddress"
+    );
     let shippingDistrict = document.getElementById("shipping-district");
 
-    checkbox.addEventListener( 'change', function() {
-    if(this.checked) {
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
         // Checkbox is checked..
-        console.log("Checked")
+        console.log("Checked");
         shippingFirstName.disabled = true;
         shippingLastName.disabled = true;
         shippingPostCode.disabled = true;
         shippingStreetAddress.disabled = true;
         shippingDistrict.disabled = true;
 
-        console.log(firstName.value)
-        console.log(lastName.value)
-        console.log(district)
-        console.log(postCode.value)
-        console.log(streetAddress.value)
+        console.log(firstName.value);
+        console.log(lastName.value);
+        console.log(district);
+        console.log(postCode.value);
+        console.log(streetAddress.value);
 
         shippingFirstName.value = firstName.value;
         shippingLastName.value = lastName.value;
         shippingPostCode.value = postCode.value;
         shippingStreetAddress.value = streetAddress.value;
         shippingDistrict.value = district;
-
-    } else {
+      } else {
         // Checkbox is not checked..
-        console.log("Not Checked")
+        console.log("Not Checked");
         document.getElementById("shipping-firstName").disabled = false;
         document.getElementById("shipping-lastName").disabled = false;
         document.getElementById("shipping-district").disabled = false;
         document.getElementById("shipping-postCode").disabled = false;
         document.getElementById("shipping-streetAddress").disabled = false;
 
-        shippingFirstName.value = '';
-        shippingLastName.value = '';
-        shippingPostCode.value = '';
-        shippingStreetAddress.value = '';
-        shippingDistrict.value = '';
-        
-    }
-});
-    // ============== Select Same Address Option==============
+        shippingFirstName.value = "";
+        shippingLastName.value = "";
+        shippingPostCode.value = "";
+        shippingStreetAddress.value = "";
+        shippingDistrict.value = "";
+      }
+    });
+      // ============== Select Same Address Option==============
 
 
 
-</script>
+      // ============= Sound Play ==================
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        audio.loop = false;
+      }
 
+      document.querySelector('.radio').addEventListener('click', ()=>{
+        console.log(true)
+      })
+      // ============= Sound Play ==================
+  </script>
 </body>
 
 </html>
