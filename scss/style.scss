@@ -6074,3 +6074,107 @@ a {
     }
   }
 }
+
+// bulk sale start from here
+
+.bulk-sale-main {
+  margin: 20px 0;
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+  }
+  .card {
+    .image-box {
+      min-height: 200px;
+      border-bottom: 1px solid #e9e7e7;
+      margin-bottom: 0px;
+      max-height: 200px;
+      text-align: center;
+      position: relative;
+
+      img {
+        height: 100%;
+        max-height: 180px;
+        margin: 0px auto;
+        width: 100%;
+      }
+    }
+    .description-box {
+      @include pp-description-box;
+      border: none;
+      h4.product-title {
+        text-align: left;
+        line-height: 1;
+        a {
+          font-size: 14px;
+          text-transform: capitalize;
+          color: $text-color;
+          line-height: 1.5;
+
+          margin-bottom: 15px;
+
+          &:hover {
+            color: $logo-blue;
+          }
+        }
+      }
+      h3.product-price {
+        @include pp-h3-product-price;
+        text-align: left;
+        span {
+          @include pp-h3-product-price-span;
+        }
+      }
+      p.product-description {
+        font-size: 14px;
+        color: $tag-grey;
+        margin-bottom: 10px;
+      }
+    }
+    .req-quote-btn {
+      @include pp-addtocart-btn;
+      background: $logo-blue;
+      width: 100%;
+      border-radius: 40px !important;
+      -webkit-border-radius: 40px !important;
+      -moz-border-radius: 40px !important;
+      -ms-border-radius: 40px !important;
+      -o-border-radius: 40px !important;
+    }
+  }
+  .five-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 145px;
+        img {
+          height: 100%;
+          max-height: 145px;
+        }
+      }
+    }
+  }
+  .four-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 180px;
+        img {
+          height: 100%;
+          max-height: 180px;
+        }
+      }
+    }
+  }
+  .six-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 120px;
+        img {
+          height: 100%;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+}
+
+// bulk sale end here
