@@ -5666,6 +5666,9 @@ a {
   }
 }
 
+
+// multistep form start from here
+
 .multistep-form-main {
   margin: 20px 0;
   .multistep-form-bg {
@@ -6141,6 +6144,10 @@ a {
     }
   }
 }
+
+// multistep form end here
+
+
 // bulk sale start from here
 
 .bulk-sale-main {
@@ -6244,4 +6251,89 @@ a {
 }
 
 // bulk sale end here
+
+
+// dashboard start from here
+.dashboard{
+
+  .dashboard-card-wrapper{
+  
+  .dashboard-card{
+    border-radius: 5px;
+    min-height: 180px;
+    transition: 0.5s;
+
+    &:hover{
+      transform: translate(-5px, -5px);
+      box-shadow: 3px 5px 16px -6px rgb(0 0 0 / 40%);
+      -webkit-box-shadow: 3px 5px 16px -6px rgb(0 0 0 / 40%);
+      -moz-box-shadow: 3px 5px 16px -6px rgb(0 0 0 / 40%);
+    }
+
+    .dashboard-card-icon-wrapper{
+      text-align: center;
+
+      .dashboard-card-icon{
+          font-size: 45px;
+          display: block;
+          margin-bottom: 20px;
+      }
+      a{
+        display: block;
+        font-size: 14px;
+        color: $white;
+        transition: all 0.5s !important;
+        opacity: 0.5;
+
+        &:hover{
+          opacity: 1;
+          transform: translateX(-10px);
+        }
+      }
+    }
+  }
+
+  .bg-grad-1{
+    background-color: #eb4786;
+    background-image: linear-gradient(315deg, #eb4786 0%, #b854a6 74%);
+  }
+  .bg-grad-2{
+    background-color: #875fc0;
+    background-image: linear-gradient(315deg, #875fc0 0%, #5346ba 74%);
+    }
+  .bg-grad-3{
+    background-color: #47c5f4;
+    background-image: linear-gradient(315deg, #47c5f4 0%, #6791d9 74%);
+  }
+}
+
+  .dashboard-address-card-wrapper{
+    // padding-bottom: 30px;
+
+    .address-card{
+      box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+      border-radius: 5px !important;
+      .card-header{
+        color: $white;
+        background-color: $white;
+        border-color: #ebedf2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $logo-blue;
+    ;
+      }
+      .card-body{
+        ul{
+          li{
+            color: $text-color;
+            span{
+  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// dashboard end here
 

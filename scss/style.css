@@ -6858,4 +6858,62 @@ a {
 .bulk-sale-main .six-col-grid-container .card .image-box img {
   height: 100%;
   max-height: 120px;
+}
+
+.dashboard .dashboard-card-wrapper .dashboard-card {
+  border-radius: 5px;
+  min-height: 180px;
+  transition: 0.5s;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper {
+  text-align: center;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper .dashboard-card-icon {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 20px;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.5s !important;
+  opacity: 0.5;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a:hover {
+  opacity: 1;
+  transform: translateX(-10px);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-1 {
+  background-color: #eb4786;
+  background-image: linear-gradient(315deg, #eb4786 0%, #b854a6 74%);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-2 {
+  background-color: #875fc0;
+  background-image: linear-gradient(315deg, #875fc0 0%, #5346ba 74%);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-3 {
+  background-color: #47c5f4;
+  background-image: linear-gradient(315deg, #47c5f4 0%, #6791d9 74%);
+}
+.dashboard .dashboard-address-card-wrapper .address-card {
+  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  border-radius: 5px !important;
+}
+.dashboard .dashboard-address-card-wrapper .address-card .card-header {
+  color: #fff;
+  background-color: #fff;
+  border-color: #ebedf2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #004a96;
+}
+.dashboard .dashboard-address-card-wrapper .address-card .card-body ul li {
+  color: rgba(0, 0, 0, 0.87);
 }/*# sourceMappingURL=style.css.map */
