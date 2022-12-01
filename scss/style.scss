@@ -643,12 +643,15 @@ a {
   }
   .home-slider-main {
     margin-bottom: 20px;
+
     .slick-dots {
       bottom: 18px;
     }
+
     .slick-dotted.slick-slider {
       margin-bottom: 0;
     }
+
     .slick-prev {
       z-index: 1;
       border: 1px solid $logo-blue;
@@ -664,6 +667,7 @@ a {
         color: $logo-red;
       }
     }
+
     .slick-next {
       z-index: 1;
       border: 1px solid $logo-blue;
@@ -731,7 +735,51 @@ a {
       -o-border-radius: 10px;
       color: #fff;
     }
+
+    .booking-info-card{
+      position: absolute;
+      z-index: 99;
+      background-color: rgba(0, 0, 0, 0.7);
+      right: 200px;
+      @include transY-center;
+      min-width: 400px;
+      border-radius: 5px !important;
+      box-sizing: border-box;
+
+      .card-title{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $white;
+        border-bottom: 1px solid $white;
+        padding: 20px 0;
+        text-transform: uppercase;
+      }
+      .card-body{
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+
+        ul{
+          padding: 0;
+          li{
+            font-size: 20px;
+            margin: 20px 0;
+            font-weight: 400;
+            color: $white;
+            font-style: italic;
+            span{
+              font-weight: 600;
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+
   }
+
+
   .online-apply {
     .online-apply-border {
       border-bottom: 1px solid $tag-grey;
@@ -5447,8 +5495,8 @@ a {
           &:focus {
             box-shadow: none;
           }
-          &:not(.collapsed) {
-          }
+          // &:not(.collapsed) {
+          // }
 
           &::after {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z' fill='%23004a96'/%3e%3c/svg%3e");
@@ -5470,10 +5518,10 @@ a {
         .card {
           border-radius: 0;
           .row {
-            .col-md-4 {
-              img {
-              }
-            }
+            // .col-md-4 {
+            //   img {
+            //   }
+            // }
 
             .col-md-8 {
               .card-body {
@@ -5719,9 +5767,9 @@ a {
             float: left;
             position: relative;
 
-            &:first-child {
+            // &:first-child {
               
-            }
+            // }
 
             &:before {
               width: 50px;
@@ -6148,111 +6196,6 @@ a {
 // multistep form end here
 
 
-// bulk sale start from here
-
-.bulk-sale-main {
-  margin: 20px 0;
-  .tab-content {
-    background: #fff;
-    padding: 20px 17px;
-  }
-  .card {
-    .image-box {
-      min-height: 200px;
-      border-bottom: 1px solid #e9e7e7;
-      margin-bottom: 0px;
-      max-height: 200px;
-      text-align: center;
-      position: relative;
-
-      img {
-        height: 100%;
-        max-height: 180px;
-        margin: 0px auto;
-        width: 100%;
-      }
-    }
-    .description-box {
-      @include pp-description-box;
-      border: none;
-      h4.product-title {
-        text-align: left;
-        line-height: 1;
-        a {
-          font-size: 14px;
-          text-transform: capitalize;
-          color: $text-color;
-          line-height: 1.5;
-
-          margin-bottom: 15px;
-
-          &:hover {
-            color: $logo-blue;
-          }
-        }
-      }
-      h3.product-price {
-        @include pp-h3-product-price;
-        text-align: left;
-        span {
-          @include pp-h3-product-price-span;
-        }
-      }
-      p.product-description {
-        font-size: 14px;
-        color: $tag-grey;
-        margin-bottom: 10px;
-      }
-    }
-    .req-quote-btn {
-      @include pp-addtocart-btn;
-      background: $logo-blue;
-      width: 100%;
-      border-radius: 40px !important;
-      -webkit-border-radius: 40px !important;
-      -moz-border-radius: 40px !important;
-      -ms-border-radius: 40px !important;
-      -o-border-radius: 40px !important;
-    }
-  }
-  .five-col-grid-container {
-    .card {
-      .image-box {
-        min-height: 145px;
-        img {
-          height: 100%;
-          max-height: 145px;
-        }
-      }
-    }
-  }
-  .four-col-grid-container {
-    .card {
-      .image-box {
-        min-height: 180px;
-        img {
-          height: 100%;
-          max-height: 180px;
-        }
-      }
-    }
-  }
-  .six-col-grid-container {
-    .card {
-      .image-box {
-        min-height: 120px;
-        img {
-          height: 100%;
-          max-height: 120px;
-        }
-      }
-    }
-  }
-}
-
-// bulk sale end here
-
-
 // dashboard start from here
 .dashboard{
 
@@ -6336,4 +6279,260 @@ a {
   }
 }
 // dashboard end here
+
+
+// bulk sale start from here
+
+.bulk-sale-main {
+  margin: 20px 0;
+
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+  }
+
+  .card {
+    position: relative;
+
+    .image-box {
+      min-height: 200px;
+      border-bottom: 1px solid #e9e7e7;
+      margin-bottom: 0px;
+      max-height: 200px;
+      text-align: center;
+      position: relative;
+
+      img {
+        height: 100%;
+        max-height: 180px;
+        margin: 0px auto;
+        width: 100%;
+      }
+    }
+    .description-box {
+      @include pp-description-box;
+      border: none;
+      h4.product-title {
+        text-align: left;
+        line-height: 1;
+        a {
+          font-size: 14px;
+          text-transform: capitalize;
+          color: $text-color;
+          line-height: 1.5;
+
+          margin-bottom: 15px;
+
+          &:hover {
+            color: $logo-blue;
+          }
+        }
+      }
+      h3.product-price {
+        @include pp-h3-product-price;
+        text-align: left;
+        span {
+          @include pp-h3-product-price-span;
+        }
+      }
+      p.product-description {
+        font-size: 14px;
+        color: $tag-grey;
+        margin-bottom: 10px;
+      }
+    }
+    .req-quote-btn {
+      @include pp-addtocart-btn;
+      background: $logo-blue;
+      width: 100%;
+      border-radius: 40px !important;
+      -webkit-border-radius: 40px !important;
+      -moz-border-radius: 40px !important;
+      -ms-border-radius: 40px !important;
+      -o-border-radius: 40px !important;
+    }
+    .discount-main{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      .discount{
+        background-color: $ex-red;
+        padding: 3px 5px;
+        border-radius: 2px;
+        span{
+          color: $white;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .five-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 145px;
+        img {
+          height: 100%;
+          max-height: 145px;
+        }
+      }
+    }
+  }
+
+  .four-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 180px;
+        img {
+          height: 100%;
+          max-height: 180px;
+        }
+      }
+    }
+  }
+
+  .six-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 120px;
+        img {
+          height: 100%;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+}
+
+// bulk sale end here
+
+
+// Single Party starts from here
+.single-party-main {
+  margin: 20px 0;
+
+  .tab-content {
+    background: #fff;
+    padding: 20px 17px;
+  }
+
+  .card {
+    position: relative;
+
+    .image-box {
+      min-height: 200px;
+      border-bottom: 1px solid #e9e7e7;
+      margin-bottom: 0px;
+      max-height: 200px;
+      text-align: center;
+      position: relative;
+
+      img {
+        height: 100%;
+        max-height: 180px;
+        margin: 0px auto;
+        width: 100%;
+      }
+    }
+
+    .description-box {
+      @include pp-description-box;
+      border: none;
+      h4.product-title {
+        text-align: left;
+        line-height: 1;
+        a {
+          font-size: 14px;
+          text-transform: capitalize;
+          color: $text-color;
+          line-height: 1.5;
+
+          margin-bottom: 15px;
+
+          &:hover {
+            color: $logo-blue;
+          }
+        }
+      }
+      h3.product-price {
+        @include pp-h3-product-price;
+        text-align: left;
+        span {
+          @include pp-h3-product-price-span;
+        }
+      }
+      p.product-description {
+        font-size: 14px;
+        color: $tag-grey;
+        margin-bottom: 10px;
+      }
+    }
+    
+    .req-quote-btn {
+      @include pp-addtocart-btn;
+      background: $logo-blue;
+      width: 100%;
+      border-radius: 40px !important;
+      -webkit-border-radius: 40px !important;
+      -moz-border-radius: 40px !important;
+      -ms-border-radius: 40px !important;
+      -o-border-radius: 40px !important;
+    }
+    .discount-main{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      .discount{
+        background-color: $ex-red;
+        padding: 3px 5px;
+        border-radius: 2px;
+        span{
+          color: $white;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .five-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 145px;
+        img {
+          height: 100%;
+          max-height: 145px;
+        }
+      }
+    }
+  }
+
+  .four-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 180px;
+        img {
+          height: 100%;
+          max-height: 180px;
+        }
+      }
+    }
+  }
+
+  .six-col-grid-container {
+    .card {
+      .image-box {
+        min-height: 120px;
+        img {
+          height: 100%;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+
+  
+}
+// Single Party end here
 

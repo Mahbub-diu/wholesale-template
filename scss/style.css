@@ -964,6 +964,49 @@ a {
   -o-border-radius: 10px;
   color: #fff;
 }
+.layout-main .home-slider-main .booking-info-card {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.7);
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  min-width: 400px;
+  border-radius: 5px !important;
+  box-sizing: border-box;
+}
+.layout-main .home-slider-main .booking-info-card .card-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.layout-main .home-slider-main .booking-info-card .card-body {
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+.layout-main .home-slider-main .booking-info-card .card-body ul {
+  padding: 0;
+}
+.layout-main .home-slider-main .booking-info-card .card-body ul li {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 400;
+  color: #fff;
+  font-style: italic;
+}
+.layout-main .home-slider-main .booking-info-card .card-body ul li span {
+  font-weight: 600;
+  font-style: normal;
+}
 .layout-main .online-apply .online-apply-border {
   border-bottom: 1px solid #828282;
   text-align: right;
@@ -6758,12 +6801,72 @@ a {
   font-size: 20px;
 }
 
+.dashboard .dashboard-card-wrapper .dashboard-card {
+  border-radius: 5px;
+  min-height: 180px;
+  transition: 0.5s;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper {
+  text-align: center;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper .dashboard-card-icon {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 20px;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.5s !important;
+  opacity: 0.5;
+}
+.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a:hover {
+  opacity: 1;
+  transform: translateX(-10px);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-1 {
+  background-color: #eb4786;
+  background-image: linear-gradient(315deg, #eb4786 0%, #b854a6 74%);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-2 {
+  background-color: #875fc0;
+  background-image: linear-gradient(315deg, #875fc0 0%, #5346ba 74%);
+}
+.dashboard .dashboard-card-wrapper .bg-grad-3 {
+  background-color: #47c5f4;
+  background-image: linear-gradient(315deg, #47c5f4 0%, #6791d9 74%);
+}
+.dashboard .dashboard-address-card-wrapper .address-card {
+  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+  border-radius: 5px !important;
+}
+.dashboard .dashboard-address-card-wrapper .address-card .card-header {
+  color: #fff;
+  background-color: #fff;
+  border-color: #ebedf2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #004a96;
+}
+.dashboard .dashboard-address-card-wrapper .address-card .card-body ul li {
+  color: rgba(0, 0, 0, 0.87);
+}
 .bulk-sale-main {
   margin: 20px 0;
 }
 .bulk-sale-main .tab-content {
   background: #fff;
   padding: 20px 17px;
+}
+.bulk-sale-main .card {
+  position: relative;
 }
 .bulk-sale-main .card .image-box {
   min-height: 200px;
@@ -6838,6 +6941,21 @@ a {
   -ms-border-radius: 40px !important;
   -o-border-radius: 40px !important;
 }
+.bulk-sale-main .card .discount-main {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.bulk-sale-main .card .discount-main .discount {
+  background-color: #c40000;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.bulk-sale-main .card .discount-main .discount span {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .bulk-sale-main .five-col-grid-container .card .image-box {
   min-height: 145px;
 }
@@ -6860,60 +6978,122 @@ a {
   max-height: 120px;
 }
 
-.dashboard .dashboard-card-wrapper .dashboard-card {
-  border-radius: 5px;
-  min-height: 180px;
-  transition: 0.5s;
+.single-party-main {
+  margin: 20px 0;
 }
-.dashboard .dashboard-card-wrapper .dashboard-card:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
+.single-party-main .tab-content {
+  background: #fff;
+  padding: 20px 17px;
 }
-.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper {
+.single-party-main .card {
+  position: relative;
+}
+.single-party-main .card .image-box {
+  min-height: 200px;
+  border-bottom: 1px solid #e9e7e7;
+  margin-bottom: 0px;
+  max-height: 200px;
   text-align: center;
+  position: relative;
 }
-.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper .dashboard-card-icon {
-  font-size: 45px;
-  display: block;
-  margin-bottom: 20px;
+.single-party-main .card .image-box img {
+  height: 100%;
+  max-height: 180px;
+  margin: 0px auto;
+  width: 100%;
 }
-.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a {
-  display: block;
+.single-party-main .card .description-box {
+  min-height: 130px;
+  border-bottom: 1px solid #e9e7e7;
+  margin-bottom: 7px;
+  border: none;
+}
+.single-party-main .card .description-box h4.product-title {
+  text-align: left;
+  line-height: 1;
+}
+.single-party-main .card .description-box h4.product-title a {
   font-size: 14px;
-  color: #fff;
-  transition: all 0.5s !important;
-  opacity: 0.5;
-}
-.dashboard .dashboard-card-wrapper .dashboard-card .dashboard-card-icon-wrapper a:hover {
-  opacity: 1;
-  transform: translateX(-10px);
-}
-.dashboard .dashboard-card-wrapper .bg-grad-1 {
-  background-color: #eb4786;
-  background-image: linear-gradient(315deg, #eb4786 0%, #b854a6 74%);
-}
-.dashboard .dashboard-card-wrapper .bg-grad-2 {
-  background-color: #875fc0;
-  background-image: linear-gradient(315deg, #875fc0 0%, #5346ba 74%);
-}
-.dashboard .dashboard-card-wrapper .bg-grad-3 {
-  background-color: #47c5f4;
-  background-image: linear-gradient(315deg, #47c5f4 0%, #6791d9 74%);
-}
-.dashboard .dashboard-address-card-wrapper .address-card {
-  box-shadow: 3px 5px 16px -6px rgba(0, 0, 0, 0.4);
-  border-radius: 5px !important;
-}
-.dashboard .dashboard-address-card-wrapper .address-card .card-header {
-  color: #fff;
-  background-color: #fff;
-  border-color: #ebedf2;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #004a96;
-}
-.dashboard .dashboard-address-card-wrapper .address-card .card-body ul li {
+  text-transform: capitalize;
   color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.single-party-main .card .description-box h4.product-title a:hover {
+  color: #004a96;
+}
+.single-party-main .card .description-box h3.product-price {
+  color: #004a96;
+  font-size: 17px;
+  text-align: center;
+  font-weight: normal;
+  text-align: left;
+}
+.single-party-main .card .description-box h3.product-price span {
+  color: #828282;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.single-party-main .card .description-box p.product-description {
+  font-size: 14px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+.single-party-main .card .req-quote-btn {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 13px;
+  margin: 0 3px;
+  min-width: 47%;
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  background: #004a96;
+  width: 100%;
+  border-radius: 40px !important;
+  -webkit-border-radius: 40px !important;
+  -moz-border-radius: 40px !important;
+  -ms-border-radius: 40px !important;
+  -o-border-radius: 40px !important;
+}
+.single-party-main .card .discount-main {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.single-party-main .card .discount-main .discount {
+  background-color: #c40000;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.single-party-main .card .discount-main .discount span {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.single-party-main .five-col-grid-container .card .image-box {
+  min-height: 145px;
+}
+.single-party-main .five-col-grid-container .card .image-box img {
+  height: 100%;
+  max-height: 145px;
+}
+.single-party-main .four-col-grid-container .card .image-box {
+  min-height: 180px;
+}
+.single-party-main .four-col-grid-container .card .image-box img {
+  height: 100%;
+  max-height: 180px;
+}
+.single-party-main .six-col-grid-container .card .image-box {
+  min-height: 120px;
+}
+.single-party-main .six-col-grid-container .card .image-box img {
+  height: 100%;
+  max-height: 120px;
 }/*# sourceMappingURL=style.css.map */

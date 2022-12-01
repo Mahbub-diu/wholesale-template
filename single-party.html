@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="./scss/slick.css" />
     <link rel="stylesheet" href="./scss/slick-theme.css" />
     <link rel="stylesheet" href="./scss/style.css" />
-    <link rel="stylesheet" href="./scss/calendar.css" />
     <link rel="stylesheet" href="./scss/responsive.css" />
 </head>
 
@@ -304,6 +303,7 @@
     <!-- ========================================================== -->
 
     <section class="layout-main">
+
         <section id="sidebar" class="shadow-sm">
             <nav class="sidebar">
                 <div class="threelink-flex">
@@ -408,6 +408,7 @@
                 </ul>
             </nav>
         </section>
+
         <section id="content">
             <div class="offer-slider-main">
                 <div class="container-fluid">
@@ -542,10 +543,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="position-relative">
-
-
-                                <div class="calendar-box">
-                                    <div id="calendar"></div>
+                                <div class="card booking-info-card">
+                                    <h5 class="card-title text-center">Booking Info</h5>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><span>Booking Name: </span>Mediasoft Data System Ltd.</li>
+                                            <li><span>Guest Person: </span>20</li>
+                                            <li><span>Party Name: </span>Christmas</li>
+                                            <li><span>Party Date: </span>25 Dec, 2022</li>
+                                            <li><span>Party Time: </span>7.00 pm</li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="homeslider-wrapper">
@@ -756,852 +764,940 @@
                     </div>
                 </div>
             </section>
-            <section class="bulk-sale-main">
+            <section class="single-party-main">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade " id="row-view-tab-pane" role="tabpanel"
-                                    aria-labelledby="row-view-tab" tabindex="0">
-                                    row wise view
-                                </div>
-                                <div class="tab-pane fade" id="fourC-view-tab-pane" role="tabpanel"
-                                    aria-labelledby="fourC-view-tab" tabindex="0">
-                                    <div class="four-col-grid-container">
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                            <div class="common-fieldset-main">
+                                <fieldset class="common-fieldset">
+                                    <legend class="rounded">
+                                        party products
+                                    </legend>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade " id="row-view-tab-pane" role="tabpanel"
+                                            aria-labelledby="row-view-tab" tabindex="0">
+                                            row wise view
+                                        </div>
+
+                                        <div class="tab-pane fade" id="fourC-view-tab-pane" role="tabpanel"
+                                            aria-labelledby="fourC-view-tab" tabindex="0">
+                                            <div class="four-col-grid-container">
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
                                                     </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="discount-main">
+                                                                <div class="discount">
+                                                                    <span>30% off</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">add to cart
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
 
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
+                                        <!-- <div class="tab-pane fade show active" id="fiveC-view-tab-pane" role="tabpanel"
+                                            aria-labelledby="fiveC-view-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="five-col-grid-container">
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="party-single">
+                                                            <div class="card">
+                                                                <div class="image-box">
+                                                                    <img src="./images/products/bs.jpg" alt=""
+                                                                        class="img-fluid">
+                                                                    <div class="quickview-main">
+                                                                        <ul class="nav justify-content-center">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="javascript:void(0);"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#quickviewModal">
+                                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">
+                                                                                    <i class="fa-regular fa-heart"></i>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="description-box">
+                                                                        <h4 class="product-title">
+                                                                            <a href="#" class="">kordite extra large white foam
+                                                                                bowl 828 ml 10 pcs </a>
+                                                                        </h4>
+                                                                        <p class="product-description">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                            elit.
+                                                                            Velit
+                                                                            nesciunt eligendi adipisci ex, nobis doloribus
+                                                                            voluptates
+        
+                                                                        </p>
+                                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                        </h3>
+                                                                        <span class="text-danger">Min order 20kg</span>
+                                                                    </div>
+                                                                    <button class="btn req-quote-btn">request price / quote
+                                                                    </button>
+        
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                        </div> -->
+
+                                        <!-- <div class="tab-pane fade" id="sixC-view-tab-pane" role="tabpanel"
+                                            aria-labelledby="sixC-view-tab" tabindex="0">
+                                            <div class="six-col-grid-container">
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
                                                     </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="party-single">
+                                                    <div class="card">
+                                                        <div class="image-box">
+                                                            <img src="./images/products/bs.jpg" alt="" class="img-fluid">
+                                                            <div class="quickview-main">
+                                                                <ul class="nav justify-content-center">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="javascript:void(0);"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#quickviewModal">
+                                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" href="#">
+                                                                            <i class="fa-regular fa-heart"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="description-box">
+                                                                <h4 class="product-title">
+                                                                    <a href="#" class="">kordite extra large white foam
+                                                                        bowl 828 ml 10 pcs </a>
+                                                                </h4>
+                                                                <p class="product-description">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Velit
+                                                                    nesciunt eligendi adipisci ex, nobis doloribus
+                                                                    voluptates
+        
+                                                                </p>
+                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
+                                                                </h3>
+                                                                <span class="text-danger">Min order 20kg</span>
+                                                            </div>
+                                                            <button class="btn req-quote-btn">request price / quote
+                                                            </button>
+        
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                        </div> -->
                                     </div>
-                                </div>
-                                <div class="tab-pane fade show active" id="fiveC-view-tab-pane" role="tabpanel"
-                                    aria-labelledby="fiveC-view-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="five-col-grid-container">
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bulk-single">
-                                                    <div class="card">
-                                                        <div class="image-box">
-                                                            <img src="./images/products/bs.jpg" alt=""
-                                                                class="img-fluid">
-                                                            <div class="quickview-main">
-                                                                <ul class="nav justify-content-center">
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:void(0);"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#quickviewModal">
-                                                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" href="#">
-                                                                            <i class="fa-regular fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="description-box">
-                                                                <h4 class="product-title">
-                                                                    <a href="#" class="">kordite extra large white foam
-                                                                        bowl 828 ml 10 pcs </a>
-                                                                </h4>
-                                                                <p class="product-description">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Velit
-                                                                    nesciunt eligendi adipisci ex, nobis doloribus
-                                                                    voluptates
-
-                                                                </p>
-                                                                <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                                </h3>
-                                                                <span class="text-danger">Min order 20kg</span>
-                                                            </div>
-                                                            <button class="btn req-quote-btn">request price / quote
-                                                            </button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="sixC-view-tab-pane" role="tabpanel"
-                                    aria-labelledby="sixC-view-tab" tabindex="0">
-                                    <div class="six-col-grid-container">
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bulk-single">
-                                            <div class="card">
-                                                <div class="image-box">
-                                                    <img src="./images/products/bs.jpg" alt="" class="img-fluid">
-                                                    <div class="quickview-main">
-                                                        <ul class="nav justify-content-center">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="javascript:void(0);"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#quickviewModal">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="description-box">
-                                                        <h4 class="product-title">
-                                                            <a href="#" class="">kordite extra large white foam
-                                                                bowl 828 ml 10 pcs </a>
-                                                        </h4>
-                                                        <p class="product-description">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit.
-                                                            Velit
-                                                            nesciunt eligendi adipisci ex, nobis doloribus
-                                                            voluptates
-
-                                                        </p>
-                                                        <h3 class="product-price">৳ 150 <span>/per PCs</span>
-                                                        </h3>
-                                                        <span class="text-danger">Min order 20kg</span>
-                                                    </div>
-                                                    <button class="btn req-quote-btn">request price / quote
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                </fieldset>
                             </div>
                         </div>
                     </div>
