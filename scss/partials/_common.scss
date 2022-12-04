@@ -264,3 +264,56 @@ span.confirmed {
     }
   }
 }
+
+
+.voucher-main {
+  background: url(../images/icon/voucher.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  .voucher-item-left {
+    width: 104px;
+    padding: 10px;
+  }
+
+  .voucher-item-right {
+    flex: 1;
+
+    .voucher-conditions {
+      padding: 8px 35px;
+      color: $logo-red;
+
+      .discont {
+        font-size: 16px;
+        color: $logo-red;
+        margin-bottom: 3px;
+      }
+
+      .condition {
+        font-size: 14px;
+        color: #4c4c4c;
+      }
+    }
+  }
+
+  .voucher-item-button {
+    margin-right: 12px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    background: $logo-red;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.voucher-main:last-child {
+  margin-bottom: 0;
+}

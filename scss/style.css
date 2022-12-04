@@ -271,6 +271,52 @@ span.confirmed {
   max-height: 145px;
 }
 
+.voucher-main {
+  background: url(../images/icon/voucher.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.voucher-main .voucher-item-left {
+  width: 104px;
+  padding: 10px;
+}
+.voucher-main .voucher-item-right {
+  flex: 1;
+}
+.voucher-main .voucher-item-right .voucher-conditions {
+  padding: 8px 35px;
+  color: #ec2028;
+}
+.voucher-main .voucher-item-right .voucher-conditions .discont {
+  font-size: 16px;
+  color: #ec2028;
+  margin-bottom: 3px;
+}
+.voucher-main .voucher-item-right .voucher-conditions .condition {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.voucher-main .voucher-item-button {
+  margin-right: 12px;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ec2028;
+  color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.voucher-main:last-child {
+  margin-bottom: 0;
+}
+
 body {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -6758,6 +6804,12 @@ a {
   padding-left: 30px;
   padding-right: 30px;
 }
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .form-card .click-here-btn {
+  display: block;
+  background-color: #004a96;
+  border-radius: 0;
+  color: #fff;
+}
 .multistep-form-main .multistep-form-bg #grad1 #msform fieldset .action-button {
   width: 200px;
   background: #004a96;
@@ -6781,6 +6833,73 @@ a {
   padding: 15px 5px;
   margin: 10px 5px;
   font-size: 16px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card {
+  background: linear-gradient(135deg, #7158fe, #9d4de6);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .logo {
+  width: 80px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-title {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px;
+  text-transform: uppercase;
+  border-right: 1px dashed #fff;
+  margin: 0;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-date {
+  font-size: 10px;
+  margin: 0;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body {
+  padding-left: 20px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body .coupon-row {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body #cpnCode {
+  border: 1px dashed #fff;
+  padding: 5px 10px;
+  border-right: 0;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body #cpnBtn {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 5px;
+  color: #7158fe;
+  cursor: pointer;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body .circle1,
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body .circle2 {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body .circle1 {
+  left: -10px;
+}
+.multistep-form-main .multistep-form-bg #grad1 #msform fieldset .coupon-card .cupon-body .circle2 {
+  right: -10px;
 }
 .multistep-form-main .checkout-table thead tr th {
   text-align: center;
