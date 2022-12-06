@@ -7215,4 +7215,20 @@ a {
 .single-party-main .six-col-grid-container .card .image-box img {
   height: 100%;
   max-height: 120px;
+}
+
+.order-information-main .table-responsive .table thead tr th {
+  font-size: 14px;
+}
+.order-information-main .table-responsive .table tbody tr th {
+  font-size: 16px;
+  vertical-align: baseline !important;
+  border: transparent;
+}
+.order-information-main .table-responsive .table tbody tr td {
+  font-weight: 400 !important;
+  vertical-align: baseline !important;
+  padding: 15px;
+  border: transparent;
+  color: #a1a1a1;
 }/*# sourceMappingURL=style.css.map */

@@ -7552,6 +7552,34 @@ a {
 
 // order details start from here
 .order-information-main {
-  
+  .table-responsive{
+    .table{
+      thead{
+        tr{
+          th{
+            font-size: 14px;
+          }
+        }
+      }
+      tbody{
+        tr{
+          th{
+            font-size: 16px;
+            // min-width: 18%;
+            vertical-align: baseline !important;
+            // padding: 15px;
+            border: transparent;
+          }
+          td{
+            font-weight: 400 !important;
+            vertical-align: baseline !important;
+            padding: 15px;
+            border: transparent;
+            color: $d-grey;
+          }
+        }
+      }
+    }
+  }
 }
 // order details end here
