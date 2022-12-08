@@ -151,8 +151,6 @@
     <!-- ========================================================== -->
     <!-- main header start from here  -->
     <!-- ========================================================== -->
-
-
     <header class="main-header">
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="">
             <div class="container-fluid">
@@ -179,6 +177,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
                                 membership
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -193,6 +192,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
                                 offers
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -227,6 +227,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
                                 celebration day
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end fade-down">
@@ -366,8 +367,8 @@
                 </ul>
             </nav>
         </section>
-        <section id="content">
 
+        <section id="content">
             <div class="offer-slider-main">
                 <div class="container-fluid">
                     <div class="row">
@@ -504,6 +505,7 @@
                     </div>
                 </div>
             </div>
+
             <section class="userprofile-banner">
                 <div class="container-fluid">
                     <div class="row">
@@ -511,7 +513,7 @@
                             <div class="banner-bg">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <h4> order list- Manage my account</h4>
+                                        <h4>profile - Manage my account</h4>
                                     </div>
                                 </div>
                             </div>
@@ -519,6 +521,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="user-info-main">
                 <div class="container-fluid">
                     <div class="row">
@@ -532,13 +535,24 @@
                                                 <ul class="nav flex-column">
 
                                                     <li class="nav-item">
-                                                        <a class="nav-link " href="">
-                                                            <i class="far fa-user"></i>
-                                                            profile</a>
+                                                        <a class="nav-link" href="">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                            Dashboard
+                                                        </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link active " href="">
+                                                        <a class="nav-link" href="">
+                                                            <i class="far fa-user"></i>
+                                                            profile
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link  " href="">
                                                             <i class="fas fa-heart"></i>wishlist</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="">
+                                                            <i class="fa-sharp fa-solid fa-ticket"></i>cupon</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link " href="">
@@ -565,81 +579,371 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                                         <div class="order-information-main">
                                             <form action="" class="">
                                                 <div class="common-fieldset-main">
                                                     <fieldset class="common-fieldset">
                                                         <legend class="rounded">
-                                                            <i class="icofont-cart"></i>
-                                                            my orders
+                                                            cupon list
                                                         </legend>
-                                                        <div class="table-responsive">
-                                                            <table class="table">
 
-                                                                <tbody>
-                                                                    <tr class="">
-                                                                        <td>sl no.</td>
-                                                                        <td>Order ID</td>
-                                                                        <td class="text-center">Order date</td>
-                                                                        <td class="text-center">Price</td>
-                                                                        <td class="text-center">Status</td>
-                                                                        <td class="text-center">Details</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="">1</td>
-                                                                        <td class="">00000139</td>
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                                                                <div class="common-fieldset-main">
+                                                                    <fieldset class="common-fieldset">
+                                                                        <legend class="rounded">category</legend>
 
-                                                                        <td class="text-center">
-                                                                            04-09-2022, 11:26AM
-                                                                        </td>
-                                                                        <td class="">2619.00 tk</td>
-                                                                        <td class="text-center">
 
-                                                                            <span class="pending">Pending</span>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a href="#" class="">View Order</a>
+                                                                        <div class="cuppon-wrapper">
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
 
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="">2</td>
-                                                                        <td class="">00000140</td>
+                                                                        <div class="term-condition text-center">
+                                                                            <a href="#">Terms & Condition</a>
+                                                                        </div>
 
-                                                                        <td class="text-center">
-                                                                            04-09-2022, 11:26AM
-                                                                        </td>
-                                                                        <td class="">2619.00 tk</td>
-                                                                        <td class="text-center">
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                                                                <div class="common-fieldset-main">
+                                                                    <fieldset class="common-fieldset">
+                                                                        <legend class="rounded">Supplier</legend>
 
-                                                                            <span class="confirmed">confirmed</span>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a href="#" class="">View Order</a>
 
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="">3</td>
-                                                                        <td class="">00000140</td>
+                                                                        <div class="cuppon-wrapper">
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
 
-                                                                        <td class="text-center">
-                                                                            04-09-2022, 11:26AM
-                                                                        </td>
-                                                                        <td class="">2619.00 tk</td>
-                                                                        <td class="text-center">
+                                                                        <div class="term-condition text-center">
+                                                                            <a href="#">Terms & Condition</a>
+                                                                        </div>
 
-                                                                            <span class="cancel">cancel</span>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a href="#" class="">View Order</a>
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                                                                <div class="common-fieldset-main">
+                                                                    <fieldset class="common-fieldset">
+                                                                        <legend class="rounded">category</legend>
 
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+
+                                                                        <div class="cuppon-wrapper">
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="term-condition text-center">
+                                                                            <a href="#">Terms & Condition</a>
+                                                                        </div>
+
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                                                                <div class="common-fieldset-main">
+                                                                    <fieldset class="common-fieldset">
+                                                                        <legend class="rounded">Supplier</legend>
+
+
+                                                                        <div class="cuppon-wrapper">
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="voucher-main my-3">
+                                                                                <div class="voucher-item-left">
+                                                                                    <img src="./images/logo.png" alt=""
+                                                                                        class="img-fluid" />
+                                                                                </div>
+                                                                                <div class="voucher-item-right">
+                                                                                    <div class="voucher-conditions">
+                                                                                        <div class="discont">৳ 15 Off</div>
+                                                                                        <div class="condition">Min Spend ৳
+                                                                                            3000</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="voucher-item-button-wrapper">
+                                                                                    <div class="card-exp-date">
+                                                                                        <p>Exp: 12/2/2022</p>
+                                                                                        
+                                                                                    </div>
+                                                                                    <button class="voucher-item-button"
+                                                                                        type="button">
+                                                                                        collect
+                                                                                    </button>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="term-condition text-center">
+                                                                            <a href="#">Terms & Condition</a>
+                                                                        </div>
+
+                                                                    </fieldset>
+                                                                </div>
+                                                            </div>
                                                         </div>
+
                                                     </fieldset>
                                                 </div>
                                             </form>
@@ -651,6 +955,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- ========================================================== -->
             <!-- second footer start from here  -->
             <!-- ========================================================== -->
@@ -817,6 +1122,7 @@
 
                 </div>
             </footer>
+
             <footer class="newssl-footer">
                 <div class="container-fluid">
                     <div class="row">

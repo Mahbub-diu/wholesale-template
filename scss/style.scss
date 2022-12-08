@@ -6315,6 +6315,41 @@ a {
           }
         }
       }
+
+      // order details start from
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                font-size: 14px;
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              th {
+                font-size: 16px;
+                // min-width: 18%;
+                vertical-align: baseline !important;
+                // padding: 15px;
+                border: transparent;
+              }
+
+              td {
+                font-weight: 400 !important;
+                vertical-align: baseline !important;
+                padding: 15px;
+                border: transparent;
+                color: $d-grey;
+              }
+            }
+          }
+        }
+      }
+
+      // order details end
     }
   }
 }
@@ -7088,7 +7123,7 @@ a {
 
             }
 
-            .cupon-body{
+            .cupon-body {
               padding-left: 20px;
 
               .coupon-row {
@@ -7098,14 +7133,14 @@ a {
                 width: fit-content;
                 margin-bottom: 10px;
               }
-  
+
               #cpnCode {
                 border: 1px dashed #fff;
                 padding: 5px 10px;
                 border-right: 0;
-  
+
               }
-  
+
               #cpnBtn {
                 border: 1px solid #fff;
                 background: #fff;
@@ -7113,7 +7148,7 @@ a {
                 color: #7158fe;
                 cursor: pointer;
               }
-  
+
               .circle1,
               .circle2 {
                 background: #ffffff;
@@ -7123,13 +7158,13 @@ a {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-  
+
               }
-  
+
               .circle1 {
                 left: -10px;
               }
-  
+
               .circle2 {
                 right: -10px;
               }
@@ -7269,6 +7304,7 @@ a {
     }
   }
 }
+
 // dashboard end here
 
 
@@ -7407,6 +7443,7 @@ a {
     }
   }
 }
+
 // bulk sale end here
 
 
@@ -7547,39 +7584,82 @@ a {
 
 
 }
+
 // Single Party end here
 
+.cuppon-wrapper{
+  .voucher-main {
+    background: url(../images/icon/voucher.png);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 10px 0px;
 
-// order details start from here
-.order-information-main {
-  .table-responsive{
-    .table{
-      thead{
-        tr{
-          th{
-            font-size: 14px;
-          }
+    .voucher-item-left {
+      width: 104px;
+      // padding: 20px;
+    }
+
+    .voucher-item-right {
+      // margin-left: 9%;
+
+      .voucher-conditions {
+        padding: 8px 0 0 20%;
+        color: $logo-red;
+
+        .discont {
+          font-size: 16px;
+          color: $logo-red;
+          margin-bottom: 3px;
         }
-      }
-      tbody{
-        tr{
-          th{
-            font-size: 16px;
-            // min-width: 18%;
-            vertical-align: baseline !important;
-            // padding: 15px;
-            border: transparent;
-          }
-          td{
-            font-weight: 400 !important;
-            vertical-align: baseline !important;
-            padding: 15px;
-            border: transparent;
-            color: $d-grey;
-          }
+
+        .condition {
+          font-size: 14px;
+          color: #4c4c4c;
         }
       }
     }
+
+    .voucher-item-button-wrapper{
+      text-align: end;
+      padding-right: 5%;
+      .card-exp-date{
+        p{
+          margin-bottom: 8px;
+          color: #4c4c4c;
+        }
+      }
+  
+      .voucher-item-button {
+        margin-right: 0px !important;
+        padding: 0 10px; 
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 5px;
+        background: $logo-red;
+        color: #fff;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .voucher-main:last-child {
+    margin-bottom: 0;
   }
 }
-// order details end here
+
+.term-condition{
+  a{
+    color: $logo-blue;
+
+    &:hover{
+      color: $logo-red;
+    }
+  }
+}
+

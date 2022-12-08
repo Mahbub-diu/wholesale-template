@@ -6249,6 +6249,21 @@ a {
   font-weight: 400;
   font-size: 14px;
 }
+.user-info-main .user-info-bg .order-information-main .table-responsive .table thead tr th {
+  font-size: 14px;
+}
+.user-info-main .user-info-bg .order-information-main .table-responsive .table tbody tr th {
+  font-size: 16px;
+  vertical-align: baseline !important;
+  border: transparent;
+}
+.user-info-main .user-info-bg .order-information-main .table-responsive .table tbody tr td {
+  font-weight: 400 !important;
+  vertical-align: baseline !important;
+  padding: 15px;
+  border: transparent;
+  color: #a1a1a1;
+}
 
 .full-year-main {
   margin: 20px 0;
@@ -7217,18 +7232,59 @@ a {
   max-height: 120px;
 }
 
-.order-information-main .table-responsive .table thead tr th {
-  font-size: 14px;
+.cuppon-wrapper .voucher-main {
+  background: url(../images/icon/voucher.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 10px 0px;
 }
-.order-information-main .table-responsive .table tbody tr th {
+.cuppon-wrapper .voucher-main .voucher-item-left {
+  width: 104px;
+}
+.cuppon-wrapper .voucher-main .voucher-item-right .voucher-conditions {
+  padding: 8px 0 0 20%;
+  color: #ec2028;
+}
+.cuppon-wrapper .voucher-main .voucher-item-right .voucher-conditions .discont {
   font-size: 16px;
-  vertical-align: baseline !important;
-  border: transparent;
+  color: #ec2028;
+  margin-bottom: 3px;
 }
-.order-information-main .table-responsive .table tbody tr td {
-  font-weight: 400 !important;
-  vertical-align: baseline !important;
-  padding: 15px;
-  border: transparent;
-  color: #a1a1a1;
+.cuppon-wrapper .voucher-main .voucher-item-right .voucher-conditions .condition {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.cuppon-wrapper .voucher-main .voucher-item-button-wrapper {
+  text-align: end;
+  padding-right: 5%;
+}
+.cuppon-wrapper .voucher-main .voucher-item-button-wrapper .card-exp-date p {
+  margin-bottom: 8px;
+  color: #4c4c4c;
+}
+.cuppon-wrapper .voucher-main .voucher-item-button-wrapper .voucher-item-button {
+  margin-right: 0px !important;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ec2028;
+  color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.cuppon-wrapper .voucher-main:last-child {
+  margin-bottom: 0;
+}
+
+.term-condition a {
+  color: #004a96;
+}
+.term-condition a:hover {
+  color: #ec2028;
 }/*# sourceMappingURL=style.css.map */
