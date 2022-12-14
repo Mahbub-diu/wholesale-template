@@ -1,9 +1,11 @@
 .common-fieldset-main {
   margin-bottom: 20px;
+
   .common-fieldset {
     padding: 15px 19px 19px 19px !important;
     border: 1px solid #e9ebec !important;
     border-radius: 4px;
+
     legend {
       text-align: left !important;
       color: $logo-blue;
@@ -18,6 +20,7 @@
     }
   }
 }
+
 .common-gap {
   background: #fff;
   padding: 20px;
@@ -35,16 +38,20 @@
 .pb-thirty {
   padding-bottom: 30px;
 }
+
 .pt-thirty {
   padding-top: 30px;
 }
+
 .px-seventeen {
   padding-left: 17px;
   padding-right: 17px;
 }
+
 .mt-thirty {
   margin-top: 30px;
 }
+
 .newshape-bg {
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -65,14 +72,17 @@
 .four-col-grid-container {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   .moredetails-main {
     border-bottom: 1px solid $l-gray !important;
   }
 }
+
 .five-col-grid-container {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .six-col-grid-container {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -114,6 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &::after {
     position: absolute;
     left: 0;
@@ -125,6 +136,7 @@
     border-bottom-color: transparent;
   }
 }
+
 span.pending {
   background: #f0932b;
   padding: 5px 10px;
@@ -139,6 +151,7 @@ span.pending {
   min-width: 80px;
   display: inline-block;
 }
+
 span.cancel {
   background: #ff5252;
   padding: 5px 10px;
@@ -168,10 +181,12 @@ span.confirmed {
   min-width: 80px;
   display: inline-block;
 }
+
 .two-col-grid-container {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr;
 }
+
 .three-col-grid-container {
   @include product-grid-common;
   grid-template-columns: 1fr 1fr 1fr;
@@ -183,6 +198,7 @@ span.confirmed {
   color: #fff;
   padding-top: 4px;
   padding-bottom: 3px;
+
   // width: 100%;
   &:hover {
     background: $logo-blue !important;
@@ -195,6 +211,7 @@ span.confirmed {
   transition: all 0.3s;
   position: relative;
   border: 1px solid #f1f1f1;
+
   .quickview-main {
     height: 58px;
     position: absolute;
@@ -203,6 +220,7 @@ span.confirmed {
     right: 0;
     overflow: hidden;
     text-align: center;
+
     ul.nav {
       li.nav-item {
         a.nav-link {
@@ -217,12 +235,14 @@ span.confirmed {
           align-items: center;
           justify-content: center;
           margin-top: 68px;
+
           &:hover {
             background: $logo-blue;
             color: #fff;
           }
         }
       }
+
       li.nav-item:nth-child(1) {
         a.nav-link {
           transition: all 0.2s ease-in-out;
@@ -232,6 +252,7 @@ span.confirmed {
           -o-transition: all 0.2s ease-in-out;
         }
       }
+
       li.nav-item:nth-child(2) {
         a.nav-link {
           transition: all 0.3s ease-in-out;
@@ -243,6 +264,7 @@ span.confirmed {
       }
     }
   }
+
   &:hover {
     ul.nav {
       li.nav-item {
@@ -253,10 +275,12 @@ span.confirmed {
     }
   }
 }
+
 .five-col-grid-container {
   .card {
     .image-box {
       min-height: 150px;
+
       img {
         height: 100%;
         max-height: 145px;
@@ -317,3 +341,225 @@ span.confirmed {
 .voucher-main:last-child {
   margin-bottom: 0;
 }
+
+
+
+
+// =============== Offcanvas ==============
+.offcanvas-open-btn {
+  position: fixed;
+  right: 0;
+  top: 50vh;
+  background-color: $logo-blue;
+  padding: 0;
+  border-radius: 0;
+  z-index: 99;
+  border-color: $logo-blue;
+  opacity: 0.7;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 1;
+    background-color: $logo-blue !important;
+  }
+
+  .total-item {
+    padding: 10px 15px;
+
+    p {
+      font-size: 14px;
+    }
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  .total-item-price {
+    background-color: $white;
+    color: $logo-blue;
+    padding: 3px 0;
+  }
+}
+
+.offcanvas {
+
+  .offcanvas-header{
+    background-color: $logo-blue;
+    h5{
+      color: $white;
+    }
+  }
+
+  // position: relative;
+  .offcanvas-close-btn {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    border-radius: 0;
+    background-color: $logo-blue;
+    border-color: $logo-blue;
+
+    &:hover{
+      background-color: $logo-blue;
+      border-color: $logo-blue;
+    }
+  }
+
+  .offcanvas-body {
+    .table {
+      tbody {
+        tr {
+          padding: 10px 0;
+          td {
+            height: 70px;
+            vertical-align: middle;
+            text-align: center;
+            color: $d-grey;
+
+            img{
+              max-width: 40px;
+              
+            
+            }
+            button{
+              background-color: transparent;
+              border: none;
+              color: $d-grey;
+            }
+          }
+
+          td.item-number {
+            position: relative;
+            color: $d-grey;
+
+            .counter-up {
+              position: absolute;
+              top: 5px;
+              right: 54%;
+              transform: translateX(50%);
+              color: #e0e0e0;
+
+              &:hover{
+                color: $d-grey;
+              }
+            }
+
+            .counter-down {
+              position: absolute;
+              bottom: 5px;
+              right: 54%;
+              transform: translateX(50%);
+              color: #e0e0e0;
+
+              &:hover{
+                color: $d-grey;
+              }
+            }
+
+            span{
+            }
+          }
+
+          td.item-price{
+            color: $ex-red;
+          }
+        }
+      }
+    }
+  }
+
+  .offcanvas-footer{
+    .accordion{
+      border-bottom: 1px solid #d8d8d8;
+      .accordion-item{
+
+        .accordion-header{
+          .accordion-button{
+            background-color: $light-blue;
+            color: $white;
+
+            &::after{
+
+            }
+
+            &:not(.collapsed)::after{
+              
+            }
+
+            &:focus{
+              box-shadow: none;
+            }
+          }
+        }
+        .accordion-body{
+          form{
+            .btn{
+              border-radius: 0;
+              background-color: $logo-blue;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .place-order{
+
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+
+      .place-order-btn{
+        border-color: $light-blue;
+        background-color: $light-blue;
+        color: $white;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        flex-basis: 70%;
+        height: 40px;
+
+      }
+      
+      span{
+        background-color: $logo-blue;
+        color: $white;
+        text-align: center;
+        flex-basis: 30%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// =============== Offcanvas ==============
+
+
+// =============== Scrollbar ==============
+.scroll_container {
+
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+
+// .scroll_container ul , .scroll_container_normal ul {
+//   padding-left: 0 !important;
+//   list-style: none;
+// }
+// .scroll_container ul li, .scroll_container_normal ul li {
+//   display: block;
+//   width: 100%;
+//   margin-bottom: 1rem;
+//   background-color: #ccc;
+// }
+// =============== Scrollbar ==============
+
+

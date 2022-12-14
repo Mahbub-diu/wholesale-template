@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i"
         rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
 
     <link rel="stylesheet" href="./fonts/icofont.min.css">
     <link rel="stylesheet" href="./fonts/arial-font.css" />
@@ -91,7 +92,12 @@
                                         reorder
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end fade-down">
-                                        <li><a class="dropdown-item" href="#"> my items reorder</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">my items</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">reorder</a>
+                                        </li>
                                         <li>
                                             <a class="dropdown-item" href="#"> wishlists </a>
                                         </li>
@@ -5487,14 +5493,482 @@
     <!-- quick view modal end here  -->
     <!-- ========================================================== -->
 
+
+    <!-- ========================================================== -->
+    <!-- offcanvas start here  -->
+    <!-- ========================================================== -->
+
+
+    <button class="btn btn-primary offcanvas-open-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <div class="total-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="p-0 m-0">Item: 0</p>
+        </div>
+        <div class="total-item-price">&#2547; 0.00</div>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <button class="btn btn-primary offcanvas-close-btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">2 Item <i
+                    class="fa-sharp fa-solid fa-basket-shopping ms-3"></i></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body scroll_container">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="offcanvas-footer">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Do you have a cupon?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form action="">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Cuppon code"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn" type="button"
+                                        id="button-addon2">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-order">
+                <button class="place-order-btn btn">placeorder</button>
+                <span>৳ 15000</span>
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================== -->
+    <!-- offcanvas start here  -->
+    <!-- ========================================================== -->
+
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="./js/select2.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/custom.js"></script>
 
-
+    <script>
+        Array.from(document.querySelectorAll('.scroll_container'))
+  .forEach(
+    el => new SimpleBar(el, {
+      autoHide: false,
+    })
+  );
+    </script>
 
     <!-- script for main home page  -->
     <!-- this script wiil run only in home page  -->
