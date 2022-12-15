@@ -2906,6 +2906,8 @@ a {
         }
       }
     }
+
+
   }
 }
 
@@ -7664,3 +7666,21 @@ a {
 }
 
 
+
+
+
+.add-all-items {
+  margin: 30px 0;
+
+  button{
+    background-color: $logo-blue;
+    color: $white;
+    border-radius: 0;
+
+    &:hover {
+      background-color: $white;
+      color: $logo-blue;
+      border-color: $logo-blue;
+    }
+  }
+}

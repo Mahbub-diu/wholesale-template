@@ -349,17 +349,18 @@ span.confirmed {
 .offcanvas-open-btn {
   position: fixed;
   right: 0;
-  top: 50vh;
+  top: 40vh;
   background-color: $logo-blue;
   padding: 0;
   border-radius: 0;
   z-index: 99;
   border-color: $logo-blue;
-  opacity: 0.7;
+  // opacity: 0.7;
   transition: all 0.3s;
+  box-shadow: -16px -2px 24px -11px rgba(0,0,0,0.62);
 
   &:hover {
-    opacity: 1;
+    // opacity: 1;
     background-color: $logo-blue !important;
   }
 
@@ -379,6 +380,7 @@ span.confirmed {
     background-color: $white;
     color: $logo-blue;
     padding: 3px 0;
+    font-weight: 500;
   }
 }
 
@@ -388,6 +390,9 @@ span.confirmed {
     background-color: $logo-blue;
     h5{
       color: $white;
+    }
+    .btn-close{
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
     }
   }
 
@@ -480,7 +485,7 @@ span.confirmed {
             color: $white;
 
             &::after{
-
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/%3E%3C/svg%3E");
             }
 
             &:not(.collapsed)::after{
@@ -535,7 +540,6 @@ span.confirmed {
     }
   }
 }
-
 // =============== Offcanvas ==============
 
 
@@ -548,18 +552,9 @@ span.confirmed {
   background-color: #fff;
   overflow-y: auto;
 }
-
-
-// .scroll_container ul , .scroll_container_normal ul {
-//   padding-left: 0 !important;
-//   list-style: none;
-// }
-// .scroll_container ul li, .scroll_container_normal ul li {
-//   display: block;
-//   width: 100%;
-//   margin-bottom: 1rem;
-//   background-color: #ccc;
-// }
 // =============== Scrollbar ==============
+
+
+
 
 

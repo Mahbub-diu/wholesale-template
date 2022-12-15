@@ -320,17 +320,16 @@ span.confirmed {
 .offcanvas-open-btn {
   position: fixed;
   right: 0;
-  top: 50vh;
+  top: 40vh;
   background-color: #004a96;
   padding: 0;
   border-radius: 0;
   z-index: 99;
   border-color: #004a96;
-  opacity: 0.7;
   transition: all 0.3s;
+  box-shadow: -16px -2px 24px -11px rgba(0, 0, 0, 0.62);
 }
 .offcanvas-open-btn:hover {
-  opacity: 1;
   background-color: #004a96 !important;
 }
 .offcanvas-open-btn .total-item {
@@ -346,6 +345,7 @@ span.confirmed {
   background-color: #fff;
   color: #004a96;
   padding: 3px 0;
+  font-weight: 500;
 }
 
 .offcanvas .offcanvas-header {
@@ -353,6 +353,9 @@ span.confirmed {
 }
 .offcanvas .offcanvas-header h5 {
   color: #fff;
+}
+.offcanvas .offcanvas-header .btn-close {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
 }
 .offcanvas .offcanvas-close-btn {
   position: absolute;
@@ -416,6 +419,9 @@ span.confirmed {
 .offcanvas .offcanvas-footer .accordion .accordion-item .accordion-header .accordion-button {
   background-color: #137bc2;
   color: #fff;
+}
+.offcanvas .offcanvas-footer .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/%3E%3C/svg%3E");
 }
 .offcanvas .offcanvas-footer .accordion .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
@@ -7429,4 +7435,18 @@ a {
 }
 .term-condition a:hover {
   color: #ec2028;
+}
+
+.add-all-items {
+  margin: 30px 0;
+}
+.add-all-items button {
+  background-color: #004a96;
+  color: #fff;
+  border-radius: 0;
+}
+.add-all-items button:hover {
+  background-color: #fff;
+  color: #004a96;
+  border-color: #004a96;
 }/*# sourceMappingURL=style.css.map */
