@@ -354,10 +354,10 @@ span.confirmed {
   padding: 0;
   border-radius: 0;
   z-index: 99;
-  border-color: $logo-blue;
+  border: none;
   // opacity: 0.7;
   transition: all 0.3s;
-  box-shadow: -16px -2px 24px -11px rgba(0,0,0,0.62);
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 68%);
 
   &:hover {
     // opacity: 1;
