@@ -412,7 +412,7 @@ a {
   margin-bottom: 0;
   margin-right: 0px;
 
-  select+.select2-container {
+  select + .select2-container {
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
@@ -872,9 +872,7 @@ a {
         }
       }
     }
-
   }
-
 
   .online-apply {
     .online-apply-border {
@@ -2451,7 +2449,7 @@ a {
           }
         }
 
-        .breadcrumb-item+.breadcrumb-item {
+        .breadcrumb-item + .breadcrumb-item {
           text-transform: capitalize;
           font-size: 14px;
 
@@ -2906,7 +2904,6 @@ a {
         }
       }
     }
-
   }
 }
 
@@ -3048,7 +3045,7 @@ a {
             }
           }
 
-          li+li {
+          li + li {
             margin-left: 2.5rem;
           }
         }
@@ -3500,7 +3497,6 @@ a {
       }
 
       .description-box {
-
         // @include pp-description-box;
         h4.product-title {
           text-align: center;
@@ -6628,7 +6624,6 @@ a {
   }
 }
 
-
 // multistep form start from here
 
 .multistep-form-main {
@@ -6712,7 +6707,6 @@ a {
             }
 
             &:active {
-
               &::before,
               &::after {
                 background: skyblue;
@@ -6767,7 +6761,6 @@ a {
           }
         }
 
-
         fieldset {
           background: white;
           border: 0 none;
@@ -6783,8 +6776,6 @@ a {
           &:not(:first-of-type) {
             display: none;
           }
-
-
 
           .form-card {
             background: white;
@@ -6869,7 +6860,6 @@ a {
               }
             }
 
-
             .radio-group {
               position: relative;
               margin-bottom: 25px;
@@ -6888,7 +6878,8 @@ a {
                   width: 150px;
                   transition: 0.3s;
 
-                  &:hover {}
+                  &:hover {
+                  }
                 }
 
                 &:hover {
@@ -6953,7 +6944,6 @@ a {
                   }
                 }
               }
-
             }
 
             .additional-information {
@@ -6961,7 +6951,6 @@ a {
                 font-size: 16px;
               }
             }
-
 
             .fit-image {
               width: 100%;
@@ -6993,7 +6982,6 @@ a {
               color: $text-color;
 
               select {
-
                 border-radius: 0;
                 color: $d-grey;
 
@@ -7025,11 +7013,7 @@ a {
                   color: $text-color;
                 }
               }
-
-
-
             }
-
 
             .cupon-input {
               .form-control {
@@ -7058,7 +7042,6 @@ a {
             }
           }
 
-
           .action-button {
             width: 200px;
             background: $logo-blue;
@@ -7070,8 +7053,6 @@ a {
             padding: 15px 5px;
             margin: 10px 5px;
             font-size: 16px;
-
-
           }
 
           .action-button-previous {
@@ -7085,11 +7066,7 @@ a {
             padding: 15px 5px;
             margin: 10px 5px;
             font-size: 16px;
-
-
           }
-
-
 
           .coupon-card {
             background: linear-gradient(135deg, #7158fe, #9d4de6);
@@ -7106,7 +7083,6 @@ a {
               width: 80px;
               border-radius: 8px;
               margin-bottom: 20px;
-
             }
 
             .cupon-title {
@@ -7121,7 +7097,6 @@ a {
             .cupon-date {
               font-size: 10px;
               margin: 0;
-
             }
 
             .cupon-body {
@@ -7139,7 +7114,6 @@ a {
                 border: 1px dashed #fff;
                 padding: 5px 10px;
                 border-right: 0;
-
               }
 
               #cpnBtn {
@@ -7159,7 +7133,6 @@ a {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-
               }
 
               .circle1 {
@@ -7170,15 +7143,7 @@ a {
                 right: -10px;
               }
             }
-
           }
-
-
-
-
-
-
-
         }
       }
     }
@@ -7218,12 +7183,9 @@ a {
 
 // multistep form end here
 
-
 // dashboard start from here
 .dashboard {
-
   .dashboard-card-wrapper {
-
     .dashboard-card {
       border-radius: 5px;
       min-height: 180px;
@@ -7290,7 +7252,6 @@ a {
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: $logo-blue;
-        ;
       }
 
       .card-body {
@@ -7298,7 +7259,8 @@ a {
           li {
             color: $text-color;
 
-            span {}
+            span {
+            }
           }
         }
       }
@@ -7307,7 +7269,6 @@ a {
 }
 
 // dashboard end here
-
 
 // bulk sale start from here
 .bulk-sale-main {
@@ -7447,7 +7408,6 @@ a {
 
 // bulk sale end here
 
-
 // Single Party starts from here
 .single-party-main {
   margin: 20px 0;
@@ -7582,13 +7542,11 @@ a {
       }
     }
   }
-
-
 }
 
 // Single Party end here
 
-.cuppon-wrapper{
+.cuppon-wrapper {
   .voucher-main {
     background: url(../images/icon/voucher.png);
     background-size: 100% 100%;
@@ -7622,19 +7580,19 @@ a {
       }
     }
 
-    .voucher-item-button-wrapper{
+    .voucher-item-button-wrapper {
       text-align: end;
       padding-right: 5%;
-      .card-exp-date{
-        p{
+      .card-exp-date {
+        p {
           margin-bottom: 8px;
           color: #4c4c4c;
         }
       }
-  
+
       .voucher-item-button {
         margin-right: 0px !important;
-        padding: 0 10px; 
+        padding: 0 10px;
         height: 30px;
         line-height: 30px;
         font-size: 12px;
@@ -7654,24 +7612,20 @@ a {
   }
 }
 
-.term-condition{
-  a{
+.term-condition {
+  a {
     color: $logo-blue;
 
-    &:hover{
+    &:hover {
       color: $logo-red;
     }
   }
 }
 
-
-
-
-
 .add-all-items {
   margin: 30px 0;
 
-  button{
+  button {
     background-color: $logo-blue;
     color: $white;
     border-radius: 0;
@@ -7680,6 +7634,190 @@ a {
       background-color: $white;
       color: $logo-blue;
       border-color: $logo-blue;
+    }
+  }
+}
+
+.supplier-reg-banner {
+  .supplier-banner {
+    background: url(.././images/supplier2-01.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    height: 250px;
+    text-align: center;
+    // margin-bottom: 20px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #004a967a;
+    }
+    h4 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 0;
+      font-weight: 700;
+
+      z-index: 1;
+      position: relative;
+    }
+  }
+}
+
+.supplier-description {
+  .supplier-desc-bg {
+    background: #fff;
+    padding: 0;
+    // margin-bottom: 20px;
+    padding: 10px 17px;
+    p {
+      font-size: 17px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      color: $logo-blue;
+    }
+    .nav-tabs {
+      justify-content: center;
+      border: none;
+      margin-bottom: 20px;
+      .nav-item {
+        .nav-link {
+          @include no-radious;
+          border: 1px solid $l-gray;
+          font-size: 15px;
+          text-transform: capitalize;
+          font-weight: 500;
+          position: relative;
+          min-width: 210px;
+          color: $d-grey;
+        }
+        .nav-link.active {
+          background: $logo-blue;
+          border-color: $logo-blue;
+          color: #fff;
+          &::before {
+            border: 10px solid #004a96;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+          }
+        }
+      }
+      .nav-item:not(:last-child) {
+        .nav-link {
+          border-right: none;
+        }
+      }
+    }
+    .supplier-login-main {
+      width: 800px;
+      margin: 0px auto;
+      .new-supplier-qsn {
+        background: $l-gray;
+        padding: 10px 10px;
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+          text-transform: capitalize;
+          color: $text-color;
+        }
+      }
+      .col-form-label {
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+      .form-control {
+        font-size: 15px;
+      }
+      .supplier-reg-btn {
+        height: 2.875rem;
+        justify-content: center;
+        padding: 0 1.25rem;
+        border: 1px solid;
+        color: #fff;
+        background: #004a96;
+        box-shadow: none;
+        outline: none;
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        -ms-border-radius: 0 !important;
+        -o-border-radius: 0 !important;
+        font-size: 17px;
+        text-transform: capitalize;
+        min-width: 200px;
+      }
+      .supplier-crt-btn {
+        height: 2.875rem;
+        justify-content: center;
+        padding: 0 1.25rem;
+        border: 1px solid;
+        color: #004a96;
+        background: $l-gray;
+        border-color: $l-gray;
+        box-shadow: none;
+        outline: none;
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        -ms-border-radius: 0 !important;
+        -o-border-radius: 0 !important;
+        font-size: 17px;
+        text-transform: capitalize;
+        min-width: 200px;
+      }
+    }
+    .form-label {
+      text-transform: capitalize;
+      font-size: 15px;
+    }
+    .form-check-label {
+      text-transform: capitalize;
+      font-size: 15px;
+    }
+    .form-control {
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .table.key-person {
+      thead {
+        th {
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 15px !important;
+          vertical-align: middle;
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 13px !important;
+            text-transform: capitalize;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
     }
   }
 }
