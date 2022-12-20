@@ -7640,4 +7640,20 @@ a {
   text-align: center;
   padding: 10px 0;
   margin-bottom: 20px;
+}
+.supplier-description .supplier-desc-bg .submit-btn {
+  min-width: 200px;
+  border: none;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  font-size: 15px;
+  color: #fff;
+  background: #004a96;
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
