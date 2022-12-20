@@ -7683,28 +7683,31 @@ a {
     }
     h3 {
       font-size: 22px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      color: $logo-blue;
+      // margin-bottom: 20px;
+      // margin-top: 20px;
+      color: #fff;
     }
     .nav-tabs {
       justify-content: center;
       border: none;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
       .nav-item {
         .nav-link {
           @include no-radious;
-          border: 1px solid $l-gray;
+          border: 1px solid transparent;
           font-size: 15px;
           text-transform: capitalize;
           font-weight: 500;
           position: relative;
           min-width: 210px;
           color: $d-grey;
+          &:hover {
+            border-color: #fff;
+          }
         }
         .nav-link.active {
           background: $logo-blue;
-          border-color: $logo-blue;
+          // border-color: $logo-blue;
           color: #fff;
           &::before {
             border: 10px solid #004a96;
@@ -7713,7 +7716,7 @@ a {
             border-left-color: transparent;
             position: absolute;
             content: '';
-            bottom: -20px;
+            bottom: -28px;
             left: 50%;
             transform: translateX(-50%);
             -webkit-transform: translateX(-50%);
@@ -7721,11 +7724,9 @@ a {
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
           }
-        }
-      }
-      .nav-item:not(:last-child) {
-        .nav-link {
-          border-right: none;
+          &:hover {
+            border-color: transparent;
+          }
         }
       }
     }
@@ -7818,6 +7819,12 @@ a {
           }
         }
       }
+    }
+    .supplier-tabs-bg {
+      background: $logo-blue;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 20px;
     }
   }
 }
