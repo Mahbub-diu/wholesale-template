@@ -7632,6 +7632,9 @@ a {
   text-align: center;
   vertical-align: middle;
 }
+.supplier-description .supplier-desc-bg .table.key-person tbody tr td img.company-logo {
+  max-width: 120px;
+}
 .supplier-description .supplier-desc-bg .supplier-tabs-bg {
   background: #004a96;
   text-align: center;
