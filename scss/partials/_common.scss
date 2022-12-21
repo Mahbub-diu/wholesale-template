@@ -808,3 +808,240 @@ span.confirmed {
     }
   }
 }
+
+// =============== Offcanvas ==============
+.offcanvas-open-btn {
+  position: fixed;
+  right: 0;
+  top: 40vh;
+  background-color: $logo-blue;
+  padding: 0;
+  border-radius: 0;
+  z-index: 99;
+  border: none;
+  // opacity: 0.7;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 68%);
+
+  &:hover {
+    // opacity: 1;
+    background-color: $logo-blue !important;
+  }
+
+  .total-item {
+    padding: 10px 15px;
+
+    p {
+      font-size: 14px;
+    }
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  .total-item-price {
+    background-color: $white;
+    color: $logo-blue;
+    padding: 3px 0;
+    font-weight: 500;
+  }
+}
+
+.offcanvas {
+
+  .offcanvas-header {
+    background-color: $logo-blue;
+
+    h5 {
+      color: $white;
+    }
+
+    .btn-close {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
+    }
+  }
+
+  // position: relative;
+  .offcanvas-close-btn {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    border-radius: 0;
+    background-color: $logo-blue;
+    border-color: $logo-blue;
+
+    &:hover {
+      background-color: $logo-blue;
+      border-color: $logo-blue;
+    }
+  }
+
+  .offcanvas-body {
+    table.table {
+      thead {
+        tr {
+          th {
+            background-color: $light-blue;
+          }
+
+          th.request-stock-title {
+            font-size: 16px !important;
+            color: $white;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          padding: 10px 0;
+
+          td {
+            height: 70px;
+            vertical-align: middle;
+            text-align: center;
+            color: $d-grey;
+
+            img {
+              max-width: 40px;
+
+
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              color: $d-grey;
+            }
+          }
+
+          td.item-number {
+            position: relative;
+            color: $d-grey;
+
+            .counter-up {
+              position: absolute;
+              top: 5px;
+              right: 54%;
+              transform: translateX(50%);
+              color: #e0e0e0;
+
+              &:hover {
+                color: $d-grey;
+              }
+            }
+
+            .counter-down {
+              position: absolute;
+              bottom: 5px;
+              right: 54%;
+              transform: translateX(50%);
+              color: #e0e0e0;
+
+              &:hover {
+                color: $d-grey;
+              }
+            }
+
+            span {}
+          }
+
+          td.item-price {
+            color: $ex-red;
+          }
+        }
+      }
+    }
+  }
+
+  .offcanvas-footer {
+    .accordion {
+      border-bottom: 1px solid #d8d8d8;
+
+      .accordion-item {
+
+        .accordion-header {
+          .accordion-button {
+            background-color: $light-blue;
+            color: $white;
+
+            &::after {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/%3E%3C/svg%3E");
+            }
+
+            &:not(.collapsed)::after {}
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .accordion-body {
+          form {
+            .btn {
+              border-radius: 0;
+              background-color: $logo-blue;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .total-price {
+      padding: 30px;
+      background-color: $logo-blue;
+
+      .subtotal {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $white;
+        color: $white;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+
+        }
+
+        .price {
+          font-size: 16px;
+        }
+      }
+
+      .savings {
+        padding: 20px 0;
+        color: $white;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+        }
+
+        .price {
+          font-size: 16px;
+        }
+      }
+
+      .view-cart-btn {
+
+        .btn {
+          background-color: transparent;
+          border-radius: 0;
+          color: $white;
+          font-size: 16px;
+          font-weight: 600;
+          border: 1px solid $white;
+          padding: 15px 0;
+
+          &:hover {
+            background-color: $white;
+            color: $logo-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============== Offcanvas ==============
