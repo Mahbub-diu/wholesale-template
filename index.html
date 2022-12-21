@@ -103,7 +103,9 @@
                                         <li><a class="dropdown-item" href="#"> monthly list</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
+
+                                <li class="nav-item dropdown" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                         <img src="./images/icon/cart.svg" alt="">
                                         cart
@@ -183,8 +185,33 @@
                                                 <i class="icofont-trash"></i>
                                             </a>
                                         </div>
+
+                                        <div class="cart-footer">
+                                            <div class="subtotal">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <p>Subtotal</p>
+                                                    </div>
+                                                    <div class="col-4 text-end"><span
+                                                            class="price text-end">1500.00</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="savings">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <p>Estimated savings</p>
+                                                    </div>
+                                                    <div class="col-4 text-end"><span
+                                                            class="price text-end">20.00</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2 view-cart-btn">
+                                                <button class="btn" type="button">View cart and checkout</button>
+                                            </div>
+                                        </div>
                                     </ul>
                                 </li>
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                         <img src="./images/icon/user.svg" alt="">
@@ -304,11 +331,18 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-
                                 celebration day
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end fade-down">
-
+                                <p class="dropdown-title">January</p>
+                                <li><a class="dropdown-item" href="#"> celebration day 1</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> celebration day 2 </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> celebration day 3 </a>
+                                </li>
+                                <p class="dropdown-title">February</p>
                                 <li><a class="dropdown-item" href="#"> celebration day 1</a></li>
                                 <li>
                                     <a class="dropdown-item" href="#"> celebration day 2 </a>
@@ -5575,16 +5609,80 @@
                         <td class="item-price">৳ 15000</td>
                         <td><button>x</button></td>
                     </tr>
-                    
-                    
-                    
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="5" class="text-center request-stock-title">Request Stock Items</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/2.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/pran.webp" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="item-number">
+                            <button class="counter counter-up"><i class="fa-solid fa-chevron-up"></i></button>
+                            <span>1</span>
+                            <button class="counter counter-down"><i class="fa-solid fa-chevron-down"></i></button>
+                        </td>
+                        <td>
+                            <img src="./images/products/1.png" alt="">
+                        </td>
+                        <td>Stylish Fashion Shirt</td>
+                        <td class="item-price">৳ 15000</td>
+                        <td><button>x</button></td>
+                    </tr>
+
+
+
 
                 </tbody>
             </table>
+
         </div>
 
         <div class="offcanvas-footer">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush d-none" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -5606,9 +5704,27 @@
                     </div>
                 </div>
             </div>
-            <div class="place-order">
-                <button class="place-order-btn btn">placeorder</button>
-                <span>৳ 15000</span>
+
+            <div class="total-price">
+                <div class="subtotal">
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="col-4 text-end"><span class="price text-end">1500.00</span></div>
+                    </div>
+                </div>
+                <div class="savings">
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Estimated savings</p>
+                        </div>
+                        <div class="col-4 text-end"><span class="price text-end">20.00</span></div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 view-cart-btn">
+                    <button class="btn" type="button">View cart and checkout</button>
+                </div>
             </div>
         </div>
     </div>

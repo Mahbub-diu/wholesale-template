@@ -386,12 +386,14 @@ span.confirmed {
 
 .offcanvas {
 
-  .offcanvas-header{
+  .offcanvas-header {
     background-color: $logo-blue;
-    h5{
+
+    h5 {
       color: $white;
     }
-    .btn-close{
+
+    .btn-close {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 320 512'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
     }
   }
@@ -405,29 +407,44 @@ span.confirmed {
     background-color: $logo-blue;
     border-color: $logo-blue;
 
-    &:hover{
+    &:hover {
       background-color: $logo-blue;
       border-color: $logo-blue;
     }
   }
 
   .offcanvas-body {
-    .table {
+    table.table {
+      thead {
+        tr {
+          th {
+            background-color: $light-blue;
+          }
+
+          th.request-stock-title {
+            font-size: 16px !important;
+            color: $white;
+          }
+        }
+      }
+
       tbody {
         tr {
           padding: 10px 0;
+
           td {
             height: 70px;
             vertical-align: middle;
             text-align: center;
             color: $d-grey;
 
-            img{
+            img {
               max-width: 40px;
-              
-            
+
+
             }
-            button{
+
+            button {
               background-color: transparent;
               border: none;
               color: $d-grey;
@@ -445,7 +462,7 @@ span.confirmed {
               transform: translateX(50%);
               color: #e0e0e0;
 
-              &:hover{
+              &:hover {
                 color: $d-grey;
               }
             }
@@ -457,16 +474,15 @@ span.confirmed {
               transform: translateX(50%);
               color: #e0e0e0;
 
-              &:hover{
+              &:hover {
                 color: $d-grey;
               }
             }
 
-            span{
-            }
+            span {}
           }
 
-          td.item-price{
+          td.item-price {
             color: $ex-red;
           }
         }
@@ -474,32 +490,32 @@ span.confirmed {
     }
   }
 
-  .offcanvas-footer{
-    .accordion{
+  .offcanvas-footer {
+    .accordion {
       border-bottom: 1px solid #d8d8d8;
-      .accordion-item{
 
-        .accordion-header{
-          .accordion-button{
+      .accordion-item {
+
+        .accordion-header {
+          .accordion-button {
             background-color: $light-blue;
             color: $white;
 
-            &::after{
+            &::after {
               background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/%3E%3C/svg%3E");
             }
 
-            &:not(.collapsed)::after{
-              
-            }
+            &:not(.collapsed)::after {}
 
-            &:focus{
+            &:focus {
               box-shadow: none;
             }
           }
         }
-        .accordion-body{
-          form{
-            .btn{
+
+        .accordion-body {
+          form {
+            .btn {
               border-radius: 0;
               background-color: $logo-blue;
               color: $white;
@@ -509,37 +525,61 @@ span.confirmed {
       }
     }
 
-    .place-order{
+    .total-price {
+      padding: 30px;
+      background-color: $logo-blue;
 
-      padding: 30px 20px;
-      display: flex;
-      align-items: center;
-
-      .place-order-btn{
-        border-color: $light-blue;
-        background-color: $light-blue;
+      .subtotal {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $white;
         color: $white;
-        border-radius: 0;
-        padding: 0;
-        width: 100%;
-        flex-basis: 70%;
-        height: 40px;
 
+        p {
+          margin: 0;
+          font-size: 16px;
+
+        }
+
+        .price {
+          font-size: 16px;
+        }
       }
-      
-      span{
-        background-color: $logo-blue;
+
+      .savings {
+        padding: 20px 0;
         color: $white;
-        text-align: center;
-        flex-basis: 30%;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+        }
+
+        .price {
+          font-size: 16px;
+        }
+      }
+
+      .view-cart-btn {
+
+        .btn {
+          background-color: transparent;
+          border-radius: 0;
+          color: $white;
+          font-size: 16px;
+          font-weight: 600;
+          border: 1px solid $white;
+          padding: 15px 0;
+
+          &:hover {
+            background-color: $white;
+            color: $logo-blue;
+          }
+        }
       }
     }
   }
 }
+
 // =============== Offcanvas ==============
 
 
@@ -552,13 +592,14 @@ span.confirmed {
   background-color: #fff;
   overflow-y: auto;
 }
+
 // =============== Scrollbar ==============
 
 
 .add-all-items {
   margin: 30px 0;
 
-  button{
+  button {
     background-color: $logo-blue;
     color: $white;
     border-radius: 0;
@@ -570,5 +611,3 @@ span.confirmed {
     }
   }
 }
-
-
