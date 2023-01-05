@@ -7843,3 +7843,51 @@ a {
     }
   }
 }
+
+// comming soon start from here
+.comminghome-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 100vh;
+  .left-box {
+    flex-basis: 50%;
+    height: 100vh;
+    background: #8d44ad;
+    padding: 200px 100px;
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+      position: relative;
+      font-weight: 700;
+      margin-bottom: 30px;
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100px;
+        content: '';
+        background: #fff;
+      }
+    }
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    h5 {
+      color: #fff;
+      font-size: 17px;
+    }
+  }
+  .right-box {
+    flex-basis: 50%;
+    height: 100vh;
+    background: #e8dbef;
+    padding: 200px 100px;
+    text-align: center;
+  }
+}
+// comming soon end here
