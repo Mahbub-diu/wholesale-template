@@ -8242,48 +8242,7 @@ a {
   text-transform: capitalize;
 }
 
-.comminghome-main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  min-height: 100vh;
-}
-.comminghome-main .left-box {
-  flex-basis: 50%;
-  height: 100vh;
-  background: #8d44ad;
-  padding: 200px 100px;
-}
-.comminghome-main .left-box h2 {
-  color: #fff;
-  text-transform: capitalize;
-  position: relative;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-.comminghome-main .left-box h2::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 100px;
-  content: "";
-  background: #fff;
-}
-.comminghome-main .left-box h3 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 50px;
-}
-.comminghome-main .left-box h5 {
-  color: #fff;
-  font-size: 17px;
-}
-.comminghome-main .right-box {
-  flex-basis: 50%;
-  height: 100vh;
-  background: #e8dbef;
-  padding: 200px 100px;
-  text-align: center;
+.comminghome-main img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
